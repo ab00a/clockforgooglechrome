@@ -1,0 +1,171 @@
+<html>
+
+<head>
+  <title></title>
+  <script type="text/javascript" src="../js/calutil.js"></script>
+  <script type="text/javascript" src="../js/displayfunctions.js"></script>
+  <script type="text/javascript" src="../js/options.js"></script>
+  <link rel="stylesheet" type="text/css" href="../style/calutil.css" />
+  <link rel="stylesheet" type="text/css" href="../style/options.css" />
+
+</head>
+
+<body>
+  <table>
+    <tr>
+      <td id="contentspane">
+        <h1 id="optionsTitle" class="h1label"></h1>
+        <p id="appearanceh" class="contentsItem"></p>
+        <p id="formath" class="contentsItem"></p>
+        <p id="remindersh" class="contentsItemOn"></p>
+        <p id="contacth" class="contentsItem"></p>
+      </td>
+      <td id="controlspane">
+        <div id="appearancecontrols" class="optionOff">
+          <h1 id="appearanceTitle" class="h1label"></h1>
+          <hr />
+          <h2 id="analogueTitle" class="h2label"></h2>
+          <input type="checkbox" id="showAnalogue" /><label class="inputLabel" id="lblshowAnalogue"
+            for="showAnalogue"></label><br />
+          <div id="dotsSelection">
+            <input type="radio" value="0" id="rdoNoDots" name="dots" /><label for="rdoNoDots" id="lblrdoNoDots"
+              class="inputLabel"></label><br />
+            <input type="radio" value="4" id="rdoFourDots" name="dots" /><label for="rdoFourDots" id="lblrdoFourDots"
+              class="inputLabel"></label><br />
+            <input type="radio" value="12" id="rdoTwelveDots" name="dots" /><label for="rdoTwelveDots"
+              id="lblrdoTwelveDots" class="inputLabel"></label><br />
+            <br />
+            <input type="radio" value="rgba(0,0,0,0.4)" id="handColourDark" name="hc" /><label for="handColourDark"
+              id="lblhandColourDark" class="inputLabel"></label><br />
+            <input type="radio" value="rgba(200,200,200,0.2)" id="handColourPale" name="hc" /><label
+              for="handColourPale" id="lblhandColourPale" class="inputLabel"></label><br />
+            <input type="radio" id="handColourCustom" name="hc" /><label for="handColourCustom" id="lblhandColourCustom"
+              class="inputLabel"></label><br /><br />
+            <div id="handsPickerDiv">
+              <span id="labelHandsColour" class="label"></span>
+              <input id="handsPicker" type="color" /><br />
+              <span id="labelHandsTrans" class="label"></span>
+              <input id="handsA" type="range" min="1" max="100" />
+            </div>
+          </div>
+          <hr />
+          <h2 id="digitalTitle" class="h2label"></h2>
+          <input type="checkbox" id="showDigital" /><label class="inputLabel" id="lblshowDigital"
+            for="showDigital"></label><br />
+          <br />
+          <div id="digitalFore">
+            <span id="lblDigitalPicker" class="label"></span>
+            <input id="digitalPicker" type="color" />
+            <input id="digitalPickerA" type="range" min="1" max="255" /><br />
+          </div>
+          <div id="badgePickerDiv">
+            <span id="lblBadgePicker" class="label"></span>
+            <input id="badgePicker" type="color" />
+            <input id="badgeA" type="range" min="1" max="255" />
+          </div>
+        </div>
+        <div id="formatcontrols" class="optionOff">
+          <h1 id="mainHoverTitle" class="h1label"></h1>
+          <hr />
+          <input type="radio" value="ta D d M Y" id="hoverTextLong12" name="ht" /><label for="hoverTextLong12"
+            id="lblhoverTextLong12"></label><br />
+          <input type="radio" value="T D d M Y" id="hoverTextLong24" name="ht" /><label for="hoverTextLong24"
+            id="lblhoverTextLong24"></label><br />
+          <input type="radio" value="T dsmsy" id="hoverTextShortUK" name="ht" /><label for="hoverTextShortUK"
+            id="lblhoverTextShortUK"></label><br />
+          <input type="radio" value="T msdsy" id="hoverTextShortUS" name="ht" /><label for="hoverTextShortUS"
+            id="lblhoverTextShortUS"></label><br />
+          <input type="radio" value="T M d Y" id="hoverTextCustom" name="ht" /><label for="hoverTextCustom"
+            id="lblhoverTextCustom" class="inputLabel"></label><br />
+          <input value="T d M Y" id="hoverTextCustomFormat" />
+          <br />
+          <span id="lblFirstDayoftheWeek" class="label"></span>
+          <select id="firstDayoftheWeek">
+            <option id="day0" value="0"></option>
+            <option id="day1" value="1"></option>
+            <option id="day2" value="2"></option>
+            <option id="day3" value="3"></option>
+            <option id="day4" value="4"></option>
+            <option id="day5" value="5"></option>
+            <option id="day6" value="6"></option>
+          </select>
+          <br />
+          <span id="lblOffset" class="label"></span>
+          <input type="number" step="0.5" max="12" min="-12" id="offset" />
+
+        </div>
+        <div id="reminderscontrols" class="optionOn">
+          <h1 id="lblMainAlarms" class="h1label"></h1>
+          <hr />
+          <div id="newAlarm">
+            <h2 id="lblAddNewAlarmHeading" class="h2label"></h2>
+            <div id="newAlarmdatePicker">
+              <table>
+                <tr>
+                  <td>
+                    <span id="lblAlarmLabel" class="label"></span>
+                  </td>
+                  <td>
+                    <input id="newAlarmLabel" />
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span id="lblRingLabel" class="label"></span>
+                  </td>
+                  <td>
+                    <select id="newAlarmRing">
+                      <option id="silence" value="nothing"></option>
+                      <option id="diing" value="diing">Ding</option>
+                      <option id="hiphop" value="hiphop">Hip Hop</option>
+                      <option id="noknoknok" value="noknoknok">Nok Nok</option>
+                      <option id="tingaling" value="tingaling">Tingaling</option>
+                      <option id="waawwaaw" value="waawwaaw">Waaw Waaw</option>
+                      <option id="ohoh" value="ohoh">Oh Oh</option>
+                    </select>
+                    <img src="../assets/silent.png" title="Mute" /><input type="range" min="0.05" max="1" step="0.05"
+                      value="1" id="reminderVolume" /><img src="../assets/ring.png" title="Full Volume" />
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span id="lblSelectedTime" class="label"></span>
+                  </td>
+                  <td>
+                    <input type="time" id="selectedTime" />
+                  </td>
+                </tr>
+              </table>
+              <input type="radio" value="today" id="datePickerToday" name="dp" checked="checked" /><label
+                for="datePickerToday" id="lbldatePickerToday" class="inputLabel"></label>
+              <input type="radio" value="tomorrow" id="datePickerTomorrow" name="dp" /><label for="datePickerTomorrow"
+                id="lbldatePickerTomorrow" class="inputLabel"></label>
+              <input type="radio" value="custom" id="datePickerCustom" name="dp" /><label for="datePickerCustom"
+                id="lbldatePickerCustom" class="inputLabel"></label>
+              <br />
+              <span id="newAlarmDatePickerControl"></span>
+              <br />
+              <input type="checkbox" id="repeatNewAlarm" /><label for="repeatNewAlarm" id="lblRepeatNewAlarm"
+                class="inputLabel"></label><br />
+              <span id="repeatDays"></span>
+              <br />
+              <input type="button" id="addNewAlarm" />
+            </div>
+          </div>
+          <br />
+          <hr />
+          <h2 id="lblHourChime" class="h2label"></h2>
+          <img id="hourChime" src="../assets/nochimes.png" /><br />
+          <img src="../assets/silent.png" title="Mute" /><input type="range" min="0.05" max="1" step="0.05"
+            id="hourVolume" /><img src="../assets/ring.png" title="Full Volume" />
+          <audio src="../assets/diing.ogg" id="hourChimeSample"></audio>
+          <br />
+          <hr />
+          <h2 id="lblListOfReminders" class="h2label"></h2>
+          <div id="listOfAlarms"></div>
+        </div>
+      </td>
+    </tr>
+</body>
+
+</html>

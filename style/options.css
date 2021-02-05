@@ -1,0 +1,129 @@
+input, option, select, .inputLabel, label, #lblFirstDayoftheWeek, .label, #repeatDays
+	{
+		font-family: 'Segoe UI', Tahoma, sans-serif;
+		color:rgb(48, 57, 66);
+		font-size:12px;
+	}
+h1
+	{
+		font-family: 'Segoe UI', Tahoma, sans-serif;
+		color:rgb(48, 57, 66);
+		font-size:18px;
+		font-weight:normal;
+	}
+hr
+	{
+    border: none;
+  	background-color: #eee;
+  	color: #eee;
+  	height: 1px;
+  }
+.optionOn
+	{
+		display: inline;
+	}
+.optionOff
+	{
+		display: none;
+	}
+.contentsItem
+	{
+		font-family: 'DejaVu Sans', Arial, sans-serif;
+		color:rgb(153, 153, 153);
+		font-size:12px;
+		cursor:pointer;
+		padding-left:12px;
+	}
+.contentsItemOn
+	{
+		font-family: 'DejaVu Sans', Arial, sans-serif;
+		color:rgb(0, 0, 0);
+		font-size:12px;
+		cursor:pointer;
+		border-left:5px solid #000000;
+		padding-left: 7px;
+	}
+.contentsItem:hover
+	{
+		color:rgb(0, 0, 0);
+	}
+#contentsPane
+	{
+		width:155px;
+		padding:0px;
+	}
+#controlsPane
+	{
+		padding: 0px, 30px, 0px, 30px;
+	}
+.contentsItemSelected
+	{
+		font-family: 'DejaVu Sans', Arial, sans-serif;
+		color:rgb(0, 0, 0);
+		font-size:12px;
+	}
+h2, #listOfAlarms
+	{
+		font-family: 'Segoe UI', Tahoma, sans-serif;
+		color:rgb(0, 0, 0);
+		font-size:14px;
+		font-weight:normal;
+	}
+#selectedTime
+	{
+		font-family: 'Segoe UI', Tahoma, sans-serif;
+		color:rgb(0, 0, 0);
+		font-size:12px;
+		font-weight:normal;
+	}
+td
+	{
+		vertical-align:top;
+	}
+#credits
+	{
+		font-size:10px;
+	}
+#remindersTable
+	{
+		font-size:12px;
+	}
+#newAlarmDatePickerControl
+	{
+		max-width:180px;
+	}
+.deleteIcon, .incrementer
+	{
+		cursor : pointer;
+	}
+.contacticon
+	{
+		border: 0px;
+		width: 32px;
+		height: 32px;
+	}
+#addNewAlarm
+	{
+		border-radius: 5px;
+		background: rgba(0,0,0,0);
+	}
+#repeatDays
+	{
+		text-indent: 10px;
+	}
+#repeatDays>p
+	{
+		margin:0em;
+	}
+#dotsSelection>input, #badgePickerDiv>span, #digitalFore>span
+  {
+    margin-left:25px;
+  }
+#handsPickerDiv>span
+  {
+    margin-left:50px;
+  }
+#hourChime
+{
+  cursor:pointer;
+}
