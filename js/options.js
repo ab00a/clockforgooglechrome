@@ -23,19 +23,13 @@ function showHideDigitalForeTextPickerControls() {
 //Handler for when the digital clock colour picker is used
 //Updates the value and updates the clock
 function badgeColourChange(e) {
-    chrome.runtime.getBackgroundPage(function (bkg) {
-        chrome.storage.sync.set({ "badgeColour": hexToRGB(document.querySelector("#badgePicker").value) + "," + document.querySelector("#badgeA").value });
-        bkg.updateTime();
-    });
+    chrome.storage.sync.set({ "badgeColour": hexToRGB(document.querySelector("#badgePicker").value) + "," + document.querySelector("#badgeA").value });
 }
 
 //Handler for when the digital clock foreground colour picker is used
 //Updates the value and updates the clock
 function digitalColourChange(e) {
-    chrome.runtime.getBackgroundPage(function (bkg) {
-        chrome.storage.sync.set({ "digitalForeColour": hexToRGB(document.querySelector("#digitalPicker").value) + "," + document.querySelector("#digitalPickerA").value });
-        bkg.updateTime();
-    });
+    chrome.storage.sync.set({ "digitalForeColour": hexToRGB(document.querySelector("#digitalPicker").value) + "," + document.querySelector("#digitalPickerA").value });
 }
 
 //Handler for when the select list is changed for the first day of the week
@@ -88,9 +82,6 @@ function changeHourVolume(e) {
 //Updates the stored value and updates the clock
 function changeOffset(e) {
     chrome.storage.sync.set({ "offset": e.currentTarget.value });
-    chrome.runtime.getBackgroundPage(function (bkg) {
-        bkg.updateTime();
-    });
 }
 
 //Handler for when the date is chosen
@@ -111,9 +102,6 @@ function dateFormatChange(e) {
         document.querySelector("#hoverTextCustomFormat").style.display = "none";
     }
     chrome.storage.sync.set({ "hoverFormat": e.currentTarget.value });
-    chrome.runtime.getBackgroundPage(function (bkg) {
-        bkg.updateTime();
-    });
 }
 
 //Handler for when the custom date format radio button is chosen
@@ -122,17 +110,11 @@ function customDateFormatChange(e) {
     document.querySelector("#hoverTextCustom").checked = true;
     document.querySelector("#hoverTextCustom").value = e.currentTarget.value;
     chrome.storage.sync.set({ "hoverFormat": e.currentTarget.value });
-    chrome.runtime.getBackgroundPage(function (bkg) {
-        bkg.updateTime();
-    });
 }
 
 //Handler for changing the clock visibility
 function clockSwitch(e) {
     chrome.storage.sync.set({ "showAnalogue": e.currentTarget.checked });
-    chrome.runtime.getBackgroundPage(function (bkg) {
-        bkg.updateTime();
-    });
     if (e.currentTarget.checked) {
         document.querySelector("#dotsSelection").style.display = "inline";
     } else {
@@ -144,19 +126,13 @@ function clockSwitch(e) {
 //Handler for changing the number of marker dots on the little clock
 function dotsSwitch(e) {
     chrome.storage.sync.set({ "dots": parseInt(e.currentTarget.value, 10) });
-    chrome.runtime.getBackgroundPage(function (bkg) {
-        bkg.updateTime();
-    });
 }
 
 //Handler for changing the colour of the hands
 //Changes the colour and hides the colour picker
 function handsColourChange(e) {
-    chrome.storage.sync.set({ "handsColour": e.currentTarget.value });
     document.querySelector("#handsPickerDiv").style.display = "none";
-    chrome.runtime.getBackgroundPage(function (bkg) {
-        bkg.updateTime();
-    });
+    chrome.storage.sync.set({ "handsColour": e.currentTarget.value });
 }
 
 //Handler for changing the hands to a custom colour
@@ -166,9 +142,6 @@ function handsColourCustomChange(e) {
     handsColour += hexToRGB(document.querySelector("#handsPicker").value) + "," + document.querySelector("#handsA").value / 100;
     handsColour += ")";
     chrome.storage.sync.set({ "handsColour": handsColour });
-    chrome.runtime.getBackgroundPage(function (bkg) {
-        bkg.updateTime();
-    });
 }
 
 //Utility functions for determining whether summer time is in force
@@ -194,23 +167,15 @@ function addNewAlarm(e) {
     alarm[2] = document.querySelector("#newAlarmLabel").value;
     alarm[1] = document.querySelector("#newAlarmRing").value;
     alarm[0] = document.dp.selectedDate;
-    //localdate = document.querySelector("#selectedTime").valueAsDate;
 
-    //localdate.setTime(localdate.getTime() + (new Date().getTimezoneOffset() * 60000));
-    //if (new Date().dst()) {
-    //    localdate.setTime(localdate.getTime() + 3600000); //Fix for summertime
-    //}
     alarmtime = document.querySelector("#selectedTime").value.split(":");
-    //alarm[0].setHours(localdate.getHours());
-    //alarm[0].setMinutes(localdate.getMinutes());
-    //alarm[0].setSeconds(localdate.getSeconds()); //This is always 0, but I've put it here for future proofing
 
     alarm[0].setHours(parseInt(alarmtime[0]));
     alarm[0].setMinutes(parseInt(alarmtime[1]));
     alarm[0].setSeconds(0);
     alarm[0].setMilliseconds(0);
     if (document.querySelector("#repeatNewAlarm").checked == true) {
-        alarm[0].setTime(alarm[0].setFullYear(2012));
+        alarm[0].setTime(alarm[0].setFullYear(2020));
         //this artificially sets a repeating alarm to happen in the past
         //so that the housekeeping logic will run on it
         //and correctly set the first run time
@@ -220,9 +185,7 @@ function addNewAlarm(e) {
         alarm[3][i] = document.querySelector("#repeatOn" + i).checked == true ? 1 : 0;
     }
 
-    chrome.runtime.getBackgroundPage(function (bkg) {
-        bkg.addReminder(alarm);
-    });
+    chrome.runtime.sendMessage({ type: "addReminder", alarm: alarm});
 }
 
 //Shows and hides the repeat panel
@@ -315,9 +278,6 @@ function showCustomPanel(e) {
 //Shows or hides the colour picker control
 function showDigitalChange(e) {
     chrome.storage.sync.set({ "showDigital": e.currentTarget.checked });
-    chrome.runtime.getBackgroundPage(function (bkg) {
-        bkg.updateTime();
-    });
     if (e.currentTarget.checked) {
         document.querySelector("#badgePickerDiv").style.display = "inline";
     } else {
@@ -530,26 +490,29 @@ document.addEventListener('DOMContentLoaded', function () {
 
         //Put i18n text in each element
         document.querySelector("#addNewAlarm").value = chrome.i18n.getMessage("lblAddNewAlarmHeading");
-        chrome.runtime.getBackgroundPage(function (bkg) {
-            document.querySelector("#lblhoverTextLong12").innerHTML = bkg.timeString(document.querySelector("#hoverTextLong12").value, dt);
-            document.querySelector("#lblhoverTextLong24").innerHTML = bkg.timeString(document.querySelector("#hoverTextLong24").value, dt);
-            document.querySelector("#lblhoverTextShortUK").innerHTML = bkg.timeString(document.querySelector("#hoverTextShortUK").value, dt);
-            document.querySelector("#lblhoverTextShortUS").innerHTML = bkg.timeString(document.querySelector("#hoverTextShortUS").value, dt);
+
+        chrome.runtime.sendMessage({type: "timeString", fmt: document.querySelector("#hoverTextLong12").value, d: dt}, function(response) {
+            document.querySelector("#lblhoverTextLong12").innerHTML = response;
         });
+        chrome.runtime.sendMessage({type: "timeString", fmt: document.querySelector("#hoverTextLong24").value, d: dt}, function(response) {
+            document.querySelector("#lblhoverTextLong24").innerHTML = response;
+        });
+        chrome.runtime.sendMessage({type: "timeString", fmt: document.querySelector("#hoverTextShortUK").value, d: dt}, function(response) {
+            document.querySelector("#lblhoverTextShortUK").innerHTML = response;
+        });
+        chrome.runtime.sendMessage({type: "timeString", fmt: document.querySelector("#hoverTextShortUS").value, d: dt}, function(response) {
+            document.querySelector("#lblhoverTextShortUS").innerHTML = response;
+        });
+
         //annoyingly, need to do <option> elements in a different way to the rest
         document.querySelector("#silence").text = chrome.i18n.getMessage("silence");
 
-        daysNames = [
-            chrome.i18n.getMessage("Sunday"),
-            chrome.i18n.getMessage("Monday"),
-            chrome.i18n.getMessage("Tuesday"),
-            chrome.i18n.getMessage("Wednesday"),
-            chrome.i18n.getMessage("Thursday"),
-            chrome.i18n.getMessage("Friday"),
-            chrome.i18n.getMessage("Saturday"),
-        ];
-        for (i = 0; i < 7; i++) {
+        d = new Date("21 Feb 2021"); // SUNDAY
+        daysNames = [];
+        for (i= 0; i < 7; i++) {
+            daysNames[i] = d.toLocaleString("default", {weekday: "long"});
             document.querySelector("#day" + i).text = daysNames[i];
+            d.setDate(d.getDate() + 1);
         }
 
         //Do all of the label elements

@@ -1,15 +1,113 @@
 "use strict";
 
+function paintClock(cvs, options, offset) {
+
+	//Set up the square to draw on, empty it and save this as a setting
+	var d, i, size, c, ticklength, fontheight, borderwidth, tickgap, fontcent39,
+		fontsize, fontcent126, seclength, sechang, minlength, minhang, hourlength,
+		hourhang, secwidth, hourwidth, minwidth;
+	d = new Date(Date.now() + (offset * 1000 * 60 * 60));
+	size = cvs.height / 2;
+	c = cvs.getContext("2d");
+	c.clearRect(0, 0, 2 * size, 2 * size);
+	c.save();
+
+	//Set the origin of the drawing area to the middle
+	c.translate(size, size);
+
+	//Select the right pen colour
+	c.fillStyle = options.colour;
+	c.strokeStyle = options.colour;
+	c.lineCap = "round"; //and a beautiful round end to the line
+
+	//Setting up the dimensions for the clock components
+	ticklength = size / 15;
+	fontheight = size / 5;
+	borderwidth = size / 30;
+	tickgap = size / 200;
+	fontcent39 = size - borderwidth - borderwidth - tickgap - ticklength - tickgap - c.measureText("9").width / 2;
+	fontsize = size / 20;
+	fontcent126 = size - borderwidth - borderwidth - borderwidth - tickgap - ticklength - tickgap - fontsize;
+	seclength = 1.05 * (size - borderwidth - borderwidth - tickgap - ticklength);
+	sechang = 0.05 * (size - borderwidth - tickgap - ticklength);
+	minlength = 1.05 * (size - borderwidth - borderwidth - tickgap - ticklength);
+	minhang = 0.2 * (size - borderwidth - tickgap - ticklength);
+	hourlength = 0.7 * (size - borderwidth - borderwidth - tickgap - ticklength);
+	hourhang = 0.15 * (size - borderwidth - tickgap - ticklength);
+	secwidth = size / 100;
+	minwidth = size / 25;
+	if (minwidth < 2) {
+		minwidth = 2;
+	}
+	hourwidth = size / 20;
+	if (hourwidth < 2) {
+		hourwidth = 2;
+	}
+	//If selected, draw twelve little tick marks around the edge
+	if (options.numbers) {
+		c.font = fontheight + "px sans-serif"; //font size should be 10% of width
+		c.textAlign = "center";
+		c.textBaseline = "middle";
+		c.fillText("12", 0, -fontcent126);
+		c.fillText("6", 0, fontcent126);
+		c.fillText("9", -fontcent39, 0); //size/20 is half the height of the text
+		c.fillText("3", fontcent39, 0);
+	}
+	if (options.ticks) {
+		for (i = 0; i < options.ticks; i++) {
+			c.beginPath();
+			c.moveTo(0, size - borderwidth - borderwidth - tickgap);
+			c.lineTo(0, size - borderwidth - borderwidth - tickgap - ticklength);
+			c.stroke();
+			c.rotate((2 * Math.PI) / options.ticks);
+		}
+	}
+	if (options.secondHand) {
+		//draw the second hand
+		c.lineWidth = secwidth;
+		c.beginPath();
+		c.rotate((d.getSeconds() / 60) * 2 * Math.PI); //rotate
+		c.moveTo(0, sechang);
+		c.lineTo(0, -seclength);
+		c.stroke();
+		c.rotate((d.getSeconds() / 60) * -2 * Math.PI); //and back
+	}
+	//draw the minute hand
+	c.lineWidth = minwidth;
+	c.beginPath();
+	c.rotate(((d.getMinutes() / 60 + d.getSeconds() / 3600)) * 2 * Math.PI); //rotate
+	c.moveTo(0, minhang); //
+	c.lineTo(0, -minlength);
+	c.stroke();
+	c.rotate(((d.getMinutes() / 60 + d.getSeconds() / 3600)) * -2 * Math.PI); //and back
+
+	//draw the hour hand
+	c.lineWidth = hourwidth;
+	c.beginPath();
+	c.rotate(((d.getHours() / 12) + (d.getMinutes() / 720)) * 2 * Math.PI);
+	c.moveTo(0, hourhang);
+	c.lineTo(0, -hourlength);
+	c.stroke();
+
+	if (options.border) {
+		//circle around the edge
+		c.beginPath();
+		c.lineWidth = borderwidth;
+		c.arc(0, 0, size - borderwidth, 0, 2 * Math.PI);
+		c.stroke();
+	}
+	c.restore();
+}
+
 function updateClock() {
-  chrome.runtime.getBackgroundPage(function (bkg) {
-    bkg.paintClock(document.querySelector("#cvsClockface"), ({
-      colour: document.handsColour,
-      ticks: 12,
-      secondHand: true,
-      border: true,
-      numbers: true
-    }), document.offset);
-  });
+  paintClock(document.querySelector("#cvsClockface"), {
+    colour: document.handsColour,
+    ticks: 12,
+    secondHand: true,
+    border: true,
+    numbers: true
+  },
+  document.offset);
 }
 
 function windowedClock() {

@@ -1,14 +1,14 @@
 input, option, select, .inputLabel, label, #lblFirstDayoftheWeek, .label, #repeatDays
 	{
-		font-family: 'Segoe UI', Tahoma, sans-serif;
+		font-family: sans-serif;
 		color:rgb(48, 57, 66);
-		font-size:12px;
+		font-size:large
 	}
 h1
 	{
-		font-family: 'Segoe UI', Tahoma, sans-serif;
+		font-family: sans-serif;
 		color:rgb(48, 57, 66);
-		font-size:18px;
+		font-size:x-large;
 		font-weight:normal;
 	}
 hr
@@ -28,17 +28,17 @@ hr
 	}
 .contentsItem
 	{
-		font-family: 'DejaVu Sans', Arial, sans-serif;
+		font-family: sans-serif;
 		color:rgb(153, 153, 153);
-		font-size:12px;
+		font-size:large;
 		cursor:pointer;
 		padding-left:12px;
 	}
 .contentsItemOn
 	{
-		font-family: 'DejaVu Sans', Arial, sans-serif;
+		font-family: sans-serif;
 		color:rgb(0, 0, 0);
-		font-size:12px;
+		font-size:large;
 		cursor:pointer;
 		border-left:5px solid #000000;
 		padding-left: 7px;
@@ -49,31 +49,32 @@ hr
 	}
 #contentsPane
 	{
-		width:155px;
+		width:33%;
 		padding:0px;
 	}
 #controlsPane
 	{
 		padding: 0px, 30px, 0px, 30px;
+		text-align: center;
 	}
 .contentsItemSelected
 	{
-		font-family: 'DejaVu Sans', Arial, sans-serif;
+		font-family: sans-serif;
 		color:rgb(0, 0, 0);
-		font-size:12px;
+		font-size:large;
 	}
 h2, #listOfAlarms
 	{
-		font-family: 'Segoe UI', Tahoma, sans-serif;
+		font-family: sans-serif;
 		color:rgb(0, 0, 0);
-		font-size:14px;
+		font-size:x-large;
 		font-weight:normal;
 	}
 #selectedTime
 	{
-		font-family: 'Segoe UI', Tahoma, sans-serif;
+		font-family: sans-serif;
 		color:rgb(0, 0, 0);
-		font-size:12px;
+		font-size:large;
 		font-weight:normal;
 	}
 td
@@ -86,7 +87,7 @@ td
 	}
 #remindersTable
 	{
-		font-size:12px;
+		font-size:large
 	}
 #newAlarmDatePickerControl
 	{
