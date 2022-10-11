@@ -507,7 +507,7 @@ document.addEventListener('DOMContentLoaded', function () {
         //annoyingly, need to do <option> elements in a different way to the rest
         document.querySelector("#silence").text = chrome.i18n.getMessage("silence");
 
-        d = new Date("21 Feb 2021"); // SUNDAY
+        var d = new Date("21 Feb 2021"); // SUNDAY
         daysNames = [];
         for (i= 0; i < 7; i++) {
             daysNames[i] = d.toLocaleString("default", {weekday: "long"});

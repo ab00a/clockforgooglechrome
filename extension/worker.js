@@ -560,6 +560,15 @@ function updateTime() {
 						+ ", " + items.digitalForeColour.split(",")[2]
 						+ ", " + parseInt(items.digitalForeColour.split(",")[3], 10) / 255
 						+ ")";
+						minutes = d.getMinutes();
+						if (minutes < 10) {
+							minutes = "0" + minutes;
+						}
+						fill = "";
+						hours = d.getHours();
+						if ((hours > 12) && (items.hoverFormat.indexOf("t") > -1)) {
+							hours -= 12;
+						}
 					ctx.fillText(hours, x + canvas.width / 2, height / 4);
 					ctx.fillText(minutes, x + canvas.width / 2, y + height / 1.33);
 				} else {
