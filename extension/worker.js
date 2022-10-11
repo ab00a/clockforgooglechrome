@@ -169,6 +169,10 @@ function soundAlarm(alarmName) {
 				]
 			},
 			function (id) {
+
+				/*https://chromium.googlesource.com/chromium/src/+/2dd7435aa7d6143bb263032dcf52bf3ac995d94c/chrome/test/data/extensions/api_test/offscreen/create_document/background.js*/
+
+
 				//link the notification with the alarm for snooze and silence purposes
 				/*soundingAlarmsRegister.push({
 					identifier: id,
