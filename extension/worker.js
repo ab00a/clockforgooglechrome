@@ -2,7 +2,14 @@
 
 //This is a register used to manage which alarms are actually sounding
 //It is used to ensure that sounds are stopped and started correctly
-// var soundingAlarmsRegister = [];
+var soundingAlarmsRegister = [];
+
+// Convenient labels for alarm object fields
+const ALARMTIME = 0;
+const ALARMSOUND = 1;
+const ALARMNAME = 2;
+const ALARMREPEATDAYS = 3;
+const ALARMVOLUME = 4;
 
 chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
 	switch (request.type) {
@@ -48,23 +55,23 @@ function tidyReminders() {
 			aChange = false,
 			d = new Date(Date.now() + (items.offset * 1000 * 60 * 60));
 		items.alarms.forEach(function (alarm, id, alarms) {
-			if (alarm[0] < d.getTime()) {
+			if (alarm[ALARMTIME] < d.getTime()) {
 				//It happens in the past...
-				if (alarm[3].indexOf(1) > -1) {
+				if (alarm[ALARMREPEATDAYS].indexOf(1) > -1) {
 					//It's a repeater, so let's recreate it at the next repeat day (which might be today)
 					//First, set the time to today, as this is the earliest possible next occurrence
-					aldate = new Date(alarm[0]);
+					aldate = new Date(alarm[ALARMTIME]);
 					aldate.setDate(d.getDate());
 					aldate.setMonth(d.getMonth());
 					aldate.setFullYear(d.getFullYear());
 					alarm[0] = aldate.getTime();
 					//while alarm is in the past or the repeat day is not in the list add one day
-					while ((alarm[0] < d.getTime()) || (alarm[3][aldate.getDay()] === 0)) {
+					while ((alarm[ALARMTIME] < d.getTime()) || (alarm[ALARMREPEATDAYS][aldate.getDay()] === 0)) {
 						aldate.setDate(aldate.getDate() + 1);
-						alarm[0] = aldate.getTime();
+						alarm[ALARMTIME] = aldate.getTime();
 					}
 					//reset the alarm for the new time by creating a new one
-					chrome.alarms.create("a_" + alarm[2] + alarm[0], { "when": alarm[0] });
+					chrome.alarms.create("a_" + alarm[ALARMNAME] + alarm[ALARMTIME], { "when": alarm[ALARMTIME] });
 					aChange = true;
 				} else {
 					//It's not a repeater, and it's in the past, so delete it
@@ -136,6 +143,24 @@ function deleteReminder(alarmToDelete) {
 	});
 }
 
+// Function to create and sound alarm audio in an offscreen document
+async function offscreenAudio(audioSrc, volume=1.0, audioType='alarmSound', id) {
+	await chrome.offscreen.createDocument(
+        {
+          url: 'audio.html',
+          reasons: ['AUDIO_PLAYBACK'],
+          justification: 'play audio for alarm in an offscreen document'
+        },
+		function (n) {
+			chrome.runtime.sendMessage({
+				'type': audioType, 
+				'audioSrc': audioSrc,
+				'volume' : volume,
+				'id' : id
+			});
+		});
+}
+
 // Function which shows the notification for an alarm
 function soundAlarm(alarmName) {
 	chrome.storage.sync.get(["alarms", "offset", "handsColour", "hoverFormat"], function (items) {
@@ -160,7 +185,7 @@ function soundAlarm(alarmName) {
 				buttons: [
 					{
 						title: "Snooze",
-						iconUrl: "/assets/icon16.png"
+						iconUrl: "/assets/icon16.png" //iconUrl is deprecated??
 					},
 					{
 						title: "Close",
@@ -169,31 +194,28 @@ function soundAlarm(alarmName) {
 				]
 			},
 			function (id) {
-
+				// Notification is created. Make a noise, if a noise is set
 				/*https://chromium.googlesource.com/chromium/src/+/2dd7435aa7d6143bb263032dcf52bf3ac995d94c/chrome/test/data/extensions/api_test/offscreen/create_document/background.js*/
-
-
-				//link the notification with the alarm for snooze and silence purposes
-				/*soundingAlarmsRegister.push({
-					identifier: id,
-					alarm: thisReminder
-				});
 				//Play the sound in a loop
-				if (thisReminder[1] != "nothing") {
-					var sound = new Audio("../assets/" + thisReminder[1] + ".ogg");
-					// sound.id = thisReminder[1];
-					sound.loop = true;
-					if (typeof thisReminder[4] != "undefined") {
-						sound.volume = parseFloat(thisReminder[4]);
+				if (thisReminder[ALARMSOUND] != "nothing") { // Only do something if the alarm has a sound
+					//link the notification with the alarm for snooze and silence purposes
+					soundingAlarmsRegister.push({
+						identifier: id,
+						alarm: thisReminder
+					});
+					// Set the volume from the stored value (if there is one)
+					var vol = 1.0;
+					if (typeof thisReminder[ALARMVOLUME] != "undefined") {
+						vol = parseFloat(thisReminder[ALARMVOLUME]);
 					}
-					sound.play();
-					// TODO Fix for new audio logic 
-				} */
+					offscreenAudio(audioSrc = "assets/" + thisReminder[ALARMSOUND] + ".ogg", vol, "alarmSound", id);
+				} 
 			}
 		);
 	});
 	tidyReminders();
 }
+
 
 // Function that returns imageData of <height> x <width> according to <options> and with offset <offset>
 function getClockImage(height, width, options, offset) {
@@ -458,7 +480,7 @@ function timeString(fmt, d) {
 				sDate += curr_year;
 				break;
 			case "y":
-				sDate += String(curr_year).substr(2);
+				sDate += String(curr_year).substring(2);
 				break;
 			default:
 				sDate += fmt.charAt(i);
@@ -594,18 +616,16 @@ function updateTime() {
 
 		//Update the hover text
 		chrome.action.setTitle({ title: timeString(items.hoverFormat, d) });
-		// chrome.action.setTitle({ title: new Date().toString() }); // REMOVE WHEN ABOVE IS UNCOMMENTED
 	});
 }
 
 function soundChime() {
 	chrome.storage.sync.get(["hourVolume"], function (items) {
-		var chime = new Audio("../assets/diing.ogg");
-		//chime.id = "chime";
+		var vol = 1.0;
 		if (typeof items.hourVolume != "undefined") {
-			chime.volume = items.hourVolume;
+			vol = items.hourVolume;
 		}
-		chime.play();
+		offscreenAudio('assets/diing.ogg', vol, 'chime', 'chime');
 	});
 }
 
@@ -695,15 +715,18 @@ chrome.runtime.onInstalled.addListener(function () {
 });
 
 //Function used by popup.js to find out if there are any sounds active at the moment
-function noAudioElements() {
+async function noAudioElements() {
 	return false;
 	// TODO - match new audio logic
 }
 
 //Called from the silence button in popup.html
-//Finds, stops and deletes all audio elements
+//Finds, stops and deletes all audio elements by closing the offscreen page
 //Then clears the sounding register and calls tidyreminders
-function silenceAlarms() {
+async function silenceAlarms() {
+	chrome.offscreen.closeDocument();
+	soundingAlarmsRegister = null;
+	tidyReminders();
 	// TODO - match new audio logic
 }
 
@@ -726,17 +749,7 @@ chrome.alarms.onAlarm.addListener(function (alarm) {
 
 //Set up handlers for notification closes
 chrome.notifications.onClosed.addListener(function (notificationId, byUser) {
-	soundingAlarmsRegister.forEach(function (item, id, items) {
-		if (item.identifier === notificationId) {
-			if (item.alarm[1] != "nothing") {
-				//TODO - match new audio logic
-				//stop the sound if there is one and remove it from the DOM
-				//document.querySelector("#" + item.alarm[1]).pause();
-				//document.querySelector("#" + item.alarm[1]).parentNode.removeChild(document.querySelector("#" + item.alarm[1])); //good practice
-			}
-			items.splice(id, 1); //Removes this item from the sounding register
-		}
-	});
+	chrome.offscreen.closeDocument();
 	tidyReminders();
 });
 
@@ -746,6 +759,11 @@ chrome.notifications.onButtonClicked.addListener(function (notificationId, butto
 		soundingAlarmsRegister.forEach(function (item, id, items) {
 			//SNOOZE!!
 			if (item.identifier === notificationId) {
+				//Stop the sound
+				chrome.runtime.sendMessage({
+					'type': 'stopAudio', 
+					'id': item.identifier
+				});
 				while (item.alarm[0] < Date.now()) {
 					item.alarm[0] += 300000; //adds five minutes to the sounder until we're ahead of now
 				}
@@ -761,7 +779,13 @@ chrome.notifications.onButtonClicked.addListener(function (notificationId, butto
 
 	if (buttonIndex === 1) {
 		//CLOSE
+		// Stop the sound!
+		chrome.runtime.sendMessage({
+			'type': 'stopAudio', 
+			'id': item.identifier
+		});
 		chrome.notifications.clear(notificationId, function (wasCleared) {
 		});
 	}
 });
+
