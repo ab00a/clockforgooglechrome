@@ -109,7 +109,7 @@ function updateClock() {
   });
 
   //Then the clock face
-  paintClock(document.querySelector("#cvsClockface"), {
+  paintClock(document.querySelector("#cvsClockFace"), {
     colour: document.handsColour,
     ticks: 12,
     secondHand: true,
@@ -164,7 +164,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     //Look for sounding alarms and set the status of the mute button appropriately
     chrome.runtime.sendMessage({ type: "audioElements" }, function (response) {
-      if (response == false) {
+      if (response < 1) {
         document.querySelector("#muteIcon").style.display = "None";
         //And shift the options icon right to compensate
         document.querySelector("#optionsIcon").colSpan = 3

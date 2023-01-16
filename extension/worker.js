@@ -692,6 +692,7 @@ function startup() {
 
 	// Start the clock and set up the regular reminders
 	regularTime();
+	setUpdateAlarm();
 
 }
 
@@ -709,9 +710,8 @@ chrome.runtime.onInstalled.addListener(function () {
 });
 
 //Function used by popup.js to find out if there are any sounds active at the moment
-async function noAudioElements() {
-	return false;
-	// TODO - match new audio logic
+function noAudioElements() {
+	return soundingAlarmsRegister.length
 }
 
 //Called from the silence button in popup.html
@@ -721,7 +721,6 @@ async function silenceAlarms() {
 	chrome.offscreen.closeDocument();
 	soundingAlarmsRegister = null;
 	tidyReminders();
-	// TODO - match new audio logic
 }
 
 //the page has been woken up, so update the clock
@@ -730,6 +729,7 @@ async function silenceAlarms() {
 chrome.alarms.onAlarm.addListener(function (alarm) {
 	switch (alarm.name) {
 		case "___minute":
+		case "___unblock":
 			regularTime();
 			break;
 		default:

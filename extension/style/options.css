@@ -128,3 +128,8 @@ td
 {
   cursor:pointer;
 }
+
+#handsA
+{
+	direction: rtl;
+}

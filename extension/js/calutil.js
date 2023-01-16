@@ -56,7 +56,7 @@ class DatePick {
 		this.mouseClick = function (e) {
 			//Don't do anything if an unselectable date has been clicked
 			if (e.currentTarget.className.indexOf("unselectable") == -1) {
-				var selectedCell = self.calendarContainer.querySelector("#calutilcalendar>tbody>tr>.selectableotherselected, #calutilcalendar>tbody>tr>.selectablepresentselected");
+				var selectedCell = self.calendarContainer.querySelector(".selectableotherselected, .selectablepresentselected");
 				if (selectedCell) {
 					selectedCell.className = selectedCell.className.replace("selected", "");
 				}

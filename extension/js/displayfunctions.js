@@ -176,6 +176,8 @@ function showRemindersIn(targetElement, editable) {
                         whenlabel += chrome.i18n.getMessage("on");
                         whenlabel += when.toLocaleString("default", {weekday: "long"});
                         whenlabel += " ";
+                        whenlabel += when.toLocaleString("default", {day: "numeric"});
+                        whenlabel += " ";
                         whenlabel += when.toLocaleString("default", {month: "long"});
                         whenlabel += " ";
                         whenlabel += when.getFullYear();
