@@ -35,7 +35,7 @@ chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
 		case "silenceAlarms":
 			silenceAlarms();
 			break;
-}
+	}
 
 });
 
@@ -751,22 +751,22 @@ chrome.notifications.onButtonClicked.addListener(function (notificationId, butto
 
 		if (item.identifier === notificationId) {
 			//Stop the sound
-			chrome.runtime.sendMessage({
-				'type': 'stopAudio',
-				'id': item.identifier
-			});
+			if (item.alarm[ALARMSOUND] != "nothing") { //This Reminder has NOISE so we must stop it
+				chrome.runtime.sendMessage({
+					'type': 'stopAudio',
+					'id': item.identifier
+				});
+			}
 
 			if (buttonIndex === 0) {
 				//SNOOZE!!
-				while (item.alarm[0] < Date.now()) {
-					item.alarm[0] += 300000; //adds five minutes to the sounder until we're ahead of now
-				}
-				item.alarm[3] = [0, 0, 0, 0, 0, 0, 0]; //snoozed alarms should not be repeaters, only one-offs
-				item.alarm[2] = "[Zzz] " + item.alarm[2];
+				item.alarm[ALARMTIME] = (Date.now() + 300000); //set a new alarm five minutes from now
+				item.alarm[ALARMREPEATDAYS] = [0, 0, 0, 0, 0, 0, 0]; //snoozed alarms should not be repeaters, only one-offs
+				item.alarm[ALARMNAME] = "[Zzz] " + item.alarm[2];
 				addReminder(item.alarm);
 			}
 
-			//CLOSE
+			//CLOSE the notification
 			chrome.notifications.clear(notificationId, function (wasCleared) {
 			});
 		}
