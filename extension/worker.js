@@ -740,14 +740,14 @@ chrome.alarms.onAlarm.addListener(function (alarm) {
 
 //Set up handlers for notification closes
 chrome.notifications.onClosed.addListener(function (notificationId, byUser) {
-	chrome.offscreen.closeDocument();
-	tidyReminders();
+	// chrome.offscreen.closeDocument(); TODO - Neither of these lines are actually needed?
+	// tidyReminders();
 });
 
 //Set up handlers for notification button clicks
 chrome.notifications.onButtonClicked.addListener(function (notificationId, buttonIndex) {
 
-	soundingAlarmsRegister.forEach(function (item, id, items) {
+	soundingAlarmsRegister.forEach(function (item, id, items) { //TODO - A silent repeating alarm will not repeat using this logic needs changing
 
 		if (item.identifier === notificationId) {
 			//Stop the sound
