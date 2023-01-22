@@ -2,7 +2,7 @@
 
 //This is a register used to manage which alarms are actually sounding
 //It is used to ensure that sounds are stopped and started correctly
-var soundingAlarmsRegister = [];
+var activeNotificationsRegister = [];
 
 // Convenient labels for alarm object fields
 const ALARMTIME = 0;
@@ -36,94 +36,103 @@ chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
 			silenceAlarms();
 			break;
 	}
-
 });
 
 chrome.storage.onChanged.addListener(function (changes, area) {
 	updateTime();
 });
 
-//Scans through all stored alarms, deletes ones from the past
-//and recreates repeating ones for the next cycle
-//and updates storage
-function tidyReminders() {
-	chrome.storage.sync.get(["alarms", "offset"], function (items) {
-		var aldate,
-			aChange = false,
-			d = new Date(Date.now() + (items.offset * 1000 * 60 * 60));
-		items.alarms.forEach(function (alarm, id, alarms) {
-			if (alarm[ALARMTIME] < d.getTime()) {
-				//It happens in the past...
-				if (alarm[ALARMREPEATDAYS].indexOf(1) > -1) {
-					//It's a repeater, so let's recreate it at the next repeat day (which might be today)
-					//First, set the time to today, as this is the earliest possible next occurrence
-					aldate = new Date(alarm[ALARMTIME]);
-					aldate.setDate(d.getDate());
-					aldate.setMonth(d.getMonth());
-					aldate.setFullYear(d.getFullYear());
-					alarm[0] = aldate.getTime();
-					//while alarm is in the past or the repeat day is not in the list add one day
-					while ((alarm[ALARMTIME] < d.getTime()) || (alarm[ALARMREPEATDAYS][aldate.getDay()] === 0)) {
-						aldate.setDate(aldate.getDate() + 1);
-						alarm[ALARMTIME] = aldate.getTime();
-					}
-					//reset the alarm for the new time by creating a new one
-					chrome.alarms.create("a_" + alarm[ALARMNAME] + alarm[ALARMTIME], { "when": alarm[ALARMTIME] });
-					aChange = true;
-				} else {
-					//It's not a repeater, and it's in the past, so delete it
-					alarms.splice(id, 1); //delete it and hop back in the iteration
-					aChange = true;
-				}
-			}
-		});
-		if (aChange) {
-			chrome.storage.sync.set({ "alarms": items.alarms });
+//Function that iterates through every Reminder in storage and deletes non-repeating ones that happen in the past
+//@returns boolean to indicate whether any changes were made through this function
+async function purgeStaleReminders() {
+	var storedReminders = await chrome.storage.sync.get(["alarms", "offset"]); 	//Collect Reminders from storage
+	var aldate,
+		deletedStaleReminders = false,
+		d = new Date(Date.now() + (storedReminders.offset * 1000 * 60 * 60)); 		// Work out when expired is
+	storedReminders.alarms.forEach(function (reminder, id, reminders) {			// Iterate through each reminder
+		if ((reminder[ALARMTIME] < d.getTime()) && (reminder[ALARMREPEATDAYS].indexOf(1) == -1)) { // Returning -1 from indexOf is Not Found
+			// Reminder time is in the past and it does not repeat (i.e. there is no "1" in the repeater array
+			reminders.splice(id, 1);											// Delete the reminder
+			deletedStaleReminders = true;										// Log that a change was made
 		}
-		//Now we scan through each reminder in items and if there is no alarm set for it, we set one
-		//This is specifically for the scenario where a reminder has been set on one computer and the alarm needs to be set up on another
-		items.alarms.forEach(function (alarm, id, alarms) {
-			var alarmName = "a_" + alarm[2] + alarm[0];
-			chrome.alarms.get(alarmName, function (a) {
-				if (a) {
-					//console.log("Reminder has alarm already: " + alarmName);
-				} else {
-					if (typeof alarm === "undefined") {
-						//this alarm has been deleted - clear it out
-						tidyReminders();
-					} else {
-						chrome.alarms.create(alarmName, { when: items.alarm[0] });
-					}
-				}
-			});
-		});
+	});
+	if (deletedStaleReminders) {
+		chrome.storage.sync.set({ "alarms": storedReminders.alarms });			// Store the updated (shorter) list of reminders
+	}
+	return deletedStaleReminders;												// Return the result
+}
+
+// Function which creates the right alarms for repeating Reminders
+async function createRepeatingAlarms() {
+	var storedReminders = await chrome.storage.sync.get(["alarms", "offset"]); 	//Collect Reminders from storage
+	storedReminders.alarms.forEach(function (reminder, id, reminders) {
+		if (reminder[ALARMREPEATDAYS].indexOf(1) > -1) {
+			//It's a repeater, so let's recreate it at the next repeat day (which might be today)
+			//First, set the time to today, as this is the earliest possible next occurrence
+			var aldate = new Date(reminder[ALARMTIME]);
+			var d = new Date(Date.now() + (storedReminders.offset * 1000 * 60 * 60));
+			aldate.setDate(d.getDate());
+			aldate.setMonth(d.getMonth());
+			aldate.setFullYear(d.getFullYear());
+			reminder[ALARMTIME] = aldate.getTime();
+			//while next alarm time is in the past or the repeat day is not in the list add one day
+			while ((reminder[ALARMTIME] < d.getTime()) || (reminder[ALARMREPEATDAYS][aldate.getDay()] === 0)) {
+				aldate.setDate(aldate.getDate() + 1);
+				reminder[ALARMTIME] = aldate.getTime();
+			}
+			//Create an alarm for the new time by creating a new one
+			chrome.alarms.create("a_" + reminder[ALARMNAME] + reminder[ALARMTIME], { "when": reminder[ALARMTIME] });
+		}
+	});
+	// Update the alarm time set in the store
+	chrome.storage.sync.set({ "alarms": storedReminders.alarms });
+}
+
+// Function that iterates through all the alarms that are set in the browser and removes those that do not have
+// a correlating Reminder
+async function removeOrphanAlarms() {
+	var alarms = await chrome.alarms.getAll();
+	var reminders = await chrome.storage.sync.get("alarms");
+	alarms.forEach(function (alarm, id, alarms) {
+		// Need to iterate through each alarm and try to match it with a reminder
+		if (alarm.name.startsWith("a_")) { //It's an alarm associated with a reminder, so let's deal with it
+			var inferredReminderName = alarm.name.replace("a_", "");
+			inferredReminderName.replace(alarm.scheduledTime, ""); //Extracting the reminder name from the alarm
+			// Filter the reminders array for those that both
+			//	a) Match the name of the alarm in question
+			/// b) Match the time of the alarm in question
+			var matchingReminders = reminders.alarms.filter((reminder) => ((reminder[ALARMNAME] === inferredReminderName) && (reminder[ALARMTIME] = alarm.scheduledTime)));
+			if (matchingReminders.length < 1) { // If the number of returned results is less than 1
+				chrome.alarms.clear(alarm.name); //Remove the alarm
+			}
+		}
 	});
 }
 
 //Function that sets an alarm for each reminder in storage
-function instantiateReminders() {
+function createOneOffAlarms() {
 	chrome.storage.sync.get("alarms", function (items) {
-		items.alarms.forEach(function (alarm, id, alarms) {
-			chrome.alarms.create("a_" + alarm[2] + alarm[0], { "when": alarm[0] });
+		items.alarms.forEach(function (reminder, id, reminders) {
+			if (reminder[ALARMREPEATDAYS].indexOf(1) == -1) {
+				chrome.alarms.create("a_" + reminder[ALARMNAME] + reminder[ALARMTIME], { "when": reminder[ALARMTIME] });
+			}
 		});
 	});
 }
 
 //Adds a new reminder to the store and sets an alarm for it
-function addReminder(alarm) {
+function addReminder(reminder) {
 	chrome.storage.sync.get(["alarms", "offset"], function (items) {
 		//Only add repeating reminders and ones in the future
-		if (alarm[3].indexOf(1) > -1) {
-			items.alarms.push(alarm);
+		if (reminder[ALARMREPEATDAYS].indexOf(1) > -1) {
+			items.alarms.push(reminder);
 			chrome.storage.sync.set({ "alarms": items.alarms });
-			tidyReminders();
+			createRepeatingAlarms();
 		} else {
-			if (alarm[0] > (Date.now() + (items.offset * 60 * 60 * 1000))) {
-				items.alarms.push(alarm);
-				chrome.storage.sync.set({
-					"alarms": items.alarms
-				});
-				chrome.alarms.create("a_" + alarm[2] + alarm[0], { "when": (alarm[0] - (items.offset * 60 * 60 * 1000)) });
+			if (reminder[ALARMTIME] > (Date.now() + (items.offset * 60 * 60 * 1000))) {
+				items.alarms.push(reminder);
+				chrome.storage.sync.set({ "alarms": items.alarms });
+				chrome.alarms.create("a_" + reminder[ALARMNAME] + reminder[ALARMTIME], { "when": (reminder[ALARMTIME] - (items.offset * 60 * 60 * 1000)) });
 			} else {
 				console.log("Alarm not added because it is in the past");
 			}
@@ -134,85 +143,90 @@ function addReminder(alarm) {
 //Deletes a reminder and removes its alarm
 function deleteReminder(alarmToDelete) {
 	chrome.storage.sync.get("alarms", function (items) {
-		chrome.alarms.clear("a_" + items.alarms[alarmToDelete][2] + items.alarms[alarmToDelete][0]);
 		items.alarms.splice(alarmToDelete, 1);
 		chrome.storage.sync.set({ "alarms": items.alarms });
+		removeOrphanAlarms();
 	});
 }
 
 // Function to create and sound alarm audio in an offscreen document
 async function offscreenAudio(audioSrc, volume = 1.0, audioType = 'soundAudio', id) {
-	await chrome.offscreen.createDocument(
-		{
-			url: 'audio.html',
-			reasons: ['AUDIO_PLAYBACK'],
-			justification: 'Play alarm and chime sounds in an offscreen document'
-		},
-		function (n) {
-			chrome.runtime.sendMessage({
-				'type': audioType,
-				'audioSrc': audioSrc,
-				'volume': volume,
-				'id': id
+	hasOffscreen = await chrome.offscreen.hasDocument();
+	if (!hasOffScreen) { // No offscreen document exists, so let's create it
+		await chrome.offscreen.createDocument(
+			{
+				url: 'audio.html',
+				reasons: ['AUDIO_PLAYBACK'],
+				justification: 'Play alarm and chime sounds in an offscreen document'
 			});
-		});
+	}
+	// Now the offscreen document exists so we can send the message to fire the audio
+	chrome.runtime.sendMessage({
+		'type': audioType,
+		'audioSrc': audioSrc,
+		'volume': volume,
+		'id': id
+	});
 }
 
 // Function which shows the notification for an alarm
 function soundAlarm(alarmName) {
 	chrome.storage.sync.get(["alarms", "offset", "handsColour", "hoverFormat"], function (items) {
 		// Find the alarm that is sounding now and make it thisReminder
-		var thisReminder;
-		items.alarms.forEach(function (item, id, items) {
-			if ("a_" + item[2] + item[0] === alarmName) {
-				thisReminder = item;
-			}
-		});
-		//TODO: add a check here to ensure thisReminder is correctly populated
+		var thisReminder = items.alarms.find((reminder) => ("a_" + reminder[ALARMNAME] + reminder[ALARMTIME] === alarmName))
 
-		//Create the notification itself
-		chrome.notifications.create(
-			"", //Let the NotificationId be automatically generated
-			{
-				type: "basic",
-				title: thisReminder[2],
-				message: timeString(items.hoverFormat, new Date(thisReminder[0])),
-				requireInteraction: true,
-				iconUrl: "/assets/icon128.png",
-				buttons: [
-					{
-						title: "Snooze",
-						iconUrl: "/assets/icon16.png"
-					},
-					{
-						title: "Close",
-						iconUrl: "/assets/delete.png"
-					}
-				]
-			},
-			function (id) {
-				// Notification is created. Make a noise, if a noise is set
-				/*https://chromium.googlesource.com/chromium/src/+/2dd7435aa7d6143bb263032dcf52bf3ac995d94c/chrome/test/data/extensions/api_test/offscreen/create_document/background.js*/
-				//Play the sound in a loop
-				if (thisReminder[ALARMSOUND] != "nothing") { // Only do something if the alarm has a sound
+		if (thisReminder != undefined) { //If no reminder has been located, just stop and do nothing
+
+			//Create the notification itself
+			chrome.notifications.create(
+				"", //Let the NotificationId be automatically generated
+				{
+					type: "basic",
+					title: thisReminder[ALARMNAME],
+					message: timeString(items.hoverFormat, new Date(thisReminder[ALARMTIME])),
+					requireInteraction: true,
+					iconUrl: "/assets/icon128.png",
+					buttons: [
+						{
+							title: "Snooze",
+							iconUrl: "/assets/icon16.png"
+						},
+						{
+							title: "Close",
+							iconUrl: "/assets/delete.png"
+						}
+					]
+				},
+				function (id) {
+					// Notification is created. 
 					//link the notification with the alarm for snooze and silence purposes
-					soundingAlarmsRegister.push({
+					activeNotificationsRegister.push({
 						identifier: id,
 						alarm: thisReminder
 					});
-					// Set the volume from the stored value (if there is one)
-					var vol = 1.0;
-					if (typeof thisReminder[ALARMVOLUME] != "undefined") {
-						vol = parseFloat(thisReminder[ALARMVOLUME]);
-					}
-					offscreenAudio(thisReminder[ALARMSOUND] + ".ogg", vol, "soundAudio", id);
-				}
-			}
-		);
-	});
-	tidyReminders();
-}
 
+					//Make a noise, if a noise is set. Play the sound in a loop
+					if (thisReminder[ALARMSOUND] != "nothing") { // Only do something if the alarm has a sound
+
+						// Set the volume from the stored value (if there is one)
+						var vol = 1.0;
+						if (typeof thisReminder[ALARMVOLUME] != "undefined") {
+							vol = parseFloat(thisReminder[ALARMVOLUME]);
+						}
+						offscreenAudio(thisReminder[ALARMSOUND] + ".ogg", vol, "soundAudio", id);
+					}
+				}
+			);
+			if (thisReminder[ALARMREPEATDAYS].indexOf(1) > -1) {  	// If this is a repeater
+				createRepeatingAlarms();							// Add the next iteration
+			}
+		} else {
+			// No reminder was found, so somenthing is out of sync, let's fix that
+			removeOrphanAlarms();
+		}
+		purgeStaleReminders(); // Remove the reminders that have happened in the past (i.e. this one)
+	});
+}
 
 // Function that returns imageData of <height> x <width> according to <options> and with offset <offset>
 function getClockImage(height, width, options, offset) {
@@ -680,20 +694,22 @@ function setupPreferences() {
 	}, function (items) {
 		// Once set, start things up
 		startup();
-	}
-	);
+	});
 }
 
 //This sets everything up and is run at start up
 function startup() {
 
-	// Make sure expired alarms don't sound early
-	tidyReminders();
+	// Make sure expired reminders don't sound early
+	purgeStaleReminders();
+
+	// Set up chrome alarms for set reminders
+	createOneOffAlarms();
+	createRepeatingAlarms();
 
 	// Start the clock and set up the regular reminders
 	regularTime();
 	setUpdateAlarm();
-
 }
 
 chrome.runtime.onStartup.addListener(startup);
@@ -704,23 +720,23 @@ chrome.runtime.onInstalled.addListener(function () {
 	chrome.storage.sync.getBytesInUse(null, function (len) {
 		if (len < 1) {
 			setupPreferences();
+		} else {
+			startup();
 		}
 	});
-	startup();
 });
 
 //Function used by popup.js to find out if there are any sounds active at the moment
 function noAudioElements() {
-	return soundingAlarmsRegister.length
+	var activeSoundingAlarms = activeNotificationsRegister.filter((reminder) => (reminder[ALARMSOUND] !== "nothing"));
+	return activeSoundingAlarms.length;
 }
 
 //Called from the silence button in popup.html
 //Finds, stops and deletes all audio elements by closing the offscreen page
-//Then clears the sounding register and calls tidyreminders
+//Then clears the sounding register
 async function silenceAlarms() {
 	chrome.offscreen.closeDocument();
-	soundingAlarmsRegister = null;
-	tidyReminders();
 }
 
 //the page has been woken up, so update the clock
@@ -738,38 +754,36 @@ chrome.alarms.onAlarm.addListener(function (alarm) {
 	}
 });
 
-//Set up handlers for notification closes
-chrome.notifications.onClosed.addListener(function (notificationId, byUser) {
-	// chrome.offscreen.closeDocument(); TODO - Neither of these lines are actually needed?
-	// tidyReminders();
-});
-
 //Set up handlers for notification button clicks
 chrome.notifications.onButtonClicked.addListener(function (notificationId, buttonIndex) {
+	// Look up the reminder in the active alarms register for this notification
+	var thisReminderIndex = activeNotificationsRegister.findIndex((notification) => (notification.identifier === notificationId));
 
-	soundingAlarmsRegister.forEach(function (item, id, items) { //TODO - A silent repeating alarm will not repeat using this logic needs changing
-
-		if (item.identifier === notificationId) {
+	if (thisReminderIndex > -1) {
+		if (activeNotificationsRegister[thisReminderIndex].alarm[ALARMSOUND] != "nothing") {
 			//Stop the sound
-			if (item.alarm[ALARMSOUND] != "nothing") { //This Reminder has NOISE so we must stop it
-				chrome.runtime.sendMessage({
-					'type': 'stopAudio',
-					'id': item.identifier
-				});
-			}
-
-			if (buttonIndex === 0) {
-				//SNOOZE!!
-				item.alarm[ALARMTIME] = (Date.now() + 300000); //set a new alarm five minutes from now
-				item.alarm[ALARMREPEATDAYS] = [0, 0, 0, 0, 0, 0, 0]; //snoozed alarms should not be repeaters, only one-offs
-				item.alarm[ALARMNAME] = "[Zzz] " + item.alarm[2];
-				addReminder(item.alarm);
-			}
-
-			//CLOSE the notification
-			chrome.notifications.clear(notificationId, function (wasCleared) {
+			chrome.runtime.sendMessage({
+				'type': 'stopAudio',
+				'id': activeNotificationsRegister[thisReminderIndex].identifier
 			});
 		}
-	});
-});
 
+		if (buttonIndex === 0) {
+			//SNOOZE!!
+			activeNotificationsRegister[thisReminderIndex].alarm[ALARMTIME] = (Date.now() + 300000); 		//set a new alarm five minutes from now
+			activeNotificationsRegister[thisReminderIndex].alarm[ALARMREPEATDAYS] = [0, 0, 0, 0, 0, 0, 0]; 	//snoozed alarms should not be repeaters, only one-offs
+			activeNotificationsRegister[thisReminderIndex].alarm[ALARMNAME] = "[Zzz] " + activeNotificationsRegister[thisReminderIndex].alarm[ALARMNAME];
+			addReminder(activeNotificationsRegister[thisReminderIndex].alarm);
+		}
+	} else {
+		console.log("ERROR: Notification ID does not match any registered active reminders");
+		// There is a non-zero risk that the activeNotificationsRegister gets out of sync becasue of service worker sleeping
+		// So if we reach this state, we stop ALL audio to prevent unstoppable noises
+		silenceAlarms();
+		//Although windows notifications may still be active, so we'll need to leave activeNotificationsRegister
+		//as is in case a snooze is required. Risk here that snoozes may not work on open notifications though
+	}
+
+	chrome.notifications.clear(notificationId); 				// CLOSE the notification
+	activeNotificationsRegister.splice(thisReminderIndex, 1); 	// Remove from the register
+});
