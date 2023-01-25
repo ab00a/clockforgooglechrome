@@ -45,8 +45,8 @@ chrome.storage.onChanged.addListener(function (changes, area) {
 //Function that iterates through every Reminder in storage and deletes non-repeating ones that happen in the past
 //@returns boolean to indicate whether any changes were made through this function
 async function purgeStaleReminders() {
-	var storedReminders = await chrome.storage.sync.get(["alarms", "offset"]); 	//Collect Reminders from storage
-	var aldate,
+	let storedReminders = await chrome.storage.sync.get(["alarms", "offset"]); 	//Collect Reminders from storage
+	let aldate,
 		deletedStaleReminders = false,
 		d = new Date(Date.now() + (storedReminders.offset * 1000 * 60 * 60)); 		// Work out when expired is
 	storedReminders.alarms.forEach(function (reminder, id, reminders) {			// Iterate through each reminder
@@ -57,20 +57,20 @@ async function purgeStaleReminders() {
 		}
 	});
 	if (deletedStaleReminders) {
-		chrome.storage.sync.set({ "alarms": storedReminders.alarms });			// Store the updated (shorter) list of reminders
+		await chrome.storage.sync.set({ "alarms": storedReminders.alarms });			// Store the updated (shorter) list of reminders
 	}
 	return deletedStaleReminders;												// Return the result
 }
 
 // Function which creates the right alarms for repeating Reminders
 async function createRepeatingAlarms() {
-	var storedReminders = await chrome.storage.sync.get(["alarms", "offset"]); 	//Collect Reminders from storage
+	let storedReminders = await chrome.storage.sync.get(["alarms", "offset"]); 	//Collect Reminders from storage
 	storedReminders.alarms.forEach(function (reminder, id, reminders) {
 		if (reminder[ALARMREPEATDAYS].indexOf(1) > -1) {
 			//It's a repeater, so let's recreate it at the next repeat day (which might be today)
 			//First, set the time to today, as this is the earliest possible next occurrence
-			var aldate = new Date(reminder[ALARMTIME]);
-			var d = new Date(Date.now() + (storedReminders.offset * 1000 * 60 * 60));
+			let aldate = new Date(reminder[ALARMTIME]);
+			let d = new Date(Date.now() + (storedReminders.offset * 1000 * 60 * 60));
 			aldate.setDate(d.getDate());
 			aldate.setMonth(d.getMonth());
 			aldate.setFullYear(d.getFullYear());
@@ -85,23 +85,23 @@ async function createRepeatingAlarms() {
 		}
 	});
 	// Update the alarm time set in the store
-	chrome.storage.sync.set({ "alarms": storedReminders.alarms });
+	await chrome.storage.sync.set({ "alarms": storedReminders.alarms });
 }
 
 // Function that iterates through all the alarms that are set in the browser and removes those that do not have
 // a correlating Reminder
 async function removeOrphanAlarms() {
-	var alarms = await chrome.alarms.getAll();
-	var reminders = await chrome.storage.sync.get("alarms");
+	let alarms = await chrome.alarms.getAll();
+	let reminders = await chrome.storage.sync.get("alarms");
 	alarms.forEach(function (alarm, id, alarms) {
 		// Need to iterate through each alarm and try to match it with a reminder
 		if (alarm.name.startsWith("a_")) { //It's an alarm associated with a reminder, so let's deal with it
-			var inferredReminderName = alarm.name.replace("a_", "");
-			inferredReminderName.replace(alarm.scheduledTime, ""); //Extracting the reminder name from the alarm
+			let inferredReminderName = alarm.name.replace("a_", "");
+			inferredReminderName = inferredReminderName.replace(alarm.scheduledTime, ""); //Extracting the reminder name from the alarm
 			// Filter the reminders array for those that both
 			//	a) Match the name of the alarm in question
 			/// b) Match the time of the alarm in question
-			var matchingReminders = reminders.alarms.filter((reminder) => ((reminder[ALARMNAME] === inferredReminderName) && (reminder[ALARMTIME] = alarm.scheduledTime)));
+			const matchingReminders = reminders.alarms.filter((reminder) => ((reminder[ALARMNAME] === inferredReminderName) && (reminder[ALARMTIME] = alarm.scheduledTime)));
 			if (matchingReminders.length < 1) { // If the number of returned results is less than 1
 				chrome.alarms.clear(alarm.name); //Remove the alarm
 			}
@@ -110,55 +110,70 @@ async function removeOrphanAlarms() {
 }
 
 //Function that sets an alarm for each reminder in storage
-function createOneOffAlarms() {
-	chrome.storage.sync.get("alarms", function (items) {
-		items.alarms.forEach(function (reminder, id, reminders) {
-			if (reminder[ALARMREPEATDAYS].indexOf(1) == -1) {
-				chrome.alarms.create("a_" + reminder[ALARMNAME] + reminder[ALARMTIME], { "when": reminder[ALARMTIME] });
-			}
-		});
-	});
-}
-
-//Adds a new reminder to the store and sets an alarm for it
-function addReminder(reminder) {
-	chrome.storage.sync.get(["alarms", "offset"], function (items) {
-		//Only add repeating reminders and ones in the future
-		if (reminder[ALARMREPEATDAYS].indexOf(1) > -1) {
-			items.alarms.push(reminder);
-			chrome.storage.sync.set({ "alarms": items.alarms });
-			createRepeatingAlarms();
-		} else {
-			if (reminder[ALARMTIME] > (Date.now() + (items.offset * 60 * 60 * 1000))) {
-				items.alarms.push(reminder);
-				chrome.storage.sync.set({ "alarms": items.alarms });
-				chrome.alarms.create("a_" + reminder[ALARMNAME] + reminder[ALARMTIME], { "when": (reminder[ALARMTIME] - (items.offset * 60 * 60 * 1000)) });
-			} else {
-				console.log("Alarm not added because it is in the past");
-			}
+async function createOneOffAlarms() {
+	let items = await chrome.storage.sync.get("alarms");
+	items.alarms.forEach(function (reminder, id, reminders) {
+		if (reminder[ALARMREPEATDAYS].indexOf(1) == -1) {
+			chrome.alarms.create("a_" + reminder[ALARMNAME] + reminder[ALARMTIME], { "when": reminder[ALARMTIME] });
 		}
 	});
 }
 
+//Adds a new reminder to the store and sets an alarm for it
+async function addReminder(reminder) {
+	let items = await chrome.storage.sync.get(["alarms", "offset"]);
+	//Only add repeating reminders and ones in the future
+	if (reminder[ALARMREPEATDAYS].indexOf(1) > -1) {
+		items.alarms.push(reminder);
+		await chrome.storage.sync.set({ "alarms": items.alarms });
+		createRepeatingAlarms();
+	} else {
+		if (reminder[ALARMTIME] > (Date.now() + (items.offset * 60 * 60 * 1000))) {
+			items.alarms.push(reminder);
+			await chrome.storage.sync.set({ "alarms": items.alarms });
+			chrome.alarms.create("a_" + reminder[ALARMNAME] + reminder[ALARMTIME], { "when": (reminder[ALARMTIME] - (items.offset * 60 * 60 * 1000)) });
+		} else {
+			console.log("Alarm not added because it is in the past");
+		}
+	}
+}
+
 //Deletes a reminder and removes its alarm
-function deleteReminder(alarmToDelete) {
-	chrome.storage.sync.get("alarms", function (items) {
+async function deleteReminder(alarmToDelete) {
+	let items = await chrome.storage.sync.get("alarms");
 		items.alarms.splice(alarmToDelete, 1);
-		chrome.storage.sync.set({ "alarms": items.alarms });
+		await chrome.storage.sync.set({ "alarms": items.alarms });
 		removeOrphanAlarms();
+}
+
+// Hacky utility function which is used to inject a small delay where required to avoid async clashes
+// The only parameter is the maximum delay in msDelay
+// If the parameter is omitted, the delay is 500ms
+function randomPause(maxDelay = 500) {
+	const delayed = Math.floor(Math.random() * maxDelay);
+	return new Promise(resolve => {
+		setTimeout(() => {
+			resolve(delayed);
+		}, delayed);
 	});
 }
 
 // Function to create and sound alarm audio in an offscreen document
 async function offscreenAudio(audioSrc, volume = 1.0, audioType = 'soundAudio', id) {
-	hasOffscreen = await chrome.offscreen.hasDocument();
-	if (!hasOffScreen) { // No offscreen document exists, so let's create it
-		await chrome.offscreen.createDocument(
-			{
-				url: 'audio.html',
-				reasons: ['AUDIO_PLAYBACK'],
-				justification: 'Play alarm and chime sounds in an offscreen document'
-			});
+	// Bit hacky because odd stuff happens if this is invoked twice at exactly the same time
+	await randomPause(1000);
+	let hasOffscreen = await chrome.offscreen.hasDocument();
+	if (!hasOffscreen) { // No offscreen document exists, so let's create it
+		try {
+			await chrome.offscreen.createDocument(
+				{
+					url: 'audio.html',
+					reasons: ['AUDIO_PLAYBACK'],
+					justification: 'Play alarm and chime sounds in an offscreen document'
+				});
+			} catch (e) {
+				console.log("Failed to create an offscreen document: " + e);
+		}
 	}
 	// Now the offscreen document exists so we can send the message to fire the audio
 	chrome.runtime.sendMessage({
@@ -170,69 +185,67 @@ async function offscreenAudio(audioSrc, volume = 1.0, audioType = 'soundAudio', 
 }
 
 // Function which shows the notification for an alarm
-function soundAlarm(alarmName) {
-	chrome.storage.sync.get(["alarms", "offset", "handsColour", "hoverFormat"], function (items) {
-		// Find the alarm that is sounding now and make it thisReminder
-		var thisReminder = items.alarms.find((reminder) => ("a_" + reminder[ALARMNAME] + reminder[ALARMTIME] === alarmName))
+async function soundAlarm(alarmName) {
+	let items = await chrome.storage.sync.get(["alarms", "offset", "handsColour", "hoverFormat"]);
+	// Find the alarm that is sounding now and make it thisReminder
+	let thisReminder = items.alarms.find((reminder) => ("a_" + reminder[ALARMNAME] + reminder[ALARMTIME] === alarmName))
 
-		if (thisReminder != undefined) { //If no reminder has been located, just stop and do nothing
+	if (thisReminder != undefined) { //If no reminder has been located, just stop and do nothing
 
-			//Create the notification itself
-			chrome.notifications.create(
-				"", //Let the NotificationId be automatically generated
-				{
-					type: "basic",
-					title: thisReminder[ALARMNAME],
-					message: timeString(items.hoverFormat, new Date(thisReminder[ALARMTIME])),
-					requireInteraction: true,
-					iconUrl: "/assets/icon128.png",
-					buttons: [
-						{
-							title: "Snooze",
-							iconUrl: "/assets/icon16.png"
-						},
-						{
-							title: "Close",
-							iconUrl: "/assets/delete.png"
-						}
-					]
-				},
-				function (id) {
-					// Notification is created. 
-					//link the notification with the alarm for snooze and silence purposes
-					activeNotificationsRegister.push({
-						identifier: id,
-						alarm: thisReminder
-					});
-
-					//Make a noise, if a noise is set. Play the sound in a loop
-					if (thisReminder[ALARMSOUND] != "nothing") { // Only do something if the alarm has a sound
-
-						// Set the volume from the stored value (if there is one)
-						var vol = 1.0;
-						if (typeof thisReminder[ALARMVOLUME] != "undefined") {
-							vol = parseFloat(thisReminder[ALARMVOLUME]);
-						}
-						offscreenAudio(thisReminder[ALARMSOUND] + ".ogg", vol, "soundAudio", id);
+		//Create the notification itself
+		chrome.notifications.create(
+			"", //Let the NotificationId be automatically generated
+			{
+				type: "basic",
+				title: thisReminder[ALARMNAME],
+				message: timeString(items.hoverFormat, new Date(thisReminder[ALARMTIME])),
+				requireInteraction: true,
+				iconUrl: "/assets/icon128.png",
+				buttons: [
+					{
+						title: "Snooze",
+						iconUrl: "/assets/icon16.png"
+					},
+					{
+						title: "Close",
+						iconUrl: "/assets/delete.png"
 					}
+				]
+			},
+			function (id) {
+				// Notification is created. 
+				//link the notification with the alarm for snooze and silence purposes
+				activeNotificationsRegister.push({
+					identifier: id,
+					alarm: thisReminder
+				});
+
+				//Make a noise, if a noise is set. Play the sound in a loop
+				if (thisReminder[ALARMSOUND] != "nothing") { // Only do something if the alarm has a sound
+
+					// Set the volume from the stored value (if there is one)
+					let vol = 1.0;
+					if (typeof thisReminder[ALARMVOLUME] != "undefined") {
+						vol = parseFloat(thisReminder[ALARMVOLUME]);
+					}
+					offscreenAudio(thisReminder[ALARMSOUND] + ".ogg", vol, "soundAudio", id);
 				}
-			);
-			if (thisReminder[ALARMREPEATDAYS].indexOf(1) > -1) {  	// If this is a repeater
-				createRepeatingAlarms();							// Add the next iteration
 			}
-		} else {
-			// No reminder was found, so somenthing is out of sync, let's fix that
-			removeOrphanAlarms();
+		);
+		if (thisReminder[ALARMREPEATDAYS].indexOf(1) > -1) {  	// If this is a repeater
+			createRepeatingAlarms();							// Add the next iteration
 		}
-		purgeStaleReminders(); // Remove the reminders that have happened in the past (i.e. this one)
-	});
+	} else {
+		// No reminder was found, so somenthing is out of sync, let's fix that
+		removeOrphanAlarms();
+	}
 }
 
 // Function that returns imageData of <height> x <width> according to <options> and with offset <offset>
 function getClockImage(height, width, options, offset) {
 	const cvs = new OffscreenCanvas(height, width);
 	//Set up the square to draw on, empty it and save this as a setting
-	var d, i, size, c, ticklength, fontheight, borderwidth, tickgap, fontcent39,
+	let d, i, size, c, ticklength, fontheight, borderwidth, tickgap, fontcent39,
 		fontsize, fontcent126, seclength, sechang, minlength, minhang, hourlength,
 		hourhang, secwidth, hourwidth, minwidth;
 	d = new Date(Date.now() + (offset * 1000 * 60 * 60));
@@ -338,7 +351,7 @@ function timeString(fmt, d) {
 	if (typeof (d) == "string") {
 		d = new Date(d);
 	}
-	var curr_date, curr_month, curr_year, hours, minutes, seconds, meri,
+	let curr_date, curr_month, curr_year, hours, minutes, seconds, meri,
 		sDate, ln, i;
 
 	curr_date = d.getDate();
@@ -504,181 +517,176 @@ function timeString(fmt, d) {
 //A key function, it updates the clock. It's called once a minute and on any change from the options page
 // It is also fired on any changes to the sync store
 // i.e. When an option is changed
-function updateTime() {
-	chrome.storage.sync.get(null, function (items) {
-		var d, ctx, x, y, width, height, radius;
-		d = new Date(Date.now() + (items.offset * 1000 * 60 * 60) + 1000); //that last 1000 is to make sure there are no on the minute edge cases
+async function updateTime() {
+	let items = await chrome.storage.sync.get(null);
+	let d, ctx, x, y, width, height, radius;
+	d = new Date(Date.now() + (items.offset * 1000 * 60 * 60) + 1000); //that last 1000 is to make sure there are no on the minute edge cases
 
-		if (items.showDigital && items.showAnalogue) {
-			var hours, minutes, fill, badgeColour;
-			//The analogue and digital clocks are required, so show the badge
-			//First build the 4 character string to put in
-			minutes = d.getMinutes();
-			if (minutes < 10) {
-				minutes = "0" + minutes;
-			}
-			fill = "";
-			hours = d.getHours();
-			if ((hours > 12) && (items.hoverFormat.indexOf("t") > -1)) {
-				hours -= 12;
-			}
-			if ((hours + "").length < 2) {
-				fill = ":";
-			}
-			//Set the badge colour
-			badgeColour = items.badgeColour.split(",");
-			badgeColour.forEach(function (element, id, badgeColour) {
-				badgeColour[id] = Number(element);
-			});
-			chrome.action.setBadgeBackgroundColor({
-				color: badgeColour
-			});
-			//and show the badge
-			chrome.action.setBadgeText({ text: hours + fill + minutes });
-		} else {
-			//We don't want the badge, so set it nothing
-			chrome.action.setBadgeText({ text: "" });
+	if (items.showDigital && items.showAnalogue) {
+		var hours, minutes, fill, badgeColour;
+		//The analogue and digital clocks are required, so show the badge
+		//First build the 4 character string to put in
+		minutes = d.getMinutes();
+		if (minutes < 10) {
+			minutes = "0" + minutes;
 		}
-
-		//For each canvas resize it according to its location in the array
-		//Take the position, add one and multiply by 19
-		//Then draw a clock in it!
-
-		//Create a canvas for each scale
-		var canvases = [new OffscreenCanvas(19, 19), new OffscreenCanvas(38, 38)];
-
-		canvases.forEach(function (canvas, id, canvases) {
-			ctx = canvas.getContext("2d");
-
-			if (items.showAnalogue === true) {
-				//Draw a new clock
-				canvas.getContext('2d').putImageData(getClockImage(canvas.height,
-					canvas.width, {
-					colour: items.handsColour,
-					ticks: items.dots,
-					secondHand: false,
-					border: false,
-					numbers: false
-				},
-					items.offset), 0, 0);
-			} else {
-				if (items.showDigital) {
-					//No analogue, only digital, so let's fill the space
-					x = 0;
-					y = 0;
-					width = canvas.width;
-					height = canvas.height;
-					radius = canvas.width * 0.15;
-
-					ctx.beginPath();
-					ctx.moveTo(x + radius, y);
-					ctx.lineTo(x + width - radius, y);
-					ctx.quadraticCurveTo(x + width, y, x + width, y + radius);
-					ctx.lineTo(x + width, y + height - radius);
-					ctx.quadraticCurveTo(x + width, y + height, x + width - radius, y + height);
-					ctx.lineTo(x + radius, y + height);
-					ctx.quadraticCurveTo(x, y + height, x, y + height - radius);
-					ctx.lineTo(x, y + radius);
-					ctx.quadraticCurveTo(x, y, x + radius, y);
-					ctx.closePath();
-
-					ctx.fillStyle = "rgba(" + items.badgeColour.split(",")[0]
-						+ ", " + items.badgeColour.split(",")[1]
-						+ ", " + items.badgeColour.split(",")[2]
-						+ ", " + parseInt(items.badgeColour.split(",")[3], 10) / 255
-						+ ")";
-					ctx.fill();
-					//Then write the time within this rectangle
-					ctx.font = "bold " + (height / 2) + "px sans-serif"; //font size should be half as high as the box
-					ctx.textAlign = "center";
-					ctx.textBaseline = "middle";
-					ctx.fillStyle = "rgba(" + items.digitalForeColour.split(",")[0]
-						+ ", " + items.digitalForeColour.split(",")[1]
-						+ ", " + items.digitalForeColour.split(",")[2]
-						+ ", " + parseInt(items.digitalForeColour.split(",")[3], 10) / 255
-						+ ")";
-					minutes = d.getMinutes();
-					if (minutes < 10) {
-						minutes = "0" + minutes;
-					}
-					fill = "";
-					hours = d.getHours();
-					if ((hours > 12) && (items.hoverFormat.indexOf("t") > -1)) {
-						hours -= 12;
-					}
-					ctx.fillText(hours, x + canvas.width / 2, height / 4);
-					ctx.fillText(minutes, x + canvas.width / 2, y + height / 1.33);
-				} else {
-					//No analogue and no Linux digital so no image on the canvas
-					ctx.clearRect(0, 0, canvas.height, canvas.width);
-				}
-			}
+		fill = "";
+		hours = d.getHours();
+		if ((hours > 12) && (items.hoverFormat.indexOf("t") > -1)) {
+			hours -= 12;
+		}
+		if ((hours + "").length < 2) {
+			fill = ":";
+		}
+		//Set the badge colour
+		badgeColour = items.badgeColour.split(",");
+		badgeColour.forEach(function (element, id, badgeColour) {
+			badgeColour[id] = Number(element);
 		});
-		//Write the clock to the toolbar
-		chrome.action.setIcon(
-			{
-				imageData:
-				{
-					"19": canvases[0].getContext("2d").getImageData(0, 0, canvases[0].height, canvases[0].width),
-					"38": canvases[1].getContext("2d").getImageData(0, 0, canvases[1].height, canvases[1].width)
-				}
-			}
-		);
+		chrome.action.setBadgeBackgroundColor({
+			color: badgeColour
+		});
+		//and show the badge
+		chrome.action.setBadgeText({ text: hours + fill + minutes });
+	} else {
+		//We don't want the badge, so set it nothing
+		chrome.action.setBadgeText({ text: "" });
+	}
 
-		//Update the hover text
-		chrome.action.setTitle({ title: timeString(items.hoverFormat, d) });
+	//For each canvas resize it according to its location in the array
+	//Take the position, add one and multiply by 19
+	//Then draw a clock in it!
+
+	//Create a canvas for each scale
+	var canvases = [new OffscreenCanvas(19, 19), new OffscreenCanvas(38, 38)];
+
+	canvases.forEach(function (canvas, id, canvases) {
+		ctx = canvas.getContext("2d");
+
+		if (items.showAnalogue === true) {
+			//Draw a new clock
+			canvas.getContext('2d').putImageData(getClockImage(canvas.height,
+				canvas.width, {
+				colour: items.handsColour,
+				ticks: items.dots,
+				secondHand: false,
+				border: false,
+				numbers: false
+			},
+				items.offset), 0, 0);
+		} else {
+			if (items.showDigital) {
+				//No analogue, only digital, so let's fill the space
+				x = 0;
+				y = 0;
+				width = canvas.width;
+				height = canvas.height;
+				radius = canvas.width * 0.15;
+
+				ctx.beginPath();
+				ctx.moveTo(x + radius, y);
+				ctx.lineTo(x + width - radius, y);
+				ctx.quadraticCurveTo(x + width, y, x + width, y + radius);
+				ctx.lineTo(x + width, y + height - radius);
+				ctx.quadraticCurveTo(x + width, y + height, x + width - radius, y + height);
+				ctx.lineTo(x + radius, y + height);
+				ctx.quadraticCurveTo(x, y + height, x, y + height - radius);
+				ctx.lineTo(x, y + radius);
+				ctx.quadraticCurveTo(x, y, x + radius, y);
+				ctx.closePath();
+
+				ctx.fillStyle = "rgba(" + items.badgeColour.split(",")[0]
+					+ ", " + items.badgeColour.split(",")[1]
+					+ ", " + items.badgeColour.split(",")[2]
+					+ ", " + parseInt(items.badgeColour.split(",")[3], 10) / 255
+					+ ")";
+				ctx.fill();
+				//Then write the time within this rectangle
+				ctx.font = "bold " + (height / 2) + "px sans-serif"; //font size should be half as high as the box
+				ctx.textAlign = "center";
+				ctx.textBaseline = "middle";
+				ctx.fillStyle = "rgba(" + items.digitalForeColour.split(",")[0]
+					+ ", " + items.digitalForeColour.split(",")[1]
+					+ ", " + items.digitalForeColour.split(",")[2]
+					+ ", " + parseInt(items.digitalForeColour.split(",")[3], 10) / 255
+					+ ")";
+				minutes = d.getMinutes();
+				if (minutes < 10) {
+					minutes = "0" + minutes;
+				}
+				fill = "";
+				hours = d.getHours();
+				if ((hours > 12) && (items.hoverFormat.indexOf("t") > -1)) {
+					hours -= 12;
+				}
+				ctx.fillText(hours, x + canvas.width / 2, height / 4);
+				ctx.fillText(minutes, x + canvas.width / 2, y + height / 1.33);
+			} else {
+				//No analogue and no Linux digital so no image on the canvas
+				ctx.clearRect(0, 0, canvas.height, canvas.width);
+			}
+		}
 	});
+	//Write the clock to the toolbar
+	chrome.action.setIcon(
+		{
+			imageData:
+			{
+				"19": canvases[0].getContext("2d").getImageData(0, 0, canvases[0].height, canvases[0].width),
+				"38": canvases[1].getContext("2d").getImageData(0, 0, canvases[1].height, canvases[1].width)
+			}
+		}
+	);
+
+	//Update the hover text
+	chrome.action.setTitle({ title: timeString(items.hoverFormat, d) });
 }
 
-function soundChime() {
-	chrome.storage.sync.get(["hourVolume"], function (items) {
-		var vol = 1.0;
-		if (typeof items.hourVolume != "undefined") {
-			vol = items.hourVolume;
-		}
-		offscreenAudio('assets/diing.ogg', vol, 'chime', 'chime');
-	});
+async function soundChime() {
+	let items = await chrome.storage.sync.get(["hourVolume"]);
+	let vol = 1.0;
+	if (typeof items.hourVolume != "undefined") {
+		vol = items.hourVolume;
+	}
+	await offscreenAudio('assets/diing.ogg', vol, 'chime', 'chime');
 }
 
 function setUpdateAlarm() {
-	var d, msDelay;
-	d = new Date();
-	msDelay = 120001 - ((d.getSeconds() * 1000) + (d.getMilliseconds())); //the delay needs to be >60s to fire at the right time
+	let d = new Date();
+	let msDelay = 120001 - ((d.getSeconds() * 1000) + (d.getMilliseconds())); //the delay needs to be >60s to fire at the right time
 	chrome.alarms.create("___minute", { "when": Date.now() + msDelay, "periodInMinutes": 1 });
 }
 
-function regularTime() {
-	var d;
+async function regularTime() {
 	updateTime();
-	d = new Date();
+	let d = new Date();
 	if (d.getSeconds() > 5) {
 		setUpdateAlarm(); //update has drifted so let's reset the timer
 	}
-	chrome.storage.sync.get(["hourChime"], function (items) {
-		if (items.hourChime > 0) {
-			switch (d.getMinutes()) {
-				case 0:
+	let items = await chrome.storage.sync.get(["hourChime"]);
+	if (items.hourChime > 0) {
+		switch (d.getMinutes()) {
+			case 0:
+				soundChime();
+				break;
+			case 15:
+			case 45:
+				if (items.hourChime === 4) {
 					soundChime();
-					break;
-				case 15:
-				case 45:
-					if (items.hourChime === 4) {
-						soundChime();
-					}
-					break;
-				case 30:
-					if (items.hourChime > 1) {
-						soundChime();
-					}
-					break;
-			}
+				}
+				break;
+			case 30:
+				if (items.hourChime > 1) {
+					soundChime();
+				}
+				break;
 		}
-	});
+	}
 }
 
 //Run on first run, this resets all the preferences to defaults
-function setupPreferences() {
-	chrome.storage.sync.set({
+async function setupPreferences() {
+	await chrome.storage.sync.set({
 		"handsColour": "rgba(0,0,0,0.4)",
 		"showDigital": false,
 		"badgeColour": "0,0,0,50",
@@ -698,37 +706,36 @@ function setupPreferences() {
 }
 
 //This sets everything up and is run at start up
-function startup() {
+async function startup() {
 
 	// Make sure expired reminders don't sound early
-	purgeStaleReminders();
+	await purgeStaleReminders();
 
 	// Set up chrome alarms for set reminders
-	createOneOffAlarms();
-	createRepeatingAlarms();
+	await createOneOffAlarms();
+	await createRepeatingAlarms();
 
 	// Start the clock and set up the regular reminders
-	regularTime();
 	setUpdateAlarm();
+	regularTime();
 }
 
 chrome.runtime.onStartup.addListener(startup);
 
 //Run on first install and upgrades
-chrome.runtime.onInstalled.addListener(function () {
+chrome.runtime.onInstalled.addListener(async function () {
 	//if there's nothing in storage, set defaults
-	chrome.storage.sync.getBytesInUse(null, function (len) {
-		if (len < 1) {
-			setupPreferences();
-		} else {
-			startup();
-		}
-	});
+	let len = chrome.storage.sync.getBytesInUse(null);
+	if (len < 1) {
+		await setupPreferences();
+	} else {
+		await startup();
+	}
 });
 
 //Function used by popup.js to find out if there are any sounds active at the moment
 function noAudioElements() {
-	var activeSoundingAlarms = activeNotificationsRegister.filter((reminder) => (reminder[ALARMSOUND] !== "nothing"));
+	const activeSoundingAlarms = activeNotificationsRegister.filter((reminder) => (reminder[ALARMSOUND] !== "nothing"));
 	return activeSoundingAlarms.length;
 }
 
@@ -736,28 +743,31 @@ function noAudioElements() {
 //Finds, stops and deletes all audio elements by closing the offscreen page
 //Then clears the sounding register
 async function silenceAlarms() {
-	chrome.offscreen.closeDocument();
+	let hasOffscreen = await chrome.offscreen.hasDocument();
+	if (hasOffscreen) {
+		chrome.offscreen.closeDocument();
+	}
 }
 
 //the page has been woken up, so update the clock
 //and register listeners
 //When an alarm sounds, use the alarm handler
-chrome.alarms.onAlarm.addListener(function (alarm) {
+chrome.alarms.onAlarm.addListener(async function (alarm) {
 	switch (alarm.name) {
 		case "___minute":
 		case "___unblock":
 			regularTime();
 			break;
 		default:
-			soundAlarm(alarm.name);
+			await soundAlarm(alarm.name);
 			break;
 	}
 });
 
 //Set up handlers for notification button clicks
-chrome.notifications.onButtonClicked.addListener(function (notificationId, buttonIndex) {
+chrome.notifications.onButtonClicked.addListener(async function (notificationId, buttonIndex) {
 	// Look up the reminder in the active alarms register for this notification
-	var thisReminderIndex = activeNotificationsRegister.findIndex((notification) => (notification.identifier === notificationId));
+	const thisReminderIndex = activeNotificationsRegister.findIndex((notification) => (notification.identifier === notificationId));
 
 	if (thisReminderIndex > -1) {
 		if (activeNotificationsRegister[thisReminderIndex].alarm[ALARMSOUND] != "nothing") {
@@ -768,16 +778,25 @@ chrome.notifications.onButtonClicked.addListener(function (notificationId, butto
 			});
 		}
 
+				// Delete the reminder
+		// Find the index of the reminder to delete
+		let items = await chrome.storage.sync.get("alarms");
+		const indexOfReminderToDelete = items.alarms.findIndex((reminder) => (reminder[ALARMNAME] == activeNotificationsRegister[thisReminderIndex].alarm[ALARMNAME]));
+		if (indexOfReminderToDelete > 0) {
+			await deleteReminder(indexOfReminderToDelete);
+		}
+
 		if (buttonIndex === 0) {
-			//SNOOZE!!
+			//SNOOZE - create a new reminder
 			activeNotificationsRegister[thisReminderIndex].alarm[ALARMTIME] = (Date.now() + 300000); 		//set a new alarm five minutes from now
 			activeNotificationsRegister[thisReminderIndex].alarm[ALARMREPEATDAYS] = [0, 0, 0, 0, 0, 0, 0]; 	//snoozed alarms should not be repeaters, only one-offs
 			activeNotificationsRegister[thisReminderIndex].alarm[ALARMNAME] = "[Zzz] " + activeNotificationsRegister[thisReminderIndex].alarm[ALARMNAME];
-			addReminder(activeNotificationsRegister[thisReminderIndex].alarm);
+			await addReminder(activeNotificationsRegister[thisReminderIndex].alarm);
 		}
+
 	} else {
 		console.log("ERROR: Notification ID does not match any registered active reminders");
-		// There is a non-zero risk that the activeNotificationsRegister gets out of sync becasue of service worker sleeping
+		// There is a non-zero risk that the activeNotificationsRegister gets out of sync because of service worker sleeping
 		// So if we reach this state, we stop ALL audio to prevent unstoppable noises
 		silenceAlarms();
 		//Although windows notifications may still be active, so we'll need to leave activeNotificationsRegister

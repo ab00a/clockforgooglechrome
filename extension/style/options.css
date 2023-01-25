@@ -133,3 +133,8 @@ td
 {
 	direction: rtl;
 }
+
+#badgeA
+{
+display: none;
+}

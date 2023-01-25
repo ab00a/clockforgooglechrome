@@ -195,9 +195,9 @@ function showRemindersIn(targetElement, editable) {
                 if (repeatsNumber > 0) {
                     repeaticon = document.createElement("img");
                     repeaticon.src = "../assets/repeat.png";
+                    colTwo.appendChild(repeaticon);
                     chrome.runtime.sendMessage({type: "timeString", fmt: items.hoverFormat, d: when}, function(response){
                         repeaticon.alt = repeaticon.title = chrome.i18n.getMessage("nextReminder") + response;
-                        colTwo.appendChild(repeaticon);
                     });
                 }
                 //label complete, now remove the trailing comma and replace any penultimate one with 'and'
@@ -212,18 +212,14 @@ function showRemindersIn(targetElement, editable) {
                 }
                 whenlabel = document.createTextNode(whenlabel);
 
-                soundIcon = document.createElement("img");
-                if (alarm[1] === "nothing") {
-                    soundIcon.src = "../assets/silent.png";
-                    soundIcon.alt = chrome.i18n.getMessage("silent");
-                    soundIcon.title = chrome.i18n.getMessage("silent");
-                } else {
+                if (alarm[1] != "nothing") {
+                    soundIcon = document.createElement("img");
                     soundIcon.src = "../assets/ring.png";
                     soundIcon.alt = alarm[1];
                     soundIcon.title = alarm[1];
+                    colZero.appendChild(soundIcon);
                 }
-
-                colZero.appendChild(soundIcon);
+       
                 colOne.appendChild(descriptor);
                 colThree.appendChild(whenlabel);
                 if (editable) {
@@ -252,6 +248,5 @@ function showRemindersIn(targetElement, editable) {
                 document.getElementsByName("deleteAlarm")[i].addEventListener("click", deleteAlarm);
             }
         }
-
     });
 }
