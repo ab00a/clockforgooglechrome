@@ -1,0 +1,310 @@
+{
+   "April": {
+      "description": "4 月",
+      "message": "4 月"
+   },
+   "August": {
+      "description": "8 月",
+      "message": "8 月"
+   },
+   "December": {
+      "description": "12 月",
+      "message": "12 月"
+   },
+   "February": {
+      "description": "2 月",
+      "message": "2 月"
+   },
+   "Friday": {
+      "description": "金曜日",
+      "message": "金曜日"
+   },
+   "January": {
+      "description": "1 月",
+      "message": "1 月"
+   },
+   "July": {
+      "description": "7 月",
+      "message": "7 月"
+   },
+   "June": {
+      "description": "6 月",
+      "message": "6 月"
+   },
+   "March": {
+      "description": "3 月",
+      "message": "3 月"
+   },
+   "May": {
+      "description": "5 月",
+      "message": "5 月"
+   },
+   "Monday": {
+      "description": "月曜日",
+      "message": "月曜日"
+   },
+   "November": {
+      "description": "11 月",
+      "message": "11 月"
+   },
+   "October": {
+      "description": "10 月",
+      "message": "10 月"
+   },
+   "Saturday": {
+      "description": "土曜日",
+      "message": "土曜日"
+   },
+   "September": {
+      "description": "9 月",
+      "message": "9 月"
+   },
+   "Sunday": {
+      "description": "日曜日",
+      "message": "日曜日"
+   },
+   "Thursday": {
+      "description": "木曜日",
+      "message": "木曜日"
+   },
+   "Tuesday": {
+      "description": "火曜日",
+      "message": "火曜日"
+   },
+   "Wednesday": {
+      "description": "水曜日",
+      "message": "水曜日"
+   },
+   "analogueTitle": {
+      "description": "アナログ時計のセクションのタイトル",
+      "message": "アナログ時計"
+   },
+   "and": {
+      "description": "このリマインダーを毎週土曜日と日曜日のオフ",
+      "message": "と"
+   },
+   "appearanceTitle": {
+      "description": "[外観] セクションのタイトル",
+      "message": "外観"
+   },
+   "appearanceh": {
+      "description": "見出しの外観の設定オプション",
+      "message": "外観"
+   },
+   "contacth": {
+      "description": "接触設定の見出しのオプション",
+      "message": "ヘルプ"
+   },
+   "datePickerCustom": {
+      "description": "カスタムの日付のラベル",
+      "message": "その他"
+   },
+   "datePickerToday": {
+      "description": "今日のラベル",
+      "message": "今日"
+   },
+   "datePickerTomorrow": {
+      "description": "明日のためのラベル",
+      "message": "明日"
+   },
+   "delete": {
+      "description": "アラームの削除アイコンにマウス オーバー テキスト",
+      "message": "削除"
+   },
+   "deleteCheck": {
+      "description": "アラームを削除するには、ユーザーが本当に望んでいることを確認する質問",
+      "message": "アラームを削除しますか。"
+   },
+   "digitalTitle": {
+      "description": "デジタル時計バッジ オプション セクションの見出し",
+      "message": "デジタル時計"
+   },
+   "edit": {
+      "description": "Word の編集のとしてこのアラームを編集",
+      "message": "編集"
+   },
+   "every": {
+      "description": "このリマインダーを毎週日曜日オフ",
+      "message": "すべて"
+   },
+   "everyDay": {
+      "description": "このリマインダーを毎日オフ",
+      "message": "毎日"
+   },
+   "exhortation": {
+      "description": "ユーザーは、彼らが私に話すことができること告げるテキスト",
+      "message": "コメント、フィードバックや議論のため。"
+   },
+   "extensionDescription": {
+      "description": "拡張機能の説明",
+      "message": "アナログ時計のツールバーは ！"
+   },
+   "extensionName": {
+      "description": "この拡張機能の名前",
+      "message": "Google のクロム ™ のための時計"
+   },
+   "formath": {
+      "description": "見出しの書式設定オプション",
+      "message": "フォーマット"
+   },
+   "gplus": {
+      "description": "G + に接続を提供します。",
+      "message": "この拡張機能 Google + 上に従ってください。"
+   },
+   "handColourCustom": {
+      "description": "カスタム カラーの手を説明するテキスト",
+      "message": "カスタム カラーの手"
+   },
+   "handColourDark": {
+      "description": "暗い手を説明するテキスト",
+      "message": "暗い手"
+   },
+   "handColourPale": {
+      "description": "薄い手を説明するテキスト",
+      "message": "薄い手"
+   },
+   "hourChime": {
+      "description": "時計が 1 時間ごとの音を立てるべきであることを示すためには、チェック ボックスのラベル",
+      "message": "時間のチャイム"
+   },
+   "hoverTextCustom": {
+      "description": "カスタムの日付の選択ボタンのラベル",
+      "message": "カスタム書式"
+   },
+   "infoTitle": {
+      "description": "情報のセクション ヘッダー",
+      "message": "情報"
+   },
+   "information": {
+      "description": "[オプション] ページの簡単な説明",
+      "message": "クロックの設定を変更します。"
+   },
+   "labelHandsColour": {
+      "description": "手の色のラベル",
+      "message": "手の色"
+   },
+   "labelHandsTrans": {
+      "description": "手の透明性のためのラベル",
+      "message": "手の透明性"
+   },
+   "lblAddNewAlarmHeading": {
+      "description": "新しいアラームの追加] セクションの見出し",
+      "message": "新しい通知を追加します。"
+   },
+   "lblAlarmLabel": {
+      "description": "新しいリマインダーのラベルのラベル",
+      "message": "ラベル"
+   },
+   "lblBadgeA": {
+      "description": "ラベル透明ピッカー バッジ背景デジタル時計のための",
+      "message": "デジタル時計の透明性"
+   },
+   "lblBadgePicker": {
+      "description": "色ピッカー バッジ背景デジタル時計のためのラベル",
+      "message": "デジタル時計の背景色"
+   },
+   "lblCategory": {
+      "description": "アラームのカテゴリ ラベル",
+      "message": "カテゴリ"
+   },
+   "lblFirstDayoftheWeek": {
+      "description": "ラベルの入力、週の最初の日",
+      "message": "週の最初の日"
+   },
+   "lblHelpSupportContact": {
+      "description": "[ヘルプ] タブの見出し",
+      "message": "ヘルプ、サポートお問い合わせ"
+   },
+   "lblListOfReminders": {
+      "description": "リマインダーの一覧の見出し",
+      "message": "スケジュールされたアラーム"
+   },
+   "lblMainAlarms": {
+      "description": "[通知] セクションの見出しラベル",
+      "message": "アラーム"
+   },
+   "lblNewAlarmHour": {
+      "description": "時間セレクター スライダーのラベル",
+      "message": "時間"
+   },
+   "lblNewAlarmMinute": {
+      "description": "分セレクター スライダーのラベル",
+      "message": "分"
+   },
+   "lblOffset": {
+      "description": "ラベルを追加または削除を実際の時間に入力",
+      "message": "タイム オフセットです。"
+   },
+   "lblRingLabel": {
+      "description": "新しいアラームのサウンドのドロップダウンのラベル",
+      "message": "サウンド"
+   },
+   "lblSelectedTime": {
+      "description": "現在選択されている時間のためのラベル",
+      "message": "時間"
+   },
+   "mainHoverTitle": {
+      "description": "ユーザーの優先日付形式のタイトル。",
+      "message": "日付の形式"
+   },
+   "minutes": {
+      "description": "分、5 分のように単語",
+      "message": "分"
+   },
+   "nextReminder": {
+      "description": "Dat 前にちょうど繰り返しアイコンのマウス オーバーで行くテキスト",
+      "message": "次のアラーム:"
+   },
+   "noReminders": {
+      "description": "アラームがないを示す",
+      "message": "アラーム セットがありません。"
+   },
+   "on": {
+      "description": "たとえば、このアラームをこの日付には",
+      "message": "上"
+   },
+   "optionsTitle": {
+      "description": "オプション ページに表示されるタイトル テキスト",
+      "message": "Google のクロム ™ のための時計"
+   },
+   "rdoFourDots": {
+      "description": "4 つのマーカー クロックのラベル",
+      "message": "4 つのドット"
+   },
+   "rdoNoDots": {
+      "description": "ラベルのため従来のクロックないマーカー",
+      "message": "ドットがないです。"
+   },
+   "rdoTwelveDots": {
+      "description": "12 マーカー時計用ラベル",
+      "message": "12 ドット"
+   },
+   "remindersh": {
+      "description": "アラームの設定を見出しオプション",
+      "message": "アラーム"
+   },
+   "repeatNewAlarm": {
+      "description": "繰り返しアラームのチェック ボックスのラベル",
+      "message": "繰り返す"
+   },
+   "showAnalogue": {
+      "description": "アナログ時計のチェック ボックスのラベル",
+      "message": "アナログ時計を表示します。"
+   },
+   "showDigital": {
+      "description": "デジタル時計のチェック ボックスのラベル",
+      "message": "デジタル時計を表示します。"
+   },
+   "silence": {
+      "description": "アラームには割り当てられたサウンドがないミュート アイコンにマウス オーバー テキスト",
+      "message": "音が出ない"
+   },
+   "twitter": {
+      "description": "Twitter での接続を提供します。",
+      "message": "この拡張機能をツイッターでフォローします。"
+   },
+   "webstore": {
+      "description": "Web ストアの接続を提供します。",
+      "message": "レポートのバグ、機能要求またはクロム Web ストアに関する質問"
+   }
+}

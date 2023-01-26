@@ -1,0 +1,310 @@
+{
+   "April": {
+      "description": "Kwietnia",
+      "message": "Kwietnia"
+   },
+   "August": {
+      "description": "Sierpnia",
+      "message": "Sierpnia"
+   },
+   "December": {
+      "description": "Grudnia",
+      "message": "Grudnia"
+   },
+   "February": {
+      "description": "Lutego",
+      "message": "Lutego"
+   },
+   "Friday": {
+      "description": "Piątek",
+      "message": "Piątek"
+   },
+   "January": {
+      "description": "Stycznia",
+      "message": "Stycznia"
+   },
+   "July": {
+      "description": "Lipca",
+      "message": "Lipca"
+   },
+   "June": {
+      "description": "Czerwca",
+      "message": "Czerwca"
+   },
+   "March": {
+      "description": "Marca",
+      "message": "Marca"
+   },
+   "May": {
+      "description": "Maj",
+      "message": "Maj"
+   },
+   "Monday": {
+      "description": "Poniedziałek",
+      "message": "Poniedziałek"
+   },
+   "November": {
+      "description": "Listopada",
+      "message": "Listopada"
+   },
+   "October": {
+      "description": "Października",
+      "message": "Października"
+   },
+   "Saturday": {
+      "description": "Sobota",
+      "message": "Sobota"
+   },
+   "September": {
+      "description": "Września",
+      "message": "Września"
+   },
+   "Sunday": {
+      "description": "Niedziela",
+      "message": "Niedziela"
+   },
+   "Thursday": {
+      "description": "Czwartek",
+      "message": "Czwartek"
+   },
+   "Tuesday": {
+      "description": "Wtorek",
+      "message": "Wtorek"
+   },
+   "Wednesday": {
+      "description": "Środa",
+      "message": "Środa"
+   },
+   "analogueTitle": {
+      "description": "Tytuł sekcji zegar analogowy",
+      "message": "Zegar analogowy"
+   },
+   "and": {
+      "description": "to przypomnienie, gaśnie w każdą sobotę i niedzielę",
+      "message": " i"
+   },
+   "appearanceTitle": {
+      "description": "Tytuł sekcji wygląd",
+      "message": "Wygląd"
+   },
+   "appearanceh": {
+      "description": "Opcje do ustawienia",
+      "message": "Wygląd"
+   },
+   "contacth": {
+      "description": "Opcje do ustawienia",
+      "message": "Pomoc"
+   },
+   "datePickerCustom": {
+      "description": "Etykieta Custom data",
+      "message": "Inne"
+   },
+   "datePickerToday": {
+      "description": "Etykiety na dziś",
+      "message": "Dzisiaj"
+   },
+   "datePickerTomorrow": {
+      "description": "Etykiety na jutro",
+      "message": "Jutro"
+   },
+   "delete": {
+      "description": "Tekstu MouseOver ikonę Usuń dla przypomnienia",
+      "message": "Usuń"
+   },
+   "deleteCheck": {
+      "description": "Pytanie do sprawdzenia, że użytkownik naprawdę chce usunąć przypomnienia",
+      "message": "Usuń przypomnienie?"
+   },
+   "digitalTitle": {
+      "description": "Nagłówek sekcji Opcje znaczek cyfrowy zegar",
+      "message": "Zegar cyfrowy"
+   },
+   "edit": {
+      "description": "Słowo do edycji, jak edytować ten alarm",
+      "message": "Edycja"
+   },
+   "every": {
+      "description": "to przypomnienie gaśnie w każdą niedzielę",
+      "message": " Każdy"
+   },
+   "everyDay": {
+      "description": "to przypomnienie gaśnie codziennie",
+      "message": " Codziennie"
+   },
+   "exhortation": {
+      "description": "Tekstu informującego, że można mówić do mnie",
+      "message": "Na komentarze, opinie i dyskusje:"
+   },
+   "extensionDescription": {
+      "description": "Opis rozszerzenia",
+      "message": "Zegar analogowy w pasku narzędzi!"
+   },
+   "extensionName": {
+      "description": "Nazwa to rozszerzenie",
+      "message": "Zegar dla Microsoft Edge ™"
+   },
+   "formath": {
+      "description": "Opcje do ustawienia formatu",
+      "message": "Format"
+   },
+   "gplus": {
+      "description": "Oferta na G +",
+      "message": "Za to rozszerzenie na Google +"
+   },
+   "handColourCustom": {
+      "description": "Tekst opisujący kolor personalny ręce",
+      "message": "Niestandardowy kolor wskazówek"
+   },
+   "handColourDark": {
+      "description": "Tekst opisujący ciemne ręce",
+      "message": "Ciemne wskazówki"
+   },
+   "handColourPale": {
+      "description": "Tekst opisujący blady ręce",
+      "message": "Jasne wskazówki"
+   },
+   "hourChime": {
+      "description": "Etykieta pole wyboru, aby wskazać, że zegar należy hałasować co godzinę",
+      "message": "Godziny gongu"
+   },
+   "hoverTextCustom": {
+      "description": "Etykieta przycisk wyboru daty niestandardowej",
+      "message": "Format niestandardowy"
+   },
+   "infoTitle": {
+      "description": "Nagłówek sekcji informacji",
+      "message": "Informacje"
+   },
+   "information": {
+      "description": "Krótki opis strony, opcje",
+      "message": "Użyj tej strona, aby zmienić ustawienia zegara."
+   },
+   "labelHandsColour": {
+      "description": "Etykiety na ręce kolor",
+      "message": "Ręce kolor"
+   },
+   "labelHandsTrans": {
+      "description": "Etykieta dla przejrzystości ręce",
+      "message": "Ręce przejrzystości"
+   },
+   "lblAddNewAlarmHeading": {
+      "description": "Do sekcji Dodaj nowe przypomnienie",
+      "message": "Dodaj nowe przypomnienie"
+   },
+   "lblAlarmLabel": {
+      "description": "Etykiety o nowe przypomnienie",
+      "message": "Etykiety "
+   },
+   "lblBadgeA": {
+      "description": "Etykieta dla przejrzystości próbnik na tle odznaka dla zegar cyfrowy",
+      "message": "Cyfrowy zegar przejrzystości"
+   },
+   "lblBadgePicker": {
+      "description": "Etykiety do wyboru kolor tła znaczek cyfrowy zegar",
+      "message": "Zegar cyfrowy na różowo"
+   },
+   "lblCategory": {
+      "description": "Etykiety kategorii przypomnienie",
+      "message": "Kategoria"
+   },
+   "lblFirstDayoftheWeek": {
+      "description": "Etykieta pierwszego dnia tygodnia, wejście",
+      "message": "Pierwszy dzień tygodnia"
+   },
+   "lblHelpSupportContact": {
+      "description": "Pozycji na karcie pomoc",
+      "message": "Pomoc, wsparcie i kontakt"
+   },
+   "lblListOfReminders": {
+      "description": "Pozycji listy przypominaczy",
+      "message": "Regularne przypomnienia"
+   },
+   "lblMainAlarms": {
+      "description": "Etykiety nagłówek sekcji przypomnienia",
+      "message": "Przypomnienia"
+   },
+   "lblNewAlarmHour": {
+      "description": "Etykiety na suwak wyboru godziny",
+      "message": "Godziny "
+   },
+   "lblNewAlarmMinute": {
+      "description": "Etykiety na suwak selektor minut",
+      "message": "Minut "
+   },
+   "lblOffset": {
+      "description": "Etykieta wejścia, który dodaje lub usuwa czas rzeczywisty czas",
+      "message": "Przesunięcie czasowe"
+   },
+   "lblRingLabel": {
+      "description": "Etykieta dla listy rozwijanej dźwięku na nowe przypomnienie",
+      "message": "Dźwięk "
+   },
+   "lblSelectedTime": {
+      "description": "Etykieta dla aktualnie wybranego czas",
+      "message": "Czas "
+   },
+   "mainHoverTitle": {
+      "description": "Użytkownik jest preferowana nazwa formatu daty.",
+      "message": "Format daty"
+   },
+   "minutes": {
+      "description": "Słowo na minut, tak jak w 5 minut",
+      "message": "minut"
+   },
+   "nextReminder": {
+      "description": "Tekst, który jedzie po prostu dat na mouseover ikonę powtarzania",
+      "message": "Kolejnego przypomnienia: "
+   },
+   "noReminders": {
+      "description": "Się podczas tu są nie przypomnienia",
+      "message": "Brak alarmy ustawione"
+   },
+   "on": {
+      "description": "Na przykład jest to przypomnienie tego dnia",
+      "message": " na "
+   },
+   "optionsTitle": {
+      "description": "Tytuł tekstu, który pojawia się na stronie Opcje",
+      "message": "Zegar dla Microsoft Edge ™"
+   },
+   "rdoFourDots": {
+      "description": "Etykieta dla czterech markerów zegar",
+      "message": "Cztery kropki"
+   },
+   "rdoNoDots": {
+      "description": "Etykiety dla tradycyjnych, bez znaczników zegar",
+      "message": "Bez kropek"
+   },
+   "rdoTwelveDots": {
+      "description": "Etykiety znaczników dwunastu zegar",
+      "message": "Dwanaście kropek"
+   },
+   "remindersh": {
+      "description": "Opcje do ustawienia przypomnienia",
+      "message": "Przypomnienia"
+   },
+   "repeatNewAlarm": {
+      "description": "Etykieta pola wyboru powtórzyć przypomnienie",
+      "message": "Powtórz"
+   },
+   "showAnalogue": {
+      "description": "Etykieta pole wyboru zegar analogowy",
+      "message": "Pokaż zegar analogowy"
+   },
+   "showDigital": {
+      "description": "Etykieta pole wyboru zegar cyfrowy",
+      "message": "Pokaż zegar cyfrowy"
+   },
+   "silence": {
+      "description": "Tekstu MouseOver ikonę wyciszenia po przypomnienie ma nie ma przypisanego dźwięku",
+      "message": "Nie ma dźwięku"
+   },
+   "twitter": {
+      "description": "Oferta na Twitter",
+      "message": "Po to rozszerzenie na Twitter"
+   },
+   "webstore": {
+      "description": "Oferta połączyć sie z magazynu sieci Web",
+      "message": "Raport błędów, funkcja wniosek lub zadać pytanie na Chrome Web Store"
+   }
+}

@@ -1,0 +1,310 @@
+{
+   "April": {
+      "description": "Квітень",
+      "message": "Квітень"
+   },
+   "August": {
+      "description": "Серпень",
+      "message": "Серпень"
+   },
+   "December": {
+      "description": "Грудень",
+      "message": "Грудень"
+   },
+   "February": {
+      "description": "Лютий",
+      "message": "Лютий"
+   },
+   "Friday": {
+      "description": "П'ятниця",
+      "message": "П'ятниця"
+   },
+   "January": {
+      "description": "Січень",
+      "message": "Січень"
+   },
+   "July": {
+      "description": "Липень",
+      "message": "Липень"
+   },
+   "June": {
+      "description": "Червень",
+      "message": "Червень"
+   },
+   "March": {
+      "description": "Березня",
+      "message": "Березня"
+   },
+   "May": {
+      "description": "Травень",
+      "message": "Травень"
+   },
+   "Monday": {
+      "description": "Понеділок",
+      "message": "Понеділок"
+   },
+   "November": {
+      "description": "Листопад",
+      "message": "Листопад"
+   },
+   "October": {
+      "description": "Жовтень",
+      "message": "Жовтень"
+   },
+   "Saturday": {
+      "description": "Субота",
+      "message": "Субота"
+   },
+   "September": {
+      "description": "Вересень",
+      "message": "Вересень"
+   },
+   "Sunday": {
+      "description": "Неділя",
+      "message": "Неділя"
+   },
+   "Thursday": {
+      "description": "Четвер",
+      "message": "Четвер"
+   },
+   "Tuesday": {
+      "description": "Вівторок",
+      "message": "Вівторок"
+   },
+   "Wednesday": {
+      "description": "Середа",
+      "message": "Середа"
+   },
+   "analogueTitle": {
+      "description": "Заголовок розділу Аналоговий годинник",
+      "message": "Аналоговий годинник"
+   },
+   "and": {
+      "description": "це нагадування вимикається кожної Суботи та неділі",
+      "message": " і"
+   },
+   "appearanceTitle": {
+      "description": "Назва розділі вигляд",
+      "message": "Зовнішній вигляд"
+   },
+   "appearanceh": {
+      "description": "Параметри заголовка для настройки оформлення",
+      "message": "Зовнішній вигляд"
+   },
+   "contacth": {
+      "description": "Параметри заголовка для контакту настройки",
+      "message": "Допомога"
+   },
+   "datePickerCustom": {
+      "description": "Етикетки для настроюваного Дата",
+      "message": "Інші"
+   },
+   "datePickerToday": {
+      "description": "Етикетки на сьогодні",
+      "message": "Сьогодні"
+   },
+   "datePickerTomorrow": {
+      "description": "Етикетки на завтра",
+      "message": "Завтра"
+   },
+   "delete": {
+      "description": "Текст наведіть курсор миші на значок \"Видалити\" для нагадувань",
+      "message": "Видалити"
+   },
+   "deleteCheck": {
+      "description": "Питання, щоб переконатися, що користувач дійсно хоче, щоб видалити нагадування",
+      "message": "Видалити нагадування?"
+   },
+   "digitalTitle": {
+      "description": "Заголовок для розділі Параметри знак цифровий годинник",
+      "message": "Цифровий годинник"
+   },
+   "edit": {
+      "description": "Word для редагування, як редагувати цей сигнал",
+      "message": "Редагувати"
+   },
+   "every": {
+      "description": "це нагадування вимикається кожної неділі",
+      "message": " Кожен"
+   },
+   "everyDay": {
+      "description": "це нагадування йде кожен день",
+      "message": " Щодня"
+   },
+   "exhortation": {
+      "description": "Текст, розповідаючи користувачів, що вони можуть говорити мені",
+      "message": "Коментарі, Відгуки та обговорення:"
+   },
+   "extensionDescription": {
+      "description": "Опис розширення",
+      "message": "Аналоговий годинник на панелі інструментів!"
+   },
+   "extensionName": {
+      "description": "Ім'я цього розширення",
+      "message": "Годинник для Microsoft Edge ™"
+   },
+   "formath": {
+      "description": "Параметри заголовка для настройки формату",
+      "message": "Формат"
+   },
+   "gplus": {
+      "description": "Запропонувати підключитися на G +",
+      "message": "Дотримуйтесь цього розширення на Google +"
+   },
+   "handColourCustom": {
+      "description": "Текст з описом вибірково колір руки",
+      "message": "Настроюваний колір руки"
+   },
+   "handColourDark": {
+      "description": "Текст з описом темно руки",
+      "message": "Темний руки"
+   },
+   "handColourPale": {
+      "description": "Текст з описом блідо руки",
+      "message": "Блідо руки"
+   },
+   "hourChime": {
+      "description": "Етикетки для прапорець, зазначаючи що годинник повинні шуміти кожну годину",
+      "message": "Реєстрації дзвін"
+   },
+   "hoverTextCustom": {
+      "description": "Етикетки для користувацьких дати виділення кнопки",
+      "message": "Користувацький формат"
+   },
+   "infoTitle": {
+      "description": "Відомості про заголовок розділу",
+      "message": "Інформація"
+   },
+   "information": {
+      "description": "Короткий опис параметрів сторінки",
+      "message": "Ця сторінка призначена для змінення параметрів на годинник."
+   },
+   "labelHandsColour": {
+      "description": "Етикетки для рук кольору",
+      "message": "Руки-кольору"
+   },
+   "labelHandsTrans": {
+      "description": "Етикетки для рук прозорості",
+      "message": "Руки прозорості"
+   },
+   "lblAddNewAlarmHeading": {
+      "description": "Заголовок для додавання нового нагадування розділу",
+      "message": "Додавання нового нагадування"
+   },
+   "lblAlarmLabel": {
+      "description": "Етикетки для підписів для нових нагадування",
+      "message": "Етикетки "
+   },
+   "lblBadgeA": {
+      "description": "Етикетки для прозорості вибору для пропуску фону для цифровий годинник",
+      "message": "Цифровий годинник прозорості"
+   },
+   "lblBadgePicker": {
+      "description": "Етикетки для колір Picker для пропуску фон для цифровий годинник",
+      "message": "Цифровий годинник фонового кольору"
+   },
+   "lblCategory": {
+      "description": "Етикетки для категорії нагадування",
+      "message": "Категорія"
+   },
+   "lblFirstDayoftheWeek": {
+      "description": "Етикетки на перший день тижня, введення",
+      "message": "Перший день тижня "
+   },
+   "lblHelpSupportContact": {
+      "description": "Заголовків за допомогою вкладки",
+      "message": "Допомога, підтримка та контакт"
+   },
+   "lblListOfReminders": {
+      "description": "Заголовок списку нагадувань",
+      "message": "Заплановані нагадування"
+   },
+   "lblMainAlarms": {
+      "description": "Заголовок мітку для розділу нагадувань",
+      "message": "Нагадування"
+   },
+   "lblNewAlarmHour": {
+      "description": "Етикетки для реєстрації селектор повзунок",
+      "message": "Реєстрації "
+   },
+   "lblNewAlarmMinute": {
+      "description": "Етикетки для хвилини селектор повзунок",
+      "message": "Хвилина "
+   },
+   "lblOffset": {
+      "description": "Етикетки для вводу, що додає або видаляє часу до фактичного часу",
+      "message": "Зсув часу"
+   },
+   "lblRingLabel": {
+      "description": "Етикетки для звуку розкривний список для нового оповіщення",
+      "message": "Звук "
+   },
+   "lblSelectedTime": {
+      "description": "Етикетки для наразі виділеного часу.",
+      "message": "Час "
+   },
+   "mainHoverTitle": {
+      "description": "Користувачем назва формат дати.",
+      "message": "Формат дати"
+   },
+   "minutes": {
+      "description": "Слово хвилин, і в 5 хвилин",
+      "message": "с."
+   },
+   "nextReminder": {
+      "description": "Текст, що відбувається просто перед на dat наведіть курсор миші на піктограму повторення",
+      "message": "Наступне оповіщення: "
+   },
+   "noReminders": {
+      "description": "Показано, коли немає нагадувань",
+      "message": "Існує не встановити нагадування"
+   },
+   "on": {
+      "description": "Наприклад, це нагадування — на цю дату",
+      "message": " на "
+   },
+   "optionsTitle": {
+      "description": "Текст назви, яка з'являється на сторінці посилань",
+      "message": "Годинник для Microsoft Edge ™"
+   },
+   "rdoFourDots": {
+      "description": "Етикетки для чотирьох маркери годинник",
+      "message": "Чотири точки"
+   },
+   "rdoNoDots": {
+      "description": "Етикетки для традиційних, без маркерів годинник",
+      "message": "Немає крапки"
+   },
+   "rdoTwelveDots": {
+      "description": "Етикетки для дванадцять маркери годинник",
+      "message": "Дванадцять крапки"
+   },
+   "remindersh": {
+      "description": "Параметри заголовка для установки нагадувань",
+      "message": "Нагадування"
+   },
+   "repeatNewAlarm": {
+      "description": "Етикетки для повторюваного нагадування прапорець",
+      "message": "Повторити"
+   },
+   "showAnalogue": {
+      "description": "Етикетки для прапорець Аналоговий годинник",
+      "message": "Відобразити аналог годинник"
+   },
+   "showDigital": {
+      "description": "Етикетки для прапорець цифровий годинник",
+      "message": "Показати цифрові годинник"
+   },
+   "silence": {
+      "description": "Текст наведіть курсор миші на mute значок, коли нагадування не має призначеного звуку",
+      "message": "Немає звуку"
+   },
+   "twitter": {
+      "description": "Пропозиція підключитися на Twitter",
+      "message": "Дотримуйтесь цього розширення на Twitter"
+   },
+   "webstore": {
+      "description": "Пропозиція підключитися з веб-магазину",
+      "message": "Повідомити про помилку, запит функції або задати питання про веб-магазин Chrome"
+   }
+}

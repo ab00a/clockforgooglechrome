@@ -1,0 +1,310 @@
+{
+   "April": {
+      "description": "Abril",
+      "message": "Abril"
+   },
+   "August": {
+      "description": "Agosto",
+      "message": "Agosto"
+   },
+   "December": {
+      "description": "Diciembre",
+      "message": "Diciembre"
+   },
+   "February": {
+      "description": "Febrero",
+      "message": "Febrero"
+   },
+   "Friday": {
+      "description": "Viernes",
+      "message": "Viernes"
+   },
+   "January": {
+      "description": "Enero",
+      "message": "Enero"
+   },
+   "July": {
+      "description": "Julio",
+      "message": "Julio"
+   },
+   "June": {
+      "description": "Junio",
+      "message": "Junio"
+   },
+   "March": {
+      "description": "Marzo",
+      "message": "Marzo"
+   },
+   "May": {
+      "description": "Mayo",
+      "message": "Mayo"
+   },
+   "Monday": {
+      "description": "Lunes",
+      "message": "Lunes"
+   },
+   "November": {
+      "description": "Noviembre",
+      "message": "Noviembre"
+   },
+   "October": {
+      "description": "Octubre",
+      "message": "Octubre"
+   },
+   "Saturday": {
+      "description": "Sábado",
+      "message": "Sábado"
+   },
+   "September": {
+      "description": "Septiembre",
+      "message": "Septiembre"
+   },
+   "Sunday": {
+      "description": "Domingo",
+      "message": "Domingo"
+   },
+   "Thursday": {
+      "description": "Jueves",
+      "message": "Jueves"
+   },
+   "Tuesday": {
+      "description": "Martes",
+      "message": "Martes"
+   },
+   "Wednesday": {
+      "description": "Miércoles",
+      "message": "Miércoles"
+   },
+   "analogueTitle": {
+      "description": "El título de la sección del reloj analógico",
+      "message": "Reloj analógico"
+   },
+   "and": {
+      "description": "Este recordatorio se sale cada el sábado y el domingo",
+      "message": " y"
+   },
+   "appearanceTitle": {
+      "description": "El título de la sección apariencia",
+      "message": "Aspecto"
+   },
+   "appearanceh": {
+      "description": "Opciones de partida para la configuración de apariencia",
+      "message": "Aspecto"
+   },
+   "contacth": {
+      "description": "Opciones de partida para la configuración del contacto",
+      "message": "Ayuda"
+   },
+   "datePickerCustom": {
+      "description": "Etiqueta para fecha de encargo",
+      "message": "Otros"
+   },
+   "datePickerToday": {
+      "description": "Etiqueta para hoy",
+      "message": "Hoy"
+   },
+   "datePickerTomorrow": {
+      "description": "Etiqueta para mañana",
+      "message": "Mañana"
+   },
+   "delete": {
+      "description": "Mouseover texto en el icono Eliminar para recordatorios",
+      "message": "Eliminar"
+   },
+   "deleteCheck": {
+      "description": "Pregunta para comprobar que el usuario realmente desea eliminar un recordatorio",
+      "message": "¿Eliminar el recordatorio?"
+   },
+   "digitalTitle": {
+      "description": "Encabezado de la sección de opciones de tarjeta de reloj digital",
+      "message": "Reloj digital"
+   },
+   "edit": {
+      "description": "La palabra para editar, en Editar esta alarma",
+      "message": "Editar"
+   },
+   "every": {
+      "description": "Este recordatorio se sale todos los domingos",
+      "message": " cada"
+   },
+   "everyDay": {
+      "description": "Este recordatorio se apaga cada día",
+      "message": " Todos los días"
+   },
+   "exhortation": {
+      "description": "Texto diciendo a los usuarios que pueden hablar a mí",
+      "message": "Para comentarios, retroalimentación y discusión:"
+   },
+   "extensionDescription": {
+      "description": "La descripción de la extensión",
+      "message": "Un reloj analógico en la barra de herramientas!"
+   },
+   "extensionName": {
+      "description": "El nombre de esta extensión",
+      "message": "Reloj para Microsoft Edge ™"
+   },
+   "formath": {
+      "description": "Opciones para la configuración del formato",
+      "message": "Formato"
+   },
+   "gplus": {
+      "description": "Oferta conectar en G +",
+      "message": "Siga esta extensión de Google +"
+   },
+   "handColourCustom": {
+      "description": "Texto que describe las manos de color personalizado",
+      "message": "Manos de color personalizado"
+   },
+   "handColourDark": {
+      "description": "Texto que describe las manos oscuras",
+      "message": "Manos oscuras"
+   },
+   "handColourPale": {
+      "description": "Texto que describe las manos pálidas",
+      "message": "Manos pálidas"
+   },
+   "hourChime": {
+      "description": "Etiqueta de la casilla de verificación indicar que el reloj debe hacer un ruido cada hora",
+      "message": "Timbre de hora"
+   },
+   "hoverTextCustom": {
+      "description": "Etiqueta para el botón de selección de fecha personalizada.",
+      "message": "Formato personalizado"
+   },
+   "infoTitle": {
+      "description": "Encabezado de la sección de información",
+      "message": "Información"
+   },
+   "information": {
+      "description": "Una breve descripción de la página de opciones",
+      "message": "Utilice esta página para cambiar la configuración del reloj."
+   },
+   "labelHandsColour": {
+      "description": "Etiqueta de color de las manos",
+      "message": "Color de las manos"
+   },
+   "labelHandsTrans": {
+      "description": "Etiqueta para la transparencia de las manos",
+      "message": "Transparencia de las manos"
+   },
+   "lblAddNewAlarmHeading": {
+      "description": "Título de la nueva sección de recordatorio agregar",
+      "message": "Agregar nuevo aviso"
+   },
+   "lblAlarmLabel": {
+      "description": "Etiqueta de la etiqueta de un recordatorio",
+      "message": "Etiqueta "
+   },
+   "lblBadgeA": {
+      "description": "Etiqueta del selector de transparencia para el fondo de la placa para el reloj digital",
+      "message": "Transparencia de reloj digital"
+   },
+   "lblBadgePicker": {
+      "description": "Etiqueta del selector de color para el fondo de la placa para el reloj digital",
+      "message": "Color de fondo de reloj digital"
+   },
+   "lblCategory": {
+      "description": "Etiqueta de la categoría de un recordatorio",
+      "message": "Categoría"
+   },
+   "lblFirstDayoftheWeek": {
+      "description": "Etiqueta para el primer día de la semana de la entrada",
+      "message": "Primer día de la semana "
+   },
+   "lblHelpSupportContact": {
+      "description": "Título de la ficha de ayuda",
+      "message": "Ayuda, soporte y contacto"
+   },
+   "lblListOfReminders": {
+      "description": "Encabezado de la lista de recordatorios",
+      "message": "Recordatorios programados"
+   },
+   "lblMainAlarms": {
+      "description": "Una etiqueta de encabezado de la sección de avisos",
+      "message": "Recordatorios"
+   },
+   "lblNewAlarmHour": {
+      "description": "Etiqueta para el control de selector de hora",
+      "message": "Hora "
+   },
+   "lblNewAlarmMinute": {
+      "description": "Etiqueta para el regulador del selector minuto",
+      "message": "Minuto "
+   },
+   "lblOffset": {
+      "description": "Etiqueta para la entrada que agrega o quita tiempo al tiempo actual",
+      "message": "Desplazamiento de tiempo"
+   },
+   "lblRingLabel": {
+      "description": "Etiqueta de la lista desplegable de sonido para un recordatorio",
+      "message": "Sonido "
+   },
+   "lblSelectedTime": {
+      "description": "Etiqueta para el tiempo seleccionado",
+      "message": "Tiempo "
+   },
+   "mainHoverTitle": {
+      "description": "Usuario preferida del título de formato de fecha.",
+      "message": "Formato de fecha"
+   },
+   "minutes": {
+      "description": "La palabra por minutos, como en 5 minutos",
+      "message": "minutos"
+   },
+   "nextReminder": {
+      "description": "Texto que va justo delante de la dat en el mouseover del símbolo de repetición",
+      "message": "Recordatorio siguiente: "
+   },
+   "noReminders": {
+      "description": "Se muestra cuando no hay ningún recordatorio",
+      "message": "No hay ningún conjunto de recordatorios"
+   },
+   "on": {
+      "description": "Por ejemplo, este aviso es en esta fecha",
+      "message": " en "
+   },
+   "optionsTitle": {
+      "description": "El texto de título que aparece en la página de opciones",
+      "message": "Reloj para Microsoft Edge ™"
+   },
+   "rdoFourDots": {
+      "description": "Etiqueta para el reloj de cuatro marcadores",
+      "message": "Cuatro puntos"
+   },
+   "rdoNoDots": {
+      "description": "Etiqueta para tradicional, ningún marcador de reloj",
+      "message": "No hay puntos"
+   },
+   "rdoTwelveDots": {
+      "description": "Etiqueta para reloj de doce marcadores",
+      "message": "Doce puntos"
+   },
+   "remindersh": {
+      "description": "Opciones de partida para la configuración de recordatorios",
+      "message": "Recordatorios"
+   },
+   "repeatNewAlarm": {
+      "description": "Etiqueta de la casilla recordatorio de repetición",
+      "message": "Repita"
+   },
+   "showAnalogue": {
+      "description": "Etiqueta de la casilla de verificación de reloj analógico",
+      "message": "Mostrar el reloj analógico"
+   },
+   "showDigital": {
+      "description": "Etiqueta de la casilla de verificación del reloj digital",
+      "message": "Mostrar el reloj Digital"
+   },
+   "silence": {
+      "description": "Texto de mouseover en icono mute cuando recordatorio no tiene ningún sonido asignado",
+      "message": "No hay sonido"
+   },
+   "twitter": {
+      "description": "Oferta para conectar en Twitter",
+      "message": "Siga esta extensión en Twitter"
+   },
+   "webstore": {
+      "description": "Oferta para conectar en la tienda Web",
+      "message": "Reportar un bug, petición de función o una pregunta en la tienda Web de Chrome"
+   }
+}
