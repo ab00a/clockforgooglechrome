@@ -1,0 +1,310 @@
+{
+   "April": {
+      "description": "Aprīlis",
+      "message": "Aprīlis"
+   },
+   "August": {
+      "description": "Augusts",
+      "message": "Augusts"
+   },
+   "December": {
+      "description": "Decembris",
+      "message": "Decembris"
+   },
+   "February": {
+      "description": "Februāris",
+      "message": "Februāris"
+   },
+   "Friday": {
+      "description": "Piektdiena",
+      "message": "Piektdiena"
+   },
+   "January": {
+      "description": "Janvāris",
+      "message": "Janvāris"
+   },
+   "July": {
+      "description": "Jūlija",
+      "message": "Jūlija"
+   },
+   "June": {
+      "description": "Jūnijs",
+      "message": "Jūnijs"
+   },
+   "March": {
+      "description": "Marts",
+      "message": "Marts"
+   },
+   "May": {
+      "description": "Maijs",
+      "message": "Maijs"
+   },
+   "Monday": {
+      "description": "Pirmdiena",
+      "message": "Pirmdiena"
+   },
+   "November": {
+      "description": "Novembris",
+      "message": "Novembris"
+   },
+   "October": {
+      "description": "Oktobris",
+      "message": "Oktobris"
+   },
+   "Saturday": {
+      "description": "Sestdiena",
+      "message": "Sestdiena"
+   },
+   "September": {
+      "description": "Septembris",
+      "message": "Septembris"
+   },
+   "Sunday": {
+      "description": "Svētdiena",
+      "message": "Svētdiena"
+   },
+   "Thursday": {
+      "description": "Ceturtdiena",
+      "message": "Ceturtdiena"
+   },
+   "Tuesday": {
+      "description": "Otrdiena",
+      "message": "Otrdiena"
+   },
+   "Wednesday": {
+      "description": "Trešdiena",
+      "message": "Trešdiena"
+   },
+   "analogueTitle": {
+      "description": "Analogais pulkstenis iedaļas virsrakstu",
+      "message": "Analogais pulkstenis"
+   },
+   "and": {
+      "description": "Šis atgādinājums dodas katru sestdienu un svētdienu",
+      "message": " un"
+   },
+   "appearanceTitle": {
+      "description": "Virsraksts sadaļā izskats",
+      "message": "Izskats"
+   },
+   "appearanceh": {
+      "description": "Opcijas, kas dodas uz attēlojuma uzstādījumi",
+      "message": "Izskats"
+   },
+   "contacth": {
+      "description": "Devās uz kontaktpersonu iestatījumu opcijas",
+      "message": "palīgā"
+   },
+   "datePickerCustom": {
+      "description": "Etiķetes, lai pielāgotu datumu",
+      "message": "Citi"
+   },
+   "datePickerToday": {
+      "description": "Šodien etiķeti",
+      "message": "Šodien"
+   },
+   "datePickerTomorrow": {
+      "description": "Uzlīme uz rītdienu",
+      "message": "Rīt"
+   },
+   "delete": {
+      "description": "Mouseover teksta dzēšanas ikonas, piemēram, atgādinājumi",
+      "message": "Dzēst"
+   },
+   "deleteCheck": {
+      "description": "Jautājumu, lai pārliecinātos, vai lietotājs tiešām vēlas dzēst atgādinājums",
+      "message": "Dzēst atgādinājumu?"
+   },
+   "digitalTitle": {
+      "description": "Elektroniskais pulkstenis žetons opcijas sadaļā virsrakstu",
+      "message": "Elektroniskā pulksteņa attēlojumu"
+   },
+   "edit": {
+      "description": "Vārds rediģēt, kā mainīt šo brīdinājumu",
+      "message": "Rediģēt"
+   },
+   "every": {
+      "description": "šo atgādinājumu katru svētdienu nodziest",
+      "message": " katru"
+   },
+   "everyDay": {
+      "description": "šo atgādinājumu katru dienu nodziest",
+      "message": " katru dienu"
+   },
+   "exhortation": {
+      "description": "Tekstā stāsta lietotājiem, viņi var runāt ar mani",
+      "message": "Komentāri, atsauksmes un diskusijas:"
+   },
+   "extensionDescription": {
+      "description": "Paplašinājums apraksts",
+      "message": "Rīkjoslā analogo pulksteni!"
+   },
+   "extensionName": {
+      "description": "Šī paplašinājuma nosaukums",
+      "message": "Microsoft Edge ™ pulkstenis"
+   },
+   "formath": {
+      "description": "Pozīcijā formāta iestatījumu opcijas",
+      "message": "Formāts"
+   },
+   "gplus": {
+      "description": "Piedāvā izveidot savienojumu ar G +",
+      "message": "Izpildiet šo pagarinājumu uz Google +"
+   },
+   "handColourCustom": {
+      "description": "Tekstu, kas apraksta pielāgotu krāsas rokas",
+      "message": "Pielāgotas krāsas rokas"
+   },
+   "handColourDark": {
+      "description": "Tekstu, kas apraksta tumši rokas",
+      "message": "Tumši rokas"
+   },
+   "handColourPale": {
+      "description": "Tekstu, kas apraksta bālās rokas",
+      "message": "Bālās rokas"
+   },
+   "hourChime": {
+      "description": "Izvēles rūtiņu, lai norādītu, ka pulkstenis būtu troksni ik stundu etiķeti",
+      "message": "Stundu Chime"
+   },
+   "hoverTextCustom": {
+      "description": "Pielāgotu datuma izvēles pogas etiķeti",
+      "message": "Pielāgots formāts"
+   },
+   "infoTitle": {
+      "description": "Informāciju sadaļas galvenē",
+      "message": "Informācija"
+   },
+   "information": {
+      "description": "Īss apraksts par lapas opcijas",
+      "message": "Izmantojiet šo lapu, lai mainītu pulksteņa iestatījumus."
+   },
+   "labelHandsColour": {
+      "description": "Rokas krāsas etiķeti",
+      "message": "Rokas krāsa"
+   },
+   "labelHandsTrans": {
+      "description": "Rokas pārredzamības etiķeti",
+      "message": "Rokas pārredzamība"
+   },
+   "lblAddNewAlarmHeading": {
+      "description": "Sadaļas Pievienot jaunu atgādinājuma virsraksts",
+      "message": "Pievienot jaunu atgādinājumu"
+   },
+   "lblAlarmLabel": {
+      "description": "Jaunu atgādinājumu etiķete etiķeti",
+      "message": "Etiķete "
+   },
+   "lblBadgeA": {
+      "description": "Etiķetes pārredzamības Picker žetona fons elektroniskais pulkstenis",
+      "message": "Digitālais pulkstenis pārredzamība"
+   },
+   "lblBadgePicker": {
+      "description": "Etiķetes krāsa Picker žetona fons elektroniskais pulkstenis",
+      "message": "Elektroniskā pulksteņa fona krāsu"
+   },
+   "lblCategory": {
+      "description": "Atgādinājums kategoriju etiķetes",
+      "message": "Kategorija"
+   },
+   "lblFirstDayoftheWeek": {
+      "description": "Label input nedēļas pirmo dienu",
+      "message": "Nedēļas pirmo dienu "
+   },
+   "lblHelpSupportContact": {
+      "description": "Devās uz palīdzības cilnes",
+      "message": "Palīdzību, atbalstu un kontaktu"
+   },
+   "lblListOfReminders": {
+      "description": "Pozīciju sarakstu, atgādinājumiem",
+      "message": "Plānotais atgādinājumus"
+   },
+   "lblMainAlarms": {
+      "description": "Pozīcijā etiķeti sadaļas atgādinājumus",
+      "message": "Atgādinājumus"
+   },
+   "lblNewAlarmHour": {
+      "description": "Stundu selektors slīdni iezīme",
+      "message": "Stunda "
+   },
+   "lblNewAlarmMinute": {
+      "description": "Minūtē selektors slīdni iezīme",
+      "message": "Minūte "
+   },
+   "lblOffset": {
+      "description": "Ievadi, ko pievieno vai noņem laikā faktiskā laika apzīmējums",
+      "message": "Laika nobīdei"
+   },
+   "lblRingLabel": {
+      "description": "Etiķete jauno atgādinājuma skaņas nolaižamā saraksta",
+      "message": "Skaņas "
+   },
+   "lblSelectedTime": {
+      "description": "Pašlaik atlasītā laika apzīmējums",
+      "message": "Laiks "
+   },
+   "mainHoverTitle": {
+      "description": "Lietotāja vēlamo datumu formātu sadaļā.",
+      "message": "Datuma formāts"
+   },
+   "minutes": {
+      "description": "Minūtes, 5 minūtes kā word",
+      "message": "minūtes"
+   },
+   "nextReminder": {
+      "description": "Tekstu, kas notiek tieši pirms dat mouseover atkārtot ikonas",
+      "message": "Nākamais atgādinājums: "
+   },
+   "noReminders": {
+      "description": "Parādīts, kad nav atgādinājumu",
+      "message": "Nav iestatīts atgādinājumi ir"
+   },
+   "on": {
+      "description": "Piemēram, šis atgādinājums ir šajā datumā",
+      "message": " par "
+   },
+   "optionsTitle": {
+      "description": "Virsraksta teksts, kas parādās lapā opcijas",
+      "message": "Microsoft Edge ™ pulkstenis"
+   },
+   "rdoFourDots": {
+      "description": "Iezīme četri marķieri pulksteni",
+      "message": "Četri punkti"
+   },
+   "rdoNoDots": {
+      "description": "Uzlīmes uz tradicionālo, bez marķieriem pulksteni",
+      "message": "Nav punkti"
+   },
+   "rdoTwelveDots": {
+      "description": "Pulkstenis divpadsmit atzīmes etiķeti",
+      "message": "Divpadsmit punkti"
+   },
+   "remindersh": {
+      "description": "Devās uz atgādinājumu iestatījumus opcijām",
+      "message": "Atgādinājumus"
+   },
+   "repeatNewAlarm": {
+      "description": "Etiķetes atkārtota atgādinājuma izvēles rūtiņa",
+      "message": "Atkārtojiet"
+   },
+   "showAnalogue": {
+      "description": "Analogais pulkstenis izvēles rūtiņu etiķete",
+      "message": "Parāda analogo pulksteni"
+   },
+   "showDigital": {
+      "description": "Elektroniskais pulkstenis izvēles rūtiņu etiķete",
+      "message": "Rādīt Digital Clock"
+   },
+   "silence": {
+      "description": "Izslēgtā mikrofona ikona, kad atgādinājums ir piešķirts bez skaņas mouseover tekstu",
+      "message": "Nav skaņas"
+   },
+   "twitter": {
+      "description": "Piedāvājam pieslēgties čivināt",
+      "message": "Sekojiet par čivināt Šis pagarinājums"
+   },
+   "webstore": {
+      "description": "Piedāvā izveidot savienojumu ar interneta veikalu",
+      "message": "Ziņot par kļūdu, līdzeklis pieprasījuma vai uzdot jautājumu par Chrome interneta veikalā"
+   }
+}

@@ -1,0 +1,310 @@
+{
+   "April": {
+      "description": "Апрель",
+      "message": "Апрель"
+   },
+   "August": {
+      "description": "Август",
+      "message": "Август"
+   },
+   "December": {
+      "description": "Декабрь",
+      "message": "Декабрь"
+   },
+   "February": {
+      "description": "Февраль",
+      "message": "Февраль"
+   },
+   "Friday": {
+      "description": "Пятница",
+      "message": "Пятница"
+   },
+   "January": {
+      "description": "Январь",
+      "message": "Январь"
+   },
+   "July": {
+      "description": "Июль",
+      "message": "Июль"
+   },
+   "June": {
+      "description": "Июнь",
+      "message": "Июнь"
+   },
+   "March": {
+      "description": "Март",
+      "message": "Март"
+   },
+   "May": {
+      "description": "Мая",
+      "message": "Мая"
+   },
+   "Monday": {
+      "description": "Понедельник",
+      "message": "Понедельник"
+   },
+   "November": {
+      "description": "Ноябрь",
+      "message": "Ноябрь"
+   },
+   "October": {
+      "description": "Октябрь",
+      "message": "Октябрь"
+   },
+   "Saturday": {
+      "description": "Суббота",
+      "message": "Суббота"
+   },
+   "September": {
+      "description": "Сентябрь",
+      "message": "Сентябрь"
+   },
+   "Sunday": {
+      "description": "Воскресенье",
+      "message": "Воскресенье"
+   },
+   "Thursday": {
+      "description": "Четверг",
+      "message": "Четверг"
+   },
+   "Tuesday": {
+      "description": "Вторник",
+      "message": "Вторник"
+   },
+   "Wednesday": {
+      "description": "Среда",
+      "message": "Среда"
+   },
+   "analogueTitle": {
+      "description": "Заголовок раздела, аналоговые часы",
+      "message": "Аналоговые часы"
+   },
+   "and": {
+      "description": "Это напоминание выключается каждую субботу и воскресенье",
+      "message": " и"
+   },
+   "appearanceTitle": {
+      "description": "Название раздела внешний вид",
+      "message": "Внешний вид"
+   },
+   "appearanceh": {
+      "description": "Варианты заголовка для настройки внешнего вида",
+      "message": "Внешний вид"
+   },
+   "contacth": {
+      "description": "Варианты заголовка для параметры контактов",
+      "message": "Справка"
+   },
+   "datePickerCustom": {
+      "description": "Этикетка для пользовательских даты",
+      "message": "Другие"
+   },
+   "datePickerToday": {
+      "description": "Этикетка на сегодня",
+      "message": "Сегодня"
+   },
+   "datePickerTomorrow": {
+      "description": "Этикетка на завтра",
+      "message": "Завтра"
+   },
+   "delete": {
+      "description": "Текст наведении курсора мыши на значок «Удалить» для напоминаний",
+      "message": "Удалить"
+   },
+   "deleteCheck": {
+      "description": "Вопрос, чтобы убедиться, что пользователь действительно хочет удалить напоминание",
+      "message": "Удалить напоминание?"
+   },
+   "digitalTitle": {
+      "description": "Заголовок для секции опции значок цифровые часы",
+      "message": "Цифровые часы"
+   },
+   "edit": {
+      "description": "Слово для редактирования, как редактировать Эта тревога",
+      "message": "Редактировать"
+   },
+   "every": {
+      "description": "Это напоминание погасла каждое воскресенье",
+      "message": " Каждый"
+   },
+   "everyDay": {
+      "description": "Это напоминание погасла каждый день",
+      "message": " Каждый день"
+   },
+   "exhortation": {
+      "description": "Текст сообщить пользователям, что они могут поговорить со мной",
+      "message": "Для комментариев, отзывов и обсуждения:"
+   },
+   "extensionDescription": {
+      "description": "Описание расширения",
+      "message": "Аналоговые часы в панели инструментов!"
+   },
+   "extensionName": {
+      "description": "Имя этого расширения",
+      "message": "Часы для Microsoft Edge ™"
+   },
+   "formath": {
+      "description": "Варианты заголовка для настройки формата",
+      "message": "Формат"
+   },
+   "gplus": {
+      "description": "Предложение подключиться на G +",
+      "message": "Выполните это продление на Google +"
+   },
+   "handColourCustom": {
+      "description": "Текст, описывающий пользовательский цвет руки",
+      "message": "Пользовательский цвет стрелок"
+   },
+   "handColourDark": {
+      "description": "Текст, описывающий темные руки",
+      "message": "Темные стрелки"
+   },
+   "handColourPale": {
+      "description": "Текст, описывающий бледно руки",
+      "message": "Бледные стрелки"
+   },
+   "hourChime": {
+      "description": "Этикетка для флажок, чтобы указать, что часы должны сделать шум каждый час",
+      "message": "Час куранты"
+   },
+   "hoverTextCustom": {
+      "description": "Подпись для кнопки выбора даты",
+      "message": "Пользовательский формат"
+   },
+   "infoTitle": {
+      "description": "Заголовок раздела информация",
+      "message": "Информация"
+   },
+   "information": {
+      "description": "Краткое описание параметров страницы",
+      "message": "Эта страница служит для изменения параметров на часах."
+   },
+   "labelHandsColour": {
+      "description": "Этикетка для руки цвет",
+      "message": "Цвет стрелок"
+   },
+   "labelHandsTrans": {
+      "description": "Этикетка для руки прозрачности",
+      "message": "Прозрачность стрелок"
+   },
+   "lblAddNewAlarmHeading": {
+      "description": "Заголовок для добавления новой секции напоминание",
+      "message": "Добавить новое напоминание"
+   },
+   "lblAlarmLabel": {
+      "description": "Этикетка для метки для нового напоминание",
+      "message": "Этикетка "
+   },
+   "lblBadgeA": {
+      "description": "Этикетка для выбора прозрачности для пропуска фон для цифровых часов",
+      "message": "Прозрачность"
+   },
+   "lblBadgePicker": {
+      "description": "Этикетка для выбора цвета для фона пропуска для цифровых часов",
+      "message": "Цвет фона"
+   },
+   "lblCategory": {
+      "description": "Этикетка для категории напоминание",
+      "message": "Категория"
+   },
+   "lblFirstDayoftheWeek": {
+      "description": "Этикетка для первый день недели ввода",
+      "message": "Первый день недели "
+   },
+   "lblHelpSupportContact": {
+      "description": "Заголовок для вкладку Справка",
+      "message": "Помощь, поддержка и контакт"
+   },
+   "lblListOfReminders": {
+      "description": "Заголовок для перечня напоминаний",
+      "message": "Регулярные напоминания"
+   },
+   "lblMainAlarms": {
+      "description": "Метка заголовка для секции напоминания",
+      "message": "Напоминания"
+   },
+   "lblNewAlarmHour": {
+      "description": "Этикетка для час переключатель",
+      "message": "Час "
+   },
+   "lblNewAlarmMinute": {
+      "description": "Этикетка для минутного переключатель",
+      "message": "Минута "
+   },
+   "lblOffset": {
+      "description": "Надпись для ввода, который добавляет или удаляет фактическое время",
+      "message": "Смещение времени"
+   },
+   "lblRingLabel": {
+      "description": "Этикетка для звука dropdown для новой памятки",
+      "message": "Звук "
+   },
+   "lblSelectedTime": {
+      "description": "Этикетка для текущего выбранного времени",
+      "message": "Время "
+   },
+   "mainHoverTitle": {
+      "description": "Пользователь предпочтительный название формата даты.",
+      "message": "Формат даты"
+   },
+   "minutes": {
+      "description": "Слово для минут, как и в 5 минут",
+      "message": "минут"
+   },
+   "nextReminder": {
+      "description": "Текст, который идет перед dat на mouseover значок повтора",
+      "message": "Следующее напоминание: "
+   },
+   "noReminders": {
+      "description": "Когда существует без напоминаний",
+      "message": "Нет напоминаний"
+   },
+   "on": {
+      "description": "Например это напоминание находится на эту дату",
+      "message": " на "
+   },
+   "optionsTitle": {
+      "description": "Текст заголовка, который отображается на странице Параметры",
+      "message": "Часы для Microsoft Edge ™"
+   },
+   "rdoFourDots": {
+      "description": "Этикетка для четырех маркеры будильник",
+      "message": "Четыре точки"
+   },
+   "rdoNoDots": {
+      "description": "Этикетка для традиционных, часы не маркеры",
+      "message": "Без точек"
+   },
+   "rdoTwelveDots": {
+      "description": "Этикетка для часов двенадцать маркеров",
+      "message": "Двенадцать точек"
+   },
+   "remindersh": {
+      "description": "Варианты заголовка для настройки напоминания",
+      "message": "Напоминания"
+   },
+   "repeatNewAlarm": {
+      "description": "Этикетка для повторять напоминание флажок",
+      "message": "Повторить"
+   },
+   "showAnalogue": {
+      "description": "Этикетка для флажка аналоговые часы",
+      "message": "Показать аналоговые часы"
+   },
+   "showDigital": {
+      "description": "Этикетка для флажка цифровые часы",
+      "message": "Показать цифровые часы"
+   },
+   "silence": {
+      "description": "Наведении текст на mute икона когда напоминание не имеет назначенного прочной",
+      "message": "Отсутствует звук"
+   },
+   "twitter": {
+      "description": "Предложение для подключения на Twitter",
+      "message": "Выполните это расширение по щебетать"
+   },
+   "webstore": {
+      "description": "Предложение для подключения в Интернет-магазине",
+      "message": "Отчет ошибка, запрос на добавление функций или задать вопрос на Интернет-магазин Chrome"
+   }
+}

@@ -1,0 +1,310 @@
+{
+   "April": {
+      "description": "April",
+      "message": "April"
+   },
+   "August": {
+      "description": "Agustus",
+      "message": "Agustus"
+   },
+   "December": {
+      "description": "Desember",
+      "message": "Desember"
+   },
+   "February": {
+      "description": "Februari",
+      "message": "Februari"
+   },
+   "Friday": {
+      "description": "Jumat",
+      "message": "Jumat"
+   },
+   "January": {
+      "description": "Januari",
+      "message": "Januari"
+   },
+   "July": {
+      "description": "Juli",
+      "message": "Juli"
+   },
+   "June": {
+      "description": "Juni",
+      "message": "Juni"
+   },
+   "March": {
+      "description": "Maret",
+      "message": "Maret"
+   },
+   "May": {
+      "description": "Mei",
+      "message": "Mei"
+   },
+   "Monday": {
+      "description": "Senin",
+      "message": "Senin"
+   },
+   "November": {
+      "description": "November",
+      "message": "November"
+   },
+   "October": {
+      "description": "Oktober",
+      "message": "Oktober"
+   },
+   "Saturday": {
+      "description": "Sabtu",
+      "message": "Sabtu"
+   },
+   "September": {
+      "description": "September",
+      "message": "September"
+   },
+   "Sunday": {
+      "description": "Minggu",
+      "message": "Minggu"
+   },
+   "Thursday": {
+      "description": "Kamis",
+      "message": "Kamis"
+   },
+   "Tuesday": {
+      "description": "Selasa",
+      "message": "Selasa"
+   },
+   "Wednesday": {
+      "description": "Rabu",
+      "message": "Rabu"
+   },
+   "analogueTitle": {
+      "description": "Judul bagian analog jam.",
+      "message": "Jam analog"
+   },
+   "and": {
+      "description": "pengingat ini berbunyi setiap Sabtu dan minggu",
+      "message": " dan"
+   },
+   "appearanceTitle": {
+      "description": "Judul Bagian tampilan",
+      "message": "Penampilan"
+   },
+   "appearanceh": {
+      "description": "Opsi menuju setelan penampakan",
+      "message": "Penampilan"
+   },
+   "contacth": {
+      "description": "Opsi menuju pengaturan kontak",
+      "message": "Tolong"
+   },
+   "datePickerCustom": {
+      "description": "Label untuk tanggal kustom",
+      "message": "Lainnya"
+   },
+   "datePickerToday": {
+      "description": "Label untuk hari ini",
+      "message": "Hari ini"
+   },
+   "datePickerTomorrow": {
+      "description": "Label untuk besok",
+      "message": "Besok"
+   },
+   "delete": {
+      "description": "Gunaka mouse di atas teks pada menghapus ikon untuk pengingat",
+      "message": "Hapus"
+   },
+   "deleteCheck": {
+      "description": "Pertanyaan untuk memverifikasi bahwa pengguna benar-benar ingin menghapus pengingat",
+      "message": "Menghapus pengingat?"
+   },
+   "digitalTitle": {
+      "description": "Menuju bagian pilihan lencana jam digital",
+      "message": "Jam digital"
+   },
+   "edit": {
+      "description": "Kata untuk mengedit, seperti dalam mengedit alarm ini",
+      "message": "Edit"
+   },
+   "every": {
+      "description": "pengingat ini berbunyi setiap minggu",
+      "message": " setiap"
+   },
+   "everyDay": {
+      "description": "pengingat ini berbunyi setiap hari",
+      "message": " Setiap hari"
+   },
+   "exhortation": {
+      "description": "Teks yang memberitahu pengguna bahwa mereka dapat berbicara dengan saya",
+      "message": "Untuk komentar, umpan balik dan diskusi:"
+   },
+   "extensionDescription": {
+      "description": "Deskripsi ekstensi",
+      "message": "Jam analog di toolbar!"
+   },
+   "extensionName": {
+      "description": "Nama ekstensi ini",
+      "message": "Jam untuk Microsoft Edge ™"
+   },
+   "formath": {
+      "description": "Opsi menuju pengaturan format",
+      "message": "Format"
+   },
+   "gplus": {
+      "description": "Menawarkan untuk terhubung di G +",
+      "message": "Ikuti ekstensi ini di Google +"
+   },
+   "handColourCustom": {
+      "description": "Teks yang menggambarkan warna kustom tangan",
+      "message": "Tangan warna kustom"
+   },
+   "handColourDark": {
+      "description": "Teks yang menggambarkan tangan gelap",
+      "message": "Gelap tangan"
+   },
+   "handColourPale": {
+      "description": "Teks yang menggambarkan tangan pucat",
+      "message": "Tangan pucat"
+   },
+   "hourChime": {
+      "description": "Label untuk kotak centang untuk menunjukkan bahwa jam harus membuat kebisingan setiap jam",
+      "message": "Jam menyela"
+   },
+   "hoverTextCustom": {
+      "description": "Label untuk tanggal kustom pilihan tombol",
+      "message": "Custom Format"
+   },
+   "infoTitle": {
+      "description": "Informasi kop seksi",
+      "message": "Informasi"
+   },
+   "information": {
+      "description": "Deskripsi singkat tentang halaman pilihan",
+      "message": "Gunakan Halaman ini untuk mengubah pengaturan pada jam."
+   },
+   "labelHandsColour": {
+      "description": "Label untuk tangan warna",
+      "message": "Tangan warna"
+   },
+   "labelHandsTrans": {
+      "description": "Label untuk tangan transparansi",
+      "message": "Tangan transparansi"
+   },
+   "lblAddNewAlarmHeading": {
+      "description": "Menuju bagian pengingat Tambah baru",
+      "message": "Menambahkan pengingat baru"
+   },
+   "lblAlarmLabel": {
+      "description": "Label untuk label untuk pengingat baru",
+      "message": "Label "
+   },
+   "lblBadgeA": {
+      "description": "Label untuk transparansi Picker untuk latar belakang lencana untuk jam digital",
+      "message": "Digital Clock transparansi"
+   },
+   "lblBadgePicker": {
+      "description": "Label untuk warna pemetik untuk latar belakang lencana untuk jam digital",
+      "message": "Warna latar belakang jam digital"
+   },
+   "lblCategory": {
+      "description": "Label untuk kategori pengingat",
+      "message": "Kategori"
+   },
+   "lblFirstDayoftheWeek": {
+      "description": "Label untuk hari pertama minggu masukan",
+      "message": "Hari pertama minggu "
+   },
+   "lblHelpSupportContact": {
+      "description": "Judul untuk tab Bantuan",
+      "message": "Bantuan, dukungan, dan kontak"
+   },
+   "lblListOfReminders": {
+      "description": "Menuju daftar pengingat",
+      "message": "Pengingat terjadwal"
+   },
+   "lblMainAlarms": {
+      "description": "Judul label untuk bagian pengingat",
+      "message": "Pengingat"
+   },
+   "lblNewAlarmHour": {
+      "description": "Label untuk jam pemilih slider",
+      "message": "Jam "
+   },
+   "lblNewAlarmMinute": {
+      "description": "Label untuk slider pemilih menit",
+      "message": "Menit "
+   },
+   "lblOffset": {
+      "description": "Label untuk masukan yang menambahkan atau menghapus waktu ke waktu aktual",
+      "message": "Waktu Offset"
+   },
+   "lblRingLabel": {
+      "description": "Label untuk dropdown suara untuk pengingat baru",
+      "message": "Suara "
+   },
+   "lblSelectedTime": {
+      "description": "Label untuk waktu yang saat ini dipilih",
+      "message": "Waktu "
+   },
+   "mainHoverTitle": {
+      "description": "Pengguna pilihan judul format tanggal.",
+      "message": "Format tanggal"
+   },
+   "minutes": {
+      "description": "Kata untuk menit, seperti dalam 5 menit",
+      "message": "menit"
+   },
+   "nextReminder": {
+      "description": "Teks yang terjadi tepat di depan dat Gunaka ikon pengulangan",
+      "message": "Pengingat berikutnya: "
+   },
+   "noReminders": {
+      "description": "Ditampilkan bila ada tidak ada pengingat",
+      "message": "Ada tidak ada pengingat diatur"
+   },
+   "on": {
+      "description": "Misalnya, pengingat ini adalah pada tanggal ini",
+      "message": " pada "
+   },
+   "optionsTitle": {
+      "description": "Teks judul yang muncul di halaman pilihan",
+      "message": "Jam untuk Microsoft Edge ™"
+   },
+   "rdoFourDots": {
+      "description": "Label untuk penanda empat jam",
+      "message": "Empat titik"
+   },
+   "rdoNoDots": {
+      "description": "Label untuk tradisional, tidak ada penanda clock",
+      "message": "Titik-titik tidak"
+   },
+   "rdoTwelveDots": {
+      "description": "Label untuk tanda-tanda dua belas jam",
+      "message": "Titik-titik dua belas"
+   },
+   "remindersh": {
+      "description": "Opsi menuju pengingat pengaturan",
+      "message": "Pengingat"
+   },
+   "repeatNewAlarm": {
+      "description": "Label untuk kotak centang Pengingat ulangi",
+      "message": "Ulangi"
+   },
+   "showAnalogue": {
+      "description": "Label untuk kotak centang jam analog",
+      "message": "Tampilkan jam analog"
+   },
+   "showDigital": {
+      "description": "Label untuk kotak centang jam digital",
+      "message": "Tampilkan Jam Digital"
+   },
+   "silence": {
+      "description": "Gunaka mouse di atas teks pada bisu ikon pengingat tidak memiliki ditugaskan suara",
+      "message": "Tidak ada suara"
+   },
+   "twitter": {
+      "description": "Menawarkan untuk menghubungkan on Twitter",
+      "message": "Ikuti ekstensi ini on Twitter"
+   },
+   "webstore": {
+      "description": "Menawarkan untuk terhubung di Toko Web",
+      "message": "Laporan bug, permintaan fitur atau mengajukan pertanyaan pada Toko Web Chrome"
+   }
+}

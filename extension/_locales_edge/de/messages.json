@@ -1,0 +1,310 @@
+{
+   "April": {
+      "description": "April",
+      "message": "April"
+   },
+   "August": {
+      "description": "August",
+      "message": "August"
+   },
+   "December": {
+      "description": "Dezember",
+      "message": "Dezember"
+   },
+   "February": {
+      "description": "Februar",
+      "message": "Februar"
+   },
+   "Friday": {
+      "description": "Freitag",
+      "message": "Freitag"
+   },
+   "January": {
+      "description": "Januar",
+      "message": "Januar"
+   },
+   "July": {
+      "description": "Juli",
+      "message": "Juli"
+   },
+   "June": {
+      "description": "Juni",
+      "message": "Juni"
+   },
+   "March": {
+      "description": "März",
+      "message": "März"
+   },
+   "May": {
+      "description": "Mai",
+      "message": "Mai"
+   },
+   "Monday": {
+      "description": "Montag",
+      "message": "Montag"
+   },
+   "November": {
+      "description": "November",
+      "message": "November"
+   },
+   "October": {
+      "description": "Oktober",
+      "message": "Oktober"
+   },
+   "Saturday": {
+      "description": "Samstag",
+      "message": "Samstag"
+   },
+   "September": {
+      "description": "September",
+      "message": "September"
+   },
+   "Sunday": {
+      "description": "Sonntag",
+      "message": "Sonntag"
+   },
+   "Thursday": {
+      "description": "Donnerstag",
+      "message": "Donnerstag"
+   },
+   "Tuesday": {
+      "description": "Dienstag",
+      "message": "Dienstag"
+   },
+   "Wednesday": {
+      "description": "Mittwoch",
+      "message": "Mittwoch"
+   },
+   "analogueTitle": {
+      "description": "Der Titel des Abschnitts Analoguhr",
+      "message": "Analoguhr"
+   },
+   "and": {
+      "description": "diese Erinnerung erlischt jeden Samstag und Sonntag",
+      "message": " und"
+   },
+   "appearanceTitle": {
+      "description": "Der Titel von Abschnitt Darstellung",
+      "message": "Darstellung"
+   },
+   "appearanceh": {
+      "description": "Optionen für Darstellungseinstellungen Überschrift",
+      "message": "Darstellung"
+   },
+   "contacth": {
+      "description": "Optionen für Kontakteinstellungen Überschrift",
+      "message": "Hilfe"
+   },
+   "datePickerCustom": {
+      "description": "Bezeichnung für benutzerdefinierte Date",
+      "message": "Andere"
+   },
+   "datePickerToday": {
+      "description": "Bezeichnung für heute",
+      "message": "Heute"
+   },
+   "datePickerTomorrow": {
+      "description": "Bezeichnung für morgen",
+      "message": "Morgen"
+   },
+   "delete": {
+      "description": "Mouseover Text auf das Löschen-Symbol für Mahnungen",
+      "message": "Löschen"
+   },
+   "deleteCheck": {
+      "description": "Frage zu überprüfen, ob der Benutzer wirklich, um eine Erinnerung zu löschen will",
+      "message": "Löschen die Erinnerung?"
+   },
+   "digitalTitle": {
+      "description": "Überschrift Abschnitt Digitaluhr Abzeichen",
+      "message": "Digitaluhr"
+   },
+   "edit": {
+      "description": "Das Wort für bearbeiten, bearbeiten wie in dieser alarm",
+      "message": "Bearbeiten"
+   },
+   "every": {
+      "description": "diese Erinnerung erlischt jeden Sonntag",
+      "message": " jeder"
+   },
+   "everyDay": {
+      "description": "diese Erinnerung erlischt jeden Tag",
+      "message": " Täglich"
+   },
+   "exhortation": {
+      "description": "Text Benutzer zu sagen, dass sie mit mir sprechen können",
+      "message": "Für Kommentare, Feedback und Diskussion:"
+   },
+   "extensionDescription": {
+      "description": "Die Beschreibung der Erweiterung",
+      "message": "Eine analoge Uhr in der Toolbar!"
+   },
+   "extensionName": {
+      "description": "Der Name dieser Erweiterung",
+      "message": "Clock für Microsoft Edge ™"
+   },
+   "formath": {
+      "description": "Optionen für Formateinstellungen Überschrift",
+      "message": "Format"
+   },
+   "gplus": {
+      "description": "Bieten Sie auf G + verbinden",
+      "message": "Befolgen Sie diese Erweiterung auf Google +"
+   },
+   "handColourCustom": {
+      "description": "Text zur Beschreibung der benutzerdefinierten Farbe Hände",
+      "message": "Benutzerdefinierte Farbe Hände"
+   },
+   "handColourDark": {
+      "description": "Text zur Beschreibung der dunklen Hände",
+      "message": "Dunkle Hände"
+   },
+   "handColourPale": {
+      "description": "Text zur Beschreibung der blassen Hände",
+      "message": "Blasse Hände"
+   },
+   "hourChime": {
+      "description": "Bezeichnung für das Kontrollkästchen, um anzugeben, dass die Uhr jede Stunde ein Geräusch machen sollte",
+      "message": "Stunde Chime"
+   },
+   "hoverTextCustom": {
+      "description": "Bezeichnung für benutzerdefinierte Datum-Auswahl-Schaltfläche",
+      "message": "Benutzerdefiniertes Format"
+   },
+   "infoTitle": {
+      "description": "Überschrift des Abschnitts",
+      "message": "Informationen"
+   },
+   "information": {
+      "description": "Eine kurze Beschreibung der Optionsseite",
+      "message": "Verwenden Sie diese Seite, um die Einstellungen der Uhr ändern."
+   },
+   "labelHandsColour": {
+      "description": "Bezeichnung für die Farbe der Hände",
+      "message": "Hände-Farbe"
+   },
+   "labelHandsTrans": {
+      "description": "Bezeichnung für die Hände-Transparenz",
+      "message": "Hände-Transparenz"
+   },
+   "lblAddNewAlarmHeading": {
+      "description": "Überschrift Abschnitt hinzufügen neue Erinnerung",
+      "message": "Fügen neue Erinnerung hinzu"
+   },
+   "lblAlarmLabel": {
+      "description": "Bezeichnung für die Bezeichnung für einen neuen reminder",
+      "message": "Etikett "
+   },
+   "lblBadgeA": {
+      "description": "Bezeichnung für Transparenz Picker für Abzeichen Hintergrund für die Digitaluhr",
+      "message": "Digital Clock-Transparenz"
+   },
+   "lblBadgePicker": {
+      "description": "Bezeichnung für Farbpicker für Abzeichen Hintergrund für die Digitaluhr",
+      "message": "Digital Clock-Hintergrundfarbe"
+   },
+   "lblCategory": {
+      "description": "Bezeichnung für die Kategorie der Erinnerung",
+      "message": "Kategorie"
+   },
+   "lblFirstDayoftheWeek": {
+      "description": "Bezeichnung für den ersten Tag der Woche-Eingang",
+      "message": "Erster Tag der Woche "
+   },
+   "lblHelpSupportContact": {
+      "description": "Registerkarte \"Hilfe\" in Richtung",
+      "message": "Hilfe, Unterstützung und Kontakt"
+   },
+   "lblListOfReminders": {
+      "description": "Überschrift für die Liste der Erinnerungen",
+      "message": "Geplanten Erinnerungen"
+   },
+   "lblMainAlarms": {
+      "description": "Eine Überschrift-Bezeichnung für den Abschnitt Erinnerungen",
+      "message": "Erinnerungen"
+   },
+   "lblNewAlarmHour": {
+      "description": "Bezeichnung für die Stunde-Selektor-slider",
+      "message": "Stunde "
+   },
+   "lblNewAlarmMinute": {
+      "description": "Bezeichnung für den Regler Minute Selektor",
+      "message": "Minute "
+   },
+   "lblOffset": {
+      "description": "Bezeichnung für die Eingabe, die hinzugefügt oder entfernt die Zeit, um die aktuelle Zeit",
+      "message": "Zeitverschiebung"
+   },
+   "lblRingLabel": {
+      "description": "Bezeichnung für den Ton Dropdown für einen neuen reminder",
+      "message": "Ton "
+   },
+   "lblSelectedTime": {
+      "description": "Bezeichnung für die aktuell ausgewählte Zeit",
+      "message": "Zeit "
+   },
+   "mainHoverTitle": {
+      "description": "Benutzer bevorzugter Datum Format Titel.",
+      "message": "Datumsformat"
+   },
+   "minutes": {
+      "description": "Das Wort für Minuten, wie in 5 Minuten",
+      "message": "Minuten"
+   },
+   "nextReminder": {
+      "description": "Text, der direkt vor der Dat auf Mouseover über das Symbol \"wiederholen geht\"",
+      "message": "Nächste Erinnerung: "
+   },
+   "noReminders": {
+      "description": "Angezeigt wird, wenn es keine Erinnerungen gibt",
+      "message": "Es gibt keine Erinnerungen"
+   },
+   "on": {
+      "description": "Beispielsweise ist diese Erinnerung an diesem Tag",
+      "message": " auf "
+   },
+   "optionsTitle": {
+      "description": "Auf der Seite angezeigten Titeltext",
+      "message": "Clock für Microsoft Edge ™"
+   },
+   "rdoFourDots": {
+      "description": "Bezeichnung für vier Marker Uhr",
+      "message": "Vier Punkte"
+   },
+   "rdoNoDots": {
+      "description": "Label für traditionelle, keine Marker Uhr",
+      "message": "Ohne Punkte"
+   },
+   "rdoTwelveDots": {
+      "description": "Bezeichnung für Marken zwölf Uhr",
+      "message": "Zwölf Punkte"
+   },
+   "remindersh": {
+      "description": "Optionen für Erinnerungen Einstellungen Rubrik",
+      "message": "Erinnerungen"
+   },
+   "repeatNewAlarm": {
+      "description": "Bezeichnung für das Kontrollkästchen Erinnerung wiederholen",
+      "message": "Wiederholen Sie die"
+   },
+   "showAnalogue": {
+      "description": "Bezeichnung für das Kontrollkästchen Analoguhr",
+      "message": "Die Analog-Uhr anzeigen"
+   },
+   "showDigital": {
+      "description": "Bezeichnung für das Kontrollkästchen Digitaluhr",
+      "message": "Die Digitaluhr anzeigen"
+   },
+   "silence": {
+      "description": "Mouseover Text auf stumm Symbol als Erinnerung keinen zugeordneten Ton hat",
+      "message": "Kein Ton"
+   },
+   "twitter": {
+      "description": "Angebot für die Verbindung auf Twitter",
+      "message": "Diese Erweiterung auf Twitter folgen"
+   },
+   "webstore": {
+      "description": "Angebot im Web-Store verbinden",
+      "message": "Ein Bug, Feature-Request zu melden oder eine Frage im Chrome Web Store"
+   }
+}

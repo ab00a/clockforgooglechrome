@@ -1,0 +1,310 @@
+{
+   "April": {
+      "description": "April",
+      "message": "April"
+   },
+   "August": {
+      "description": "August",
+      "message": "August"
+   },
+   "December": {
+      "description": "Desember",
+      "message": "Desember"
+   },
+   "February": {
+      "description": "Februar",
+      "message": "Februar"
+   },
+   "Friday": {
+      "description": "Fredag",
+      "message": "Fredag"
+   },
+   "January": {
+      "description": "Januar",
+      "message": "Januar"
+   },
+   "July": {
+      "description": "Juli",
+      "message": "Juli"
+   },
+   "June": {
+      "description": "Juni",
+      "message": "Juni"
+   },
+   "March": {
+      "description": "Mars",
+      "message": "Mars"
+   },
+   "May": {
+      "description": "Mai",
+      "message": "Mai"
+   },
+   "Monday": {
+      "description": "Mandag",
+      "message": "Mandag"
+   },
+   "November": {
+      "description": "November",
+      "message": "November"
+   },
+   "October": {
+      "description": "Oktober",
+      "message": "Oktober"
+   },
+   "Saturday": {
+      "description": "Lørdag",
+      "message": "Lørdag"
+   },
+   "September": {
+      "description": "September",
+      "message": "September"
+   },
+   "Sunday": {
+      "description": "Søndag",
+      "message": "Søndag"
+   },
+   "Thursday": {
+      "description": "Torsdag",
+      "message": "Torsdag"
+   },
+   "Tuesday": {
+      "description": "Tirsdag",
+      "message": "Tirsdag"
+   },
+   "Wednesday": {
+      "description": "Onsdag",
+      "message": "Onsdag"
+   },
+   "analogueTitle": {
+      "description": "Tittelen på delen analog klokke",
+      "message": "Analog klokke"
+   },
+   "and": {
+      "description": "denne påminnelsen går av hver lørdag og søndag",
+      "message": " og"
+   },
+   "appearanceTitle": {
+      "description": "Tittelen på delen utseende",
+      "message": "Utseende"
+   },
+   "appearanceh": {
+      "description": "Alternativer på vei mot visningsinnstillinger",
+      "message": "Utseende"
+   },
+   "contacth": {
+      "description": "Alternativer for kontaktinnstillinger på vei",
+      "message": "hjelp"
+   },
+   "datePickerCustom": {
+      "description": "Etikett for egendefinert dato",
+      "message": "Andre"
+   },
+   "datePickerToday": {
+      "description": "Etikett for i dag",
+      "message": "I dag"
+   },
+   "datePickerTomorrow": {
+      "description": "Etikett for i morgen",
+      "message": "I morgen"
+   },
+   "delete": {
+      "description": "Mouseover tekst på Slett-ikonet for purringer",
+      "message": "Slette"
+   },
+   "deleteCheck": {
+      "description": "Spørsmål til bekrefte at brukeren virkelig ønsker å slette en påminnelse",
+      "message": "Slette påminnelsen?"
+   },
+   "digitalTitle": {
+      "description": "Overskriften for delen digital klokke-merke",
+      "message": "Digital klokke"
+   },
+   "edit": {
+      "description": "Ordet for redigere, som i redigere denne alarmen",
+      "message": "Redigere"
+   },
+   "every": {
+      "description": "denne påminnelsen går av hver søndag",
+      "message": " hver"
+   },
+   "everyDay": {
+      "description": "denne påminnelsen går av hver dag",
+      "message": " hver dag"
+   },
+   "exhortation": {
+      "description": "Tekst som forteller brukere at de kan snakke med meg",
+      "message": "For kommentarer, tilbakemeldinger og diskusjon:"
+   },
+   "extensionDescription": {
+      "description": "Beskrivelse av utvidelsen",
+      "message": "En analog klokke på verktøylinjen!"
+   },
+   "extensionName": {
+      "description": "Navnet på denne filtypen",
+      "message": "Klokken for Microsoft Edge ™"
+   },
+   "formath": {
+      "description": "Alternativer på vei mot formatinnstillinger",
+      "message": "Format"
+   },
+   "gplus": {
+      "description": "Tilby å koble på G +",
+      "message": "Følg denne utvidelsen på Google +"
+   },
+   "handColourCustom": {
+      "description": "Tekst som beskriver egendefi nert farge hender",
+      "message": "Egendefinert farge hender"
+   },
+   "handColourDark": {
+      "description": "Tekst som beskriver mørke hender",
+      "message": "Mørk hender"
+   },
+   "handColourPale": {
+      "description": "Tekst som beskriver blek hender",
+      "message": "Blek hender"
+   },
+   "hourChime": {
+      "description": "Etiketten for boksen for å angi at klokken bør gjøre en støy hver time",
+      "message": "Time klokkespill"
+   },
+   "hoverTextCustom": {
+      "description": "Etikett for knappen for egendefinert dato markering",
+      "message": "Egendefinert Format"
+   },
+   "infoTitle": {
+      "description": "Informasjon deloverskrift",
+      "message": "Informasjon"
+   },
+   "information": {
+      "description": "En kort beskrivelse av Alternativer-siden",
+      "message": "Bruk denne siden til å endre innstillingene på klokken."
+   },
+   "labelHandsColour": {
+      "description": "Etikett for hender farge",
+      "message": "Hender farge"
+   },
+   "labelHandsTrans": {
+      "description": "Etikett for hender åpenhet",
+      "message": "Hender gjennomsiktighet"
+   },
+   "lblAddNewAlarmHeading": {
+      "description": "Overskrift for Legg til påminnelse delen nye",
+      "message": "Legg til ny påminnelse"
+   },
+   "lblAlarmLabel": {
+      "description": "Etikett for etiketten for en purring",
+      "message": "Etikett "
+   },
+   "lblBadgeA": {
+      "description": "Etikett for gjennomsiktighet Picker for merket bakgrunn for digital klokke",
+      "message": "Digital klokke gjennomsiktighet"
+   },
+   "lblBadgePicker": {
+      "description": "Etikett for Colour Picker for merket bakgrunn for digital klokke",
+      "message": "Digital klokke bakgrunnsfarge"
+   },
+   "lblCategory": {
+      "description": "Etikett for kategorien av en påminnelse",
+      "message": "Kategori"
+   },
+   "lblFirstDayoftheWeek": {
+      "description": "Etikett for den første dagen i uken inngang",
+      "message": "Første dag i uken "
+   },
+   "lblHelpSupportContact": {
+      "description": "Overskrift for hjelp-kategorien",
+      "message": "Hjelp, støtte og kontakt"
+   },
+   "lblListOfReminders": {
+      "description": "Liste over påminnelser på vei",
+      "message": "Planlagte påminnelser"
+   },
+   "lblMainAlarms": {
+      "description": "En overskrift etikett for delen påminnelser",
+      "message": "Påminnelser"
+   },
+   "lblNewAlarmHour": {
+      "description": "Etikett for glidebryteren for time-velgeren",
+      "message": "Time "
+   },
+   "lblNewAlarmMinute": {
+      "description": "Etikett for glidebryteren minutt velgeren",
+      "message": "Minutt "
+   },
+   "lblOffset": {
+      "description": "Etikett for inndata som legger til eller fjerner tid til den faktiske tiden",
+      "message": "Tidsforskyvningen"
+   },
+   "lblRingLabel": {
+      "description": "Etikett for lyd rullegardinmenyen for en purring",
+      "message": "Lyd "
+   },
+   "lblSelectedTime": {
+      "description": "Etiketten for den valgte tiden",
+      "message": "Tid "
+   },
+   "mainHoverTitle": {
+      "description": "Brukerens foretrukne dato format tittel.",
+      "message": "Datoformat"
+   },
+   "minutes": {
+      "description": "Ordet i minutter, som i 5 minutter",
+      "message": "minutter"
+   },
+   "nextReminder": {
+      "description": "Tekst som går rett foran dat på mouseover av gjenta-ikonet",
+      "message": "Neste påminnelse: "
+   },
+   "noReminders": {
+      "description": "Vises når det finnes ingen påminnelser",
+      "message": "Det finnes ingen påminnelser-sett"
+   },
+   "on": {
+      "description": "Denne påminnelsen er for eksempel på denne datoen",
+      "message": " på "
+   },
+   "optionsTitle": {
+      "description": "Tittelteksten som vises på alternativsiden",
+      "message": "Klokken for Microsoft Edge ™"
+   },
+   "rdoFourDots": {
+      "description": "Etikett for fire markører klokke",
+      "message": "Fire prikker"
+   },
+   "rdoNoDots": {
+      "description": "Etikett for tradisjonelle, uten dataindikatorer klokke",
+      "message": "Ingen prikker"
+   },
+   "rdoTwelveDots": {
+      "description": "Etikett for tolv markører klokke",
+      "message": "Tolv prikker"
+   },
+   "remindersh": {
+      "description": "Alternativer på vei mot påminnelser-innstillinger",
+      "message": "Påminnelser"
+   },
+   "repeatNewAlarm": {
+      "description": "Etikett for avkrysningsruten gjenta påminnelse",
+      "message": "Gjenta"
+   },
+   "showAnalogue": {
+      "description": "Etiketten for boksen analog klokke",
+      "message": "Vis analog klokke"
+   },
+   "showDigital": {
+      "description": "Etikett for merket for digital klokke",
+      "message": "Vis Digitalklokke"
+   },
+   "silence": {
+      "description": "Mouseover tekst på mute-ikonet når påminnelse har ingen tildelte lyd",
+      "message": "Ingen lyd"
+   },
+   "twitter": {
+      "description": "Tilbud om å koble på Twitter",
+      "message": "Følg denne utvidelsen på Twitter"
+   },
+   "webstore": {
+      "description": "Tilbud om å koble på Web-butikk",
+      "message": "Rapportere en bug, funksjonsforespørsel, eller stille et spørsmål på Chrome-Web-butikk"
+   }
+}

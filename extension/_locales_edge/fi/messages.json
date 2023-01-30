@@ -1,0 +1,310 @@
+{
+   "April": {
+      "description": "Huhtikuuta",
+      "message": "Huhtikuuta"
+   },
+   "August": {
+      "description": "Elokuu",
+      "message": "Elokuu"
+   },
+   "December": {
+      "description": "Joulukuuta",
+      "message": "Joulukuuta"
+   },
+   "February": {
+      "description": "Helmikuuta",
+      "message": "Helmikuuta"
+   },
+   "Friday": {
+      "description": "Perjantai",
+      "message": "Perjantai"
+   },
+   "January": {
+      "description": "Tammikuuta",
+      "message": "Tammikuuta"
+   },
+   "July": {
+      "description": "Heinäkuuta",
+      "message": "Heinäkuuta"
+   },
+   "June": {
+      "description": "Kesäkuuta",
+      "message": "Kesäkuuta"
+   },
+   "March": {
+      "description": "Maaliskuussa",
+      "message": "Maaliskuussa"
+   },
+   "May": {
+      "description": "Toukokuuta",
+      "message": "Toukokuuta"
+   },
+   "Monday": {
+      "description": "Maanantai",
+      "message": "Maanantai"
+   },
+   "November": {
+      "description": "Marraskuuta",
+      "message": "Marraskuuta"
+   },
+   "October": {
+      "description": "Lokakuussa",
+      "message": "Lokakuussa"
+   },
+   "Saturday": {
+      "description": "Lauantai",
+      "message": "Lauantai"
+   },
+   "September": {
+      "description": "Syyskuuta",
+      "message": "Syyskuuta"
+   },
+   "Sunday": {
+      "description": "Sunnuntai",
+      "message": "Sunnuntai"
+   },
+   "Thursday": {
+      "description": "Torstai",
+      "message": "Torstai"
+   },
+   "Tuesday": {
+      "description": "Tiistai",
+      "message": "Tiistai"
+   },
+   "Wednesday": {
+      "description": "Keskiviikko",
+      "message": "Keskiviikko"
+   },
+   "analogueTitle": {
+      "description": "Analoginen kello-osan otsikko",
+      "message": "Analoginen kello"
+   },
+   "and": {
+      "description": "Tämä muistutus sammuu joka lauantai ja sunnuntai",
+      "message": " ja"
+   },
+   "appearanceTitle": {
+      "description": "Ulkoasu-osan otsikko",
+      "message": "Ulkonäkö"
+   },
+   "appearanceh": {
+      "description": "Vaihtoehtoja menossa kohti Ulkoasuasetukset",
+      "message": "Ulkonäkö"
+   },
+   "contacth": {
+      "description": "Matkalla asetukset asetukset",
+      "message": "Apua"
+   },
+   "datePickerCustom": {
+      "description": "Mukautetun päivämäärän selite",
+      "message": "Muut"
+   },
+   "datePickerToday": {
+      "description": "Tänään merkki",
+      "message": "Tänään"
+   },
+   "datePickerTomorrow": {
+      "description": "Huomenna-merkki",
+      "message": "Huomenna"
+   },
+   "delete": {
+      "description": "Mouseover teksti muistutuksia Poista-kuvaketta",
+      "message": "Poista"
+   },
+   "deleteCheck": {
+      "description": "Varmista, että käyttäjä todella haluaa poistaa muistutuksen kysymys",
+      "message": "Poistaa muistutuksen?"
+   },
+   "digitalTitle": {
+      "description": "Matkalla Digitaalikello rintanappi options-jaksoon",
+      "message": "Digitaalikello"
+   },
+   "edit": {
+      "description": "Sanan muokkaaminen, kuten muokata Tämä hälytys",
+      "message": "Muokkaa"
+   },
+   "every": {
+      "description": "Tämä muistutus sammuu sunnuntaisin",
+      "message": " Jokainen"
+   },
+   "everyDay": {
+      "description": "Tämä muistutus sammuu päivittäin",
+      "message": " Joka päivä"
+   },
+   "exhortation": {
+      "description": "Teksti kertoo käyttäjille, että he voivat puhua minulle",
+      "message": "Kommentteja, palautetta ja keskustelua:"
+   },
+   "extensionDescription": {
+      "description": "Lisälaajennuksen kuvauksen",
+      "message": "Analoginen kello kotona koristella!"
+   },
+   "extensionName": {
+      "description": "Tämä laajennus nimi",
+      "message": "Kellon Microsoft Edge ™"
+   },
+   "formath": {
+      "description": "Vaihtoehtoja menossa muotoiluasetukset",
+      "message": "Muodossa"
+   },
+   "gplus": {
+      "description": "Tarjoavat yhteyden G +",
+      "message": "Seuraa laajentaminen Google +-palvelussa"
+   },
+   "handColourCustom": {
+      "description": "Kuvausteksti mukautetun värin käsissä",
+      "message": "Mukautetun värin käsissä"
+   },
+   "handColourDark": {
+      "description": "Kuvausteksti tumma käsissä",
+      "message": "Tumma käsissä"
+   },
+   "handColourPale": {
+      "description": "Kuvausteksti vaalean käsissä",
+      "message": "Vaalean käsissä"
+   },
+   "hourChime": {
+      "description": "Etiketit ilmaisevat, että kello pitäisi ehtiä kohista joka tunti-valintaneliö",
+      "message": "H säestää"
+   },
+   "hoverTextCustom": {
+      "description": "Mukautetun päivämäärän valinta-painikkeen selite",
+      "message": "Mukautettu muoto"
+   },
+   "infoTitle": {
+      "description": "Tiedot-otsikko",
+      "message": "Tiedot"
+   },
+   "information": {
+      "description": "Lyhyt kuvaus asetukset-sivulla",
+      "message": "Tämän sivun avulla voit muuttaa kellon asetukset."
+   },
+   "labelHandsColour": {
+      "description": "Kädet väri-merkki",
+      "message": "Kädet väri"
+   },
+   "labelHandsTrans": {
+      "description": "Kädet avoimuus-merkki",
+      "message": "Kädet avoimuus"
+   },
+   "lblAddNewAlarmHeading": {
+      "description": "Lisää uusi muistutus jakso menossa",
+      "message": "Lisää uusi muistutus"
+   },
+   "lblAlarmLabel": {
+      "description": "Merkki Label uusi muistutus",
+      "message": "Etiketti "
+   },
+   "lblBadgeA": {
+      "description": "Selite avoimuuden Picker rintanappi tausta digitaalisen kellon",
+      "message": "Digitaalinen kello avoimuus"
+   },
+   "lblBadgePicker": {
+      "description": "Värimuokkain rintanappi tausta digitaalinen kello-merkki",
+      "message": "Digitaalinen kello taustaväri"
+   },
+   "lblCategory": {
+      "description": "Muistutuksen luokka-merkki",
+      "message": "Luokka"
+   },
+   "lblFirstDayoftheWeek": {
+      "description": "Ensimmäinen viikonpäivä tulo-merkki",
+      "message": "Ensimmäinen viikonpäivä "
+   },
+   "lblHelpSupportContact": {
+      "description": "Matkalla Ohje-välilehti",
+      "message": "Apua, tukea ja yhteystiedot"
+   },
+   "lblListOfReminders": {
+      "description": "Otsikko luettelo muistutukset",
+      "message": "Ajoitettuja muistutuksia"
+   },
+   "lblMainAlarms": {
+      "description": "Otsikon merkintä Muistutukset-kohdan",
+      "message": "Muistutukset"
+   },
+   "lblNewAlarmHour": {
+      "description": "Merkki h valitsin liukusäädintä",
+      "message": "H "
+   },
+   "lblNewAlarmMinute": {
+      "description": "Hetken valitsin liukusäädintä-merkki",
+      "message": "Minuutti "
+   },
+   "lblOffset": {
+      "description": "Merkki panos, joka lisää tai poistaa itse aikaa aika",
+      "message": "Aikasiirtymää"
+   },
+   "lblRingLabel": {
+      "description": "Otsikon äänen avattavasta uusi muistutus",
+      "message": "Ääni "
+   },
+   "lblSelectedTime": {
+      "description": "Valitun aika-merkki",
+      "message": "Aika "
+   },
+   "mainHoverTitle": {
+      "description": "Käyttäjän ensisijainen päivämäärä muodossa otsikko.",
+      "message": "Päivämäärämuoto"
+   },
+   "minutes": {
+      "description": "Sana minuuttia, kuten 5 minuuttia",
+      "message": "minuuttia"
+   },
+   "nextReminder": {
+      "description": "Teksti menee edestä IT mouseover toistokuvaketta",
+      "message": "Seuraava muistutus: "
+   },
+   "noReminders": {
+      "description": "Kun näytettäviä muistutuksia ei ole",
+      "message": "Muistutukset-tiedosto ladattiin ominasuuksille"
+   },
+   "on": {
+      "description": "Esimerkiksi tämä muistutus on tänä päivänä",
+      "message": " päivänä "
+   },
+   "optionsTitle": {
+      "description": "Otsikkoteksti, joka näkyy asetukset-sivulla",
+      "message": "Kellon Microsoft Edge ™"
+   },
+   "rdoFourDots": {
+      "description": "Neljän merkit kello-merkki",
+      "message": "Neljä pistettä"
+   },
+   "rdoNoDots": {
+      "description": "Etsint perinteinen, ei merkkejä kello",
+      "message": "Ei pisteitä"
+   },
+   "rdoTwelveDots": {
+      "description": "Kaksitoista merkkejä kello-merkki",
+      "message": "12 Pistettä"
+   },
+   "remindersh": {
+      "description": "Vaihtoehtoja menossa muistutusten asetukset",
+      "message": "Muistutukset"
+   },
+   "repeatNewAlarm": {
+      "description": "Etiketti toista muistutus-valintaruutu",
+      "message": "Toista"
+   },
+   "showAnalogue": {
+      "description": "Analoginen kello-valintaruutu-merkki",
+      "message": "Näytä analoginen kello"
+   },
+   "showDigital": {
+      "description": "Selite Digitaalikello-valintaruutu",
+      "message": "Näyttää digitaalikellon"
+   },
+   "silence": {
+      "description": "Mouseover teksti mykistys-kuvaketta, kun muistutus ei ole määritetty ääntä",
+      "message": "Ei ääntä"
+   },
+   "twitter": {
+      "description": "Tarjoukseen yhdistää Twitter",
+      "message": "Tämä laajennus seuraa hermona"
+   },
+   "webstore": {
+      "description": "Tarjoavat yhteyden Web-Store",
+      "message": "Ilmoita virhe, ominaisuuspyyntö tai kysyä Chrome Web Store"
+   }
+}
