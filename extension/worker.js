@@ -13,16 +13,13 @@ const ALARMVOLUME = 4;
 
 chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
 	switch (request.type) {
-		case "tidyReminders":
-			tidyReminders();
-			sendResponse("OK");
-			break;
 		case "timeString":
 			sendResponse(timeString(request.fmt, request.d));
 			break;
 		case "regularTime":
 			regularTime();
 			sendResponse("OK");
+			break;
 		case "audioElements":
 			sendResponse(noAudioElements());
 			break;
@@ -101,7 +98,7 @@ async function removeOrphanAlarms() {
 			// Filter the reminders array for those that both
 			//	a) Match the name of the alarm in question
 			/// b) Match the time of the alarm in question
-			const matchingReminders = reminders.alarms.filter((reminder) => ((reminder[ALARMNAME] === inferredReminderName) && (reminder[ALARMTIME] = alarm.scheduledTime)));
+			const matchingReminders = reminders.alarms.filter((reminder) => ((reminder[ALARMNAME] === inferredReminderName) && (reminder[ALARMTIME] === alarm.scheduledTime)));
 			if (matchingReminders.length < 1) { // If the number of returned results is less than 1
 				chrome.alarms.clear(alarm.name); //Remove the alarm
 			}
@@ -141,9 +138,9 @@ async function addReminder(reminder) {
 //Deletes a reminder and removes its alarm
 async function deleteReminder(alarmToDelete) {
 	let items = await chrome.storage.sync.get("alarms");
-		items.alarms.splice(alarmToDelete, 1);
-		await chrome.storage.sync.set({ "alarms": items.alarms });
-		removeOrphanAlarms();
+	items.alarms.splice(alarmToDelete, 1);
+	await chrome.storage.sync.set({ "alarms": items.alarms });
+	removeOrphanAlarms();
 }
 
 // Hacky utility function which is used to inject a small delay where required to avoid async clashes
@@ -151,7 +148,7 @@ async function deleteReminder(alarmToDelete) {
 // If the parameter is omitted, the delay is 500ms
 function randomPause(maxDelay = 500) {
 	const delayed = Math.floor(Math.random() * maxDelay);
-	return new Promise(resolve => {
+	return new Promise((resolve) => {
 		setTimeout(() => {
 			resolve(delayed);
 		}, delayed);
@@ -159,7 +156,7 @@ function randomPause(maxDelay = 500) {
 }
 
 // Function to create and sound alarm audio in an offscreen document
-async function offscreenAudio(audioSrc, volume = 1.0, audioType = 'soundAudio', id) {
+async function offscreenAudio(audioSrc, volume = 1.0, audioType = "soundAudio", id) {
 	// Bit hacky because odd stuff happens if this is invoked twice at exactly the same time
 	await randomPause(1000);
 	let hasOffscreen = await chrome.offscreen.hasDocument();
@@ -167,20 +164,20 @@ async function offscreenAudio(audioSrc, volume = 1.0, audioType = 'soundAudio', 
 		try {
 			await chrome.offscreen.createDocument(
 				{
-					url: 'audio.html',
+					url: "audio.html",
 					reasons: ['AUDIO_PLAYBACK'],
-					justification: 'Play alarm and chime sounds in an offscreen document'
+					justification: "Play alarm and chime sounds in an offscreen document"
 				});
-			} catch (e) {
-				console.log("Failed to create an offscreen document: " + e);
+		} catch (e) {
+			console.log("Failed to create an offscreen document: " + e);
 		}
 	}
 	// Now the offscreen document exists so we can send the message to fire the audio
 	chrome.runtime.sendMessage({
-		'type': audioType,
-		'audioSrc': audioSrc,
-		'volume': volume,
-		'id': id
+		"type": audioType,
+		"audioSrc": audioSrc,
+		"volume": volume,
+		"id": id
 	});
 }
 
@@ -225,7 +222,7 @@ async function soundAlarm(alarmName) {
 
 					// Set the volume from the stored value (if there is one)
 					let vol = 1.0;
-					if (typeof thisReminder[ALARMVOLUME] != "undefined") {
+					if (typeof thisReminder[ALARMVOLUME] !== "undefined") {
 						vol = parseFloat(thisReminder[ALARMVOLUME]);
 					}
 					offscreenAudio(thisReminder[ALARMSOUND] + ".ogg", vol, "soundAudio", id);
@@ -508,7 +505,6 @@ function timeString(fmt, d) {
 				break;
 			default:
 				sDate += fmt.charAt(i);
-				break;
 		}
 	}
 	return sDate;
@@ -523,7 +519,7 @@ async function updateTime() {
 	d = new Date(Date.now() + (items.offset * 1000 * 60 * 60) + 1000); //that last 1000 is to make sure there are no on the minute edge cases
 
 	if (items.showDigital && items.showAnalogue) {
-		var hours, minutes, fill, badgeColour;
+		let hours, minutes, fill, badgeColour;
 		//The analogue and digital clocks are required, so show the badge
 		//First build the 4 character string to put in
 		minutes = d.getMinutes();
@@ -535,7 +531,7 @@ async function updateTime() {
 		if ((hours > 12) && (items.hoverFormat.indexOf("t") > -1)) {
 			hours -= 12;
 		}
-		if ((hours + "").length < 2) {
+		if (String(hours).length < 2) {
 			fill = ":";
 		}
 		//Set the badge colour
@@ -610,12 +606,11 @@ async function updateTime() {
 					+ ", " + items.digitalForeColour.split(",")[2]
 					+ ", " + parseInt(items.digitalForeColour.split(",")[3], 10) / 255
 					+ ")";
-				minutes = d.getMinutes();
+				let minutes = d.getMinutes();
 				if (minutes < 10) {
 					minutes = "0" + minutes;
 				}
-				fill = "";
-				hours = d.getHours();
+				let hours = d.getHours();
 				if ((hours > 12) && (items.hoverFormat.indexOf("t") > -1)) {
 					hours -= 12;
 				}
@@ -648,7 +643,7 @@ async function soundChime() {
 	if (typeof items.hourVolume != "undefined") {
 		vol = items.hourVolume;
 	}
-	await offscreenAudio('assets/diing.ogg', vol, 'chime', 'chime');
+	await offscreenAudio("assets/diing.ogg", vol, "chime", "chime");
 }
 
 function setUpdateAlarm() {
@@ -725,7 +720,7 @@ chrome.runtime.onStartup.addListener(startup);
 //Run on first install and upgrades
 chrome.runtime.onInstalled.addListener(async function () {
 	//if there's nothing in storage, set defaults
-	let len = chrome.storage.sync.getBytesInUse(null);
+	let len = await chrome.storage.sync.getBytesInUse(null);
 	if (len < 1) {
 		await setupPreferences();
 	} else {
@@ -760,7 +755,6 @@ chrome.alarms.onAlarm.addListener(async function (alarm) {
 			break;
 		default:
 			await soundAlarm(alarm.name);
-			break;
 	}
 });
 
@@ -770,18 +764,18 @@ chrome.notifications.onButtonClicked.addListener(async function (notificationId,
 	const thisReminderIndex = activeNotificationsRegister.findIndex((notification) => (notification.identifier === notificationId));
 
 	if (thisReminderIndex > -1) {
-		if (activeNotificationsRegister[thisReminderIndex].alarm[ALARMSOUND] != "nothing") {
+		if (activeNotificationsRegister[thisReminderIndex].alarm[ALARMSOUND] !== "nothing") {
 			//Stop the sound
 			chrome.runtime.sendMessage({
-				'type': 'stopAudio',
-				'id': activeNotificationsRegister[thisReminderIndex].identifier
+				"type": "stopAudio",
+				"id": activeNotificationsRegister[thisReminderIndex].identifier
 			});
 		}
 
-				// Delete the reminder
+		// Delete the reminder
 		// Find the index of the reminder to delete
 		let items = await chrome.storage.sync.get("alarms");
-		const indexOfReminderToDelete = items.alarms.findIndex((reminder) => (reminder[ALARMNAME] == activeNotificationsRegister[thisReminderIndex].alarm[ALARMNAME]));
+		const indexOfReminderToDelete = items.alarms.findIndex((reminder) => (reminder[ALARMNAME] === activeNotificationsRegister[thisReminderIndex].alarm[ALARMNAME]));
 		if (indexOfReminderToDelete > 0) {
 			await deleteReminder(indexOfReminderToDelete);
 		}
