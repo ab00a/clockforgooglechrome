@@ -771,7 +771,7 @@ chrome.notifications.onButtonClicked.addListener(async function (notificationId,
 		// Find the index of the reminder to delete
 		let items = await chrome.storage.sync.get("alarms");
 		const indexOfReminderToDelete = items.alarms.findIndex((reminder) => (reminder[ALARMNAME] === activeNotificationsRegister[thisReminderIndex].alarm[ALARMNAME]));
-		if (indexOfReminderToDelete > 0) {
+		if (indexOfReminderToDelete > -1) {
 			await deleteReminder(indexOfReminderToDelete);
 		}
 
