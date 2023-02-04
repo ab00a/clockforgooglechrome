@@ -39,24 +39,30 @@ chrome.storage.onChanged.addListener(function (changes, area) {
 	updateTime();
 });
 
-//Function that iterates through every Reminder in storage and deletes non-repeating ones that happen in the past
-//@returns boolean to indicate whether any changes were made through this function
-async function purgeStaleReminders() {
-	let storedReminders = await chrome.storage.sync.get(["alarms", "offset"]); 	//Collect Reminders from storage
-	let aldate,
-		deletedStaleReminders = false,
-		d = new Date(Date.now() + (storedReminders.offset * 1000 * 60 * 60)); 		// Work out when expired is
-	storedReminders.alarms.forEach(function (reminder, id, reminders) {			// Iterate through each reminder
-		if ((reminder[ALARMTIME] < d.getTime()) && (reminder[ALARMREPEATDAYS].indexOf(1) == -1)) { // Returning -1 from indexOf is Not Found
-			// Reminder time is in the past and it does not repeat (i.e. there is no "1" in the repeater array
-			reminders.splice(id, 1);											// Delete the reminder
-			deletedStaleReminders = true;										// Log that a change was made
-		}
-	});
-	if (deletedStaleReminders) {
-		await chrome.storage.sync.set({ "alarms": storedReminders.alarms });			// Store the updated (shorter) list of reminders
+// Function used to respond to alarm fired events
+// If it's the regular update, fire the clock
+// Otherwise sound the alarm
+async function alarmHandler(alarm) {
+	switch (alarm.name) {
+		case "___minute":
+			regularTime();
+			break;
+		default:
+			await soundAlarm(alarm.name);
 	}
-	return deletedStaleReminders;												// Return the result
+}
+
+//the page has been woken up, so update the clock
+//and register listeners
+//When an alarm sounds, use the alarm handler
+chrome.alarms.onAlarm.addListener(alarmHandler);
+
+//Function that iterates through every Reminder in storage and deletes non-repeating ones that happen in the past
+async function purgeStaleReminders() {
+	let storedReminders = await chrome.storage.sync.get(["alarms", "offset"]); //Collect Reminders from storage
+	let d = new Date(Date.now() + (storedReminders.offset * 1000 * 60 * 60)); // Work out when expired is
+	let newReminders = storedReminders.alarms.filter((reminder) => ((reminder[ALARMTIME] > d.getTime()) || (reminder[ALARMREPEATDAYS].indexOf(1) > -1))); // Iterate through each reminder
+	await chrome.storage.sync.set({ "alarms": newReminders }); // Store the updated (shorter) list of reminders
 }
 
 // Function which creates the right alarms for repeating Reminders
@@ -119,6 +125,8 @@ async function createOneOffAlarms() {
 //Adds a new reminder to the store and sets an alarm for it
 async function addReminder(reminder) {
 	let items = await chrome.storage.sync.get(["alarms", "offset"]);
+	// Add a random 0-999ms delay to stop simultaneous alarms firing HACK
+	reminder[ALARMTIME] = reminder[ALARMTIME] + Math.floor(1000 * Math.random());
 	//Only add repeating reminders and ones in the future
 	if (reminder[ALARMREPEATDAYS].indexOf(1) > -1) {
 		items.alarms.push(reminder);
@@ -649,6 +657,7 @@ async function soundChime() {
 function setUpdateAlarm() {
 	let d = new Date();
 	let msDelay = 120001 - ((d.getSeconds() * 1000) + (d.getMilliseconds())); //the delay needs to be >60s to fire at the right time
+	msDelay += Math.floor(500 * Math.random()); // Addition of 0-499ms delay to avoid simultaneous alarms firing and causing Chrome alarm handlers to get confused
 	chrome.alarms.create("___minute", { "when": Date.now() + msDelay, "periodInMinutes": 1 });
 }
 
@@ -743,20 +752,6 @@ async function silenceAlarms() {
 		chrome.offscreen.closeDocument();
 	}
 }
-
-//the page has been woken up, so update the clock
-//and register listeners
-//When an alarm sounds, use the alarm handler
-chrome.alarms.onAlarm.addListener(async function (alarm) {
-	switch (alarm.name) {
-		case "___minute":
-		case "___unblock":
-			regularTime();
-			break;
-		default:
-			await soundAlarm(alarm.name);
-	}
-});
 
 //Set up handlers for notification button clicks
 chrome.notifications.onButtonClicked.addListener(async function (notificationId, buttonIndex) {
