@@ -57,12 +57,12 @@ async function alarmHandler(alarm) {
 //When an alarm sounds, use the alarm handler
 chrome.alarms.onAlarm.addListener(alarmHandler);
 
-// There is an issue that after a period of standby, alarms no longer fire, so this detects the user state change an fixes them
+// There is an issue that after a period of standby, alarms no longer fire, so this detects the user state change and fixes them
 chrome.idle.onStateChanged.addListener(function (newState) {
-	if (newState === "active") {
+	if (newState === "active") { //If the device has recently become active
 		chrome.alarms.get("___minute", function(updateAlarm) {
-			if (updateAlarm.scheduledTime < Date.now()) {
-				//Alarm didn't fire so we need to reset them
+			if (updateAlarm.scheduledTime < Date.now()) { //If the next clock update is scheduled in the past
+				//Alarm didn't fire so we need to reset
 				console.log("Out of sync - restarting");
 				startup();
 			}

@@ -21,7 +21,7 @@
       "offscreen",
       "idle"
    ],
-   "version": "2.2.0.0",
+   "version": "2.2.0.1",
    "short_name": "__MSG_extensionName__",
    "minimum_chrome_version": "109",
    "action": {
