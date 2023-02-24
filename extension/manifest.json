@@ -18,7 +18,8 @@
       "notifications",
       "storage",
       "alarms",
-      "offscreen"
+      "offscreen",
+      "idle"
    ],
    "version": "2.2.0.0",
    "short_name": "__MSG_extensionName__",

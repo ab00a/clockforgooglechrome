@@ -1,0 +1,310 @@
+{
+   "April": {
+      "description": "Aprill",
+      "message": "Aprill"
+   },
+   "August": {
+      "description": "August",
+      "message": "August"
+   },
+   "December": {
+      "description": "Detsember",
+      "message": "Detsember"
+   },
+   "February": {
+      "description": "Veebruar",
+      "message": "Veebruar"
+   },
+   "Friday": {
+      "description": "Reede",
+      "message": "Reede"
+   },
+   "January": {
+      "description": "Jaanuar",
+      "message": "Jaanuar"
+   },
+   "July": {
+      "description": "Juuli",
+      "message": "Juuli"
+   },
+   "June": {
+      "description": "Juuni",
+      "message": "Juuni"
+   },
+   "March": {
+      "description": "Märts",
+      "message": "Märts"
+   },
+   "May": {
+      "description": "Võib",
+      "message": "Võib"
+   },
+   "Monday": {
+      "description": "Esmaspäev",
+      "message": "Esmaspäev"
+   },
+   "November": {
+      "description": "November",
+      "message": "November"
+   },
+   "October": {
+      "description": "Oktoober",
+      "message": "Oktoober"
+   },
+   "Saturday": {
+      "description": "Laupäev",
+      "message": "Laupäev"
+   },
+   "September": {
+      "description": "September",
+      "message": "September"
+   },
+   "Sunday": {
+      "description": "Pühapäev",
+      "message": "Pühapäev"
+   },
+   "Thursday": {
+      "description": "Neljapäev",
+      "message": "Neljapäev"
+   },
+   "Tuesday": {
+      "description": "Teisipäev",
+      "message": "Teisipäev"
+   },
+   "Wednesday": {
+      "description": "Kolmapäev",
+      "message": "Kolmapäev"
+   },
+   "analogueTitle": {
+      "description": "Analoog kella-jao pealkiri",
+      "message": "Analoog kella"
+   },
+   "and": {
+      "description": "see meeldetuletus hakkab tööle igal laupäeval ja pühapäeval",
+      "message": " ja"
+   },
+   "appearanceTitle": {
+      "description": "Jaotises ilme pealkiri",
+      "message": "Välimus"
+   },
+   "appearanceh": {
+      "description": "Rubriigi esitusviisi seaded Valikud",
+      "message": "Välimus"
+   },
+   "contacth": {
+      "description": "Rubriigi Kontaktide seaded Valikud",
+      "message": "Abi"
+   },
+   "datePickerCustom": {
+      "description": "Kohandatud kuupäeva silt",
+      "message": "Muud"
+   },
+   "datePickerToday": {
+      "description": "Täna silt",
+      "message": "Täna"
+   },
+   "datePickerTomorrow": {
+      "description": "Homme silt",
+      "message": "Homme"
+   },
+   "delete": {
+      "description": "Mouse teksti meeldetuletustele ikooni Kustuta",
+      "message": "Kustuta"
+   },
+   "deleteCheck": {
+      "description": "Küsimus veendumaks, et kasutaja tahab tõesti Kustuta meeldetuletus",
+      "message": "Kustuta meeldetuletus?"
+   },
+   "digitalTitle": {
+      "description": "Digitaalne kell märk suvandid jaotise pealkiri",
+      "message": "Digitaalne kell"
+   },
+   "edit": {
+      "description": "Sõna muuta, näiteks muuta see alarm",
+      "message": "Redigeeri"
+   },
+   "every": {
+      "description": "selle meeldetuletuse kustub igal pühapäeval",
+      "message": " iga"
+   },
+   "everyDay": {
+      "description": "see meeldetuletus hakkab tööle iga päev",
+      "message": " Iga päev"
+   },
+   "exhortation": {
+      "description": "Tekst, mis teavitab kasutajat, et nad saavad rääkida mulle",
+      "message": "Kommentaarid, tagasiside ja arutelu:"
+   },
+   "extensionDescription": {
+      "description": "Pikendamise kirjeldus",
+      "message": "Analoog kella tööriistaribal!"
+   },
+   "extensionName": {
+      "description": "Seda nime",
+      "message": "Microsoft Edge ™ kella"
+   },
+   "formath": {
+      "description": "Pealkirja formaat seaded Valikud",
+      "message": "Formaat"
+   },
+   "gplus": {
+      "description": "Pakkuda G + ühenduda",
+      "message": "Järgige seda teenuses Google +"
+   },
+   "handColourCustom": {
+      "description": "Kohandatud värv käed kirjeldav tekst",
+      "message": "Kohandatud värv käed"
+   },
+   "handColourDark": {
+      "description": "Tekst, mis kirjeldab tume käed",
+      "message": "Must käsi"
+   },
+   "handColourPale": {
+      "description": "Tekst, mis kirjeldab kahvatu, käed",
+      "message": "Kahvatu, käed"
+   },
+   "hourChime": {
+      "description": "Silt märkeruut osutamaks, et kella peaks teha müra iga tunni järel",
+      "message": "Tundi kellamäng"
+   },
+   "hoverTextCustom": {
+      "description": "Kohandatud kuupäeva valiku nuppu silt",
+      "message": "Kohandatud Formaat"
+   },
+   "infoTitle": {
+      "description": "Teave sektsiooni päises",
+      "message": "Teave"
+   },
+   "information": {
+      "description": "Lühikirjeldus lehe Suvandid",
+      "message": "Selle lehe abil saate muuta kella seaded."
+   },
+   "labelHandsColour": {
+      "description": "Käed värvi jaoks silt",
+      "message": "Käed värv"
+   },
+   "labelHandsTrans": {
+      "description": "Sildi kätes selguse",
+      "message": "Käed läbipaistvus"
+   },
+   "lblAddNewAlarmHeading": {
+      "description": "Meeldetuletuse jaotises Lisa uus pealkiri",
+      "message": "Lisada uus Meelespea"
+   },
+   "lblAlarmLabel": {
+      "description": "Uue meeldetuletuse sildi nimi",
+      "message": "Silt "
+   },
+   "lblBadgeA": {
+      "description": "Digitaalne kell märk tausta läbipaistvus korjaja silt",
+      "message": "Digitaalne kell läbipaistvust"
+   },
+   "lblBadgePicker": {
+      "description": "Sildi värv valija jaoks märk taustal digitaalse kella",
+      "message": "Digitaalne kell tausta värv"
+   },
+   "lblCategory": {
+      "description": "Sildi jaoks meeldetuletus",
+      "message": "Kategooria"
+   },
+   "lblFirstDayoftheWeek": {
+      "description": "Silt sisend nädala esimene päev",
+      "message": "Selle nädala esimene päev "
+   },
+   "lblHelpSupportContact": {
+      "description": "Spikker jaotise pealkiri",
+      "message": "Abi, tugi- ja kontaktandmed"
+   },
+   "lblListOfReminders": {
+      "description": "Rubriigi meeldetuletuste loend",
+      "message": "Ajastatud meeldetuletused"
+   },
+   "lblMainAlarms": {
+      "description": "Pealkiri silt jaotise meeldetuletused",
+      "message": "Meeldetuletusi"
+   },
+   "lblNewAlarmHour": {
+      "description": "Silt liugurit tund valija",
+      "message": "Tund "
+   },
+   "lblNewAlarmMinute": {
+      "description": "Silt liugurit hetke valija",
+      "message": "Minut "
+   },
+   "lblOffset": {
+      "description": "Märgise sisestamiseks, mis lisab või eemaldab aega, et tegelik aeg",
+      "message": "Aja nihe"
+   },
+   "lblRingLabel": {
+      "description": "Uue meeldetuletuse heli rippmenüü silt",
+      "message": "Heli "
+   },
+   "lblSelectedTime": {
+      "description": "Praegu valitud ajal silt",
+      "message": "Aeg "
+   },
+   "mainHoverTitle": {
+      "description": "Kasutaja eelistatud kuupäev formaadis pealkiri.",
+      "message": "Kuupäeva formaat"
+   },
+   "minutes": {
+      "description": "Minutit, kui 5 minutit sõna",
+      "message": "minutit"
+   },
+   "nextReminder": {
+      "description": "Teksti, mis läheb lihtsalt ees on dat korda ikooni Mouse",
+      "message": "Järgmine Meeldetuletus: "
+   },
+   "noReminders": {
+      "description": "Kui pole meeldetuletusi",
+      "message": "Ei ole seatud meeldetuletused"
+   },
+   "on": {
+      "description": "Näiteks, see meeldetuletus on sellel kuupäeval",
+      "message": " kohta "
+   },
+   "optionsTitle": {
+      "description": "Pealkiri tekst, mis kuvatakse lehel Suvandid",
+      "message": "Microsoft Edge ™ kella"
+   },
+   "rdoFourDots": {
+      "description": "Silt kella nelja markerid",
+      "message": "Neli punkti"
+   },
+   "rdoNoDots": {
+      "description": "Toetamine traditsiooniline, ei ole markerid kella",
+      "message": "Ei ole punkte"
+   },
+   "rdoTwelveDots": {
+      "description": "Silt kella kaheteistkümne markerid",
+      "message": "12 Punkti"
+   },
+   "remindersh": {
+      "description": "Rubriigi meeldetuletusi seaded Valikud",
+      "message": "Meeldetuletusi"
+   },
+   "repeatNewAlarm": {
+      "description": "Korduva meeldetuletuse ruut silt",
+      "message": "Kordus"
+   },
+   "showAnalogue": {
+      "description": "Analoog kella ruut silt",
+      "message": "Näita analoog kella"
+   },
+   "showDigital": {
+      "description": "Digitaalne kell ruut silt",
+      "message": "Kuva digitaalne kell"
+   },
+   "silence": {
+      "description": "Mouse teksti kui meeldetuletus ei ole määratud heli vaigistamiseks ikoonil",
+      "message": "Puudub heli"
+   },
+   "twitter": {
+      "description": "Pakkuda Ühenda Twitter",
+      "message": "Jälgi seda puperdama"
+   },
+   "webstore": {
+      "description": "Pakkuda ühendada veebipoe",
+      "message": "RAPORT viga, omadus taotlus või küsida Chrome'i veebipood"
+   }
+}

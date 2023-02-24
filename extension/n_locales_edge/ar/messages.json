@@ -1,0 +1,310 @@
+{
+   "April": {
+      "description": "نيسان/أبريل",
+      "message": "نيسان/أبريل"
+   },
+   "August": {
+      "description": "آب/أغسطس",
+      "message": "آب/أغسطس"
+   },
+   "December": {
+      "description": "كانون الأول/ديسمبر",
+      "message": "كانون الأول/ديسمبر"
+   },
+   "February": {
+      "description": "شباط/فبراير",
+      "message": "شباط/فبراير"
+   },
+   "Friday": {
+      "description": "الجمعة",
+      "message": "الجمعة"
+   },
+   "January": {
+      "description": "كانون الثاني/يناير",
+      "message": "كانون الثاني/يناير"
+   },
+   "July": {
+      "description": "تموز/يوليه",
+      "message": "تموز/يوليه"
+   },
+   "June": {
+      "description": "حزيران/يونيه",
+      "message": "حزيران/يونيه"
+   },
+   "March": {
+      "description": "آذار/مارس",
+      "message": "آذار/مارس"
+   },
+   "May": {
+      "description": "أيار/مايو",
+      "message": "أيار/مايو"
+   },
+   "Monday": {
+      "description": "الاثنين",
+      "message": "الاثنين"
+   },
+   "November": {
+      "description": "تشرين الثاني/نوفمبر",
+      "message": "تشرين الثاني/نوفمبر"
+   },
+   "October": {
+      "description": "تشرين الأول/أكتوبر",
+      "message": "تشرين الأول/أكتوبر"
+   },
+   "Saturday": {
+      "description": "السبت",
+      "message": "السبت"
+   },
+   "September": {
+      "description": "أيلول/سبتمبر",
+      "message": "أيلول/سبتمبر"
+   },
+   "Sunday": {
+      "description": "الأحد",
+      "message": "الأحد"
+   },
+   "Thursday": {
+      "description": "اليوم الخميس",
+      "message": "اليوم الخميس"
+   },
+   "Tuesday": {
+      "description": "اليوم الثلاثاء",
+      "message": "اليوم الثلاثاء"
+   },
+   "Wednesday": {
+      "description": "الأربعاء",
+      "message": "الأربعاء"
+   },
+   "analogueTitle": {
+      "description": "عنوان المقطع التناظرية على مدار الساعة",
+      "message": "التناظرية على مدار الساعة"
+   },
+   "and": {
+      "description": "هذا التذكير تنفجر كل يوم السبت والأحد",
+      "message": " و"
+   },
+   "appearanceTitle": {
+      "description": "عنوان المقطع المظهر",
+      "message": "مظهر"
+   },
+   "appearanceh": {
+      "description": "خيارات العنوان لإعدادات المظهر",
+      "message": "مظهر"
+   },
+   "contacth": {
+      "description": "خيارات العنوان لإعدادات الاتصال",
+      "message": "تعليمات"
+   },
+   "datePickerCustom": {
+      "description": "التسمية لتاريخ مخصص",
+      "message": "الأخرى"
+   },
+   "datePickerToday": {
+      "description": "تسمية لهذا اليوم",
+      "message": "اليوم"
+   },
+   "datePickerTomorrow": {
+      "description": "التسمية للغد",
+      "message": "الغد"
+   },
+   "delete": {
+      "description": "النص Mouseover على أيقونة الحذف للتذكير",
+      "message": "حذف"
+   },
+   "deleteCheck": {
+      "description": "السؤال للتحقق من أن المستخدم يريد حقاً في حذف رسالة تذكير",
+      "message": "حذف التذكير؟"
+   },
+   "digitalTitle": {
+      "description": "عنوان للمقطع خيارات شارة ساعة رقمية",
+      "message": "ساعة رقمية"
+   },
+   "edit": {
+      "description": "Word لتحرير، كما هو الحال في تحرير هذا التنبيه",
+      "message": "تحرير"
+   },
+   "every": {
+      "description": "هذا التذكير تنفجر كل يوم الأحد",
+      "message": " كل"
+   },
+   "everyDay": {
+      "description": "هذا التذكير تنفجر كل يوم",
+      "message": " كل يوم"
+   },
+   "exhortation": {
+      "description": "نص قول المستخدمين أنهم يمكن الحديث بالنسبة لي",
+      "message": "للتعليقات وردود الفعل ومناقشة:"
+   },
+   "extensionDescription": {
+      "description": "وصف لتمديد",
+      "message": "على مدار ساعة تناظرية في شريط الأدوات!"
+   },
+   "extensionName": {
+      "description": "اسم هذا التمديد",
+      "message": "على مدار الساعة ل ™ جوجل كروم"
+   },
+   "formath": {
+      "description": "خيارات العنوان لإعدادات تنسيق",
+      "message": "تنسيق"
+   },
+   "gplus": {
+      "description": "نقدم للاتصال على G +",
+      "message": "اتبع هذا التمديد على جوجل +"
+   },
+   "handColourCustom": {
+      "description": "نص يصف اليدين لون مخصص",
+      "message": "أيدي لون مخصص"
+   },
+   "handColourDark": {
+      "description": "نص يصف أيدي الظلام",
+      "message": "أيدي الظلام"
+   },
+   "handColourPale": {
+      "description": "نص يصف اليدين شاحب",
+      "message": "أيدي شاحب"
+   },
+   "hourChime": {
+      "description": "التسمية لمربع الاختيار للإشارة إلى أن على مدار الساعة وينبغي جعل ضوضاء في كل ساعة",
+      "message": "ساعة الرنين"
+   },
+   "hoverTextCustom": {
+      "description": "تسمية زر اختيار تاريخ مخصص",
+      "message": "تنسيق مخصص"
+   },
+   "infoTitle": {
+      "description": "رأس قسم المعلومات",
+      "message": "معلومات"
+   },
+   "information": {
+      "description": "وصف مختصر للصفحة خيارات",
+      "message": "استخدم هذه الصفحة لتغيير الإعدادات الموجودة على مدار الساعة."
+   },
+   "labelHandsColour": {
+      "description": "التسمية للون اليدين",
+      "message": "لون اليدين"
+   },
+   "labelHandsTrans": {
+      "description": "التسمية للشفافية اليدين",
+      "message": "أيدي الشفافية"
+   },
+   "lblAddNewAlarmHeading": {
+      "description": "عنوان للمقطع إضافة تذكرة جديدة",
+      "message": "إضافة تذكرة جديدة"
+   },
+   "lblAlarmLabel": {
+      "description": "التسمية للتسمية لتذكرة جديدة",
+      "message": "التسمية "
+   },
+   "lblBadgeA": {
+      "description": "التسمية \"منتقي الشفافية\" لخلفية شارة لساعة رقمية",
+      "message": "الشفافية على مدار الساعة الرقمية"
+   },
+   "lblBadgePicker": {
+      "description": "التسمية \"لاقط اللون\" لخلفية شارة لساعة رقمية",
+      "message": "لون خلفية عقارب الساعة الرقمية"
+   },
+   "lblCategory": {
+      "description": "التسمية بالنسبة لتذكرة فئة",
+      "message": "الفئة"
+   },
+   "lblFirstDayoftheWeek": {
+      "description": "التسمية في اليوم الأول من الأسبوع الإدخال",
+      "message": "اليوم الأول من الأسبوع "
+   },
+   "lblHelpSupportContact": {
+      "description": "العنوان لعلامة التبويب تعليمات",
+      "message": "التعليمات والدعم والاتصال"
+   },
+   "lblListOfReminders": {
+      "description": "العنوان لقائمة التذكيرات",
+      "message": "تذكير مجدول"
+   },
+   "lblMainAlarms": {
+      "description": "تسمية عنوان للمقطع التذكيرات",
+      "message": "رسائل التذكير"
+   },
+   "lblNewAlarmHour": {
+      "description": "التسمية لمربع التمرير مدار محدد",
+      "message": "مدار "
+   },
+   "lblNewAlarmMinute": {
+      "description": "التسمية لمربع التمرير محدد دقيقة",
+      "message": "دقيقة "
+   },
+   "lblOffset": {
+      "description": "التسمية للمدخلات التي تضيف أو تزيل الوقت للوقت الفعلي",
+      "message": "إزاحة الوقت"
+   },
+   "lblRingLabel": {
+      "description": "التسمية للقائمة المنسدلة السليمة لتذكرة جديدة",
+      "message": "الصوت "
+   },
+   "lblSelectedTime": {
+      "description": "التسمية للوقت المحدد حاليا",
+      "message": "الوقت "
+   },
+   "mainHoverTitle": {
+      "description": "المستخدم المفضلة تاريخ تنسيق العنوان.",
+      "message": "تنسيق التاريخ"
+   },
+   "minutes": {
+      "description": "كلمة لمدة دقيقة، كما هو الحال في 5 دقائق",
+      "message": "دقيقة"
+   },
+   "nextReminder": {
+      "description": "النص الذي يذهب فقط أمام dat على mouseover رمز تكرار",
+      "message": "تذكير بالتالي: "
+   },
+   "noReminders": {
+      "description": "تظهر عندما يكون هناك لا رسائل تذكيرية",
+      "message": "لم يتم تذكير تعيين"
+   },
+   "on": {
+      "description": "على سبيل المثال، هذا التذكير في هذا التاريخ",
+      "message": " على "
+   },
+   "optionsTitle": {
+      "description": "نص العنوان الذي يظهر في صفحة خيارات",
+      "message": "على مدار الساعة ل ™ جوجل كروم"
+   },
+   "rdoFourDots": {
+      "description": "التسمية لأربعة علامات على مدار الساعة",
+      "message": "النقاط الأربع"
+   },
+   "rdoNoDots": {
+      "description": "تسمية للتقليدية، لا توجد علامات على مدار الساعة",
+      "message": "لا توجد نقاط"
+   },
+   "rdoTwelveDots": {
+      "description": "التسمية لعلامات اثنا عشر ساعة",
+      "message": "النقاط الاثنتي عشرة"
+   },
+   "remindersh": {
+      "description": "خيارات العنوان لإعدادات الرسائل التذكيرية",
+      "message": "رسائل التذكير"
+   },
+   "repeatNewAlarm": {
+      "description": "التسمية لخانة الاختيار تكرار التذكير",
+      "message": "كرر"
+   },
+   "showAnalogue": {
+      "description": "التسمية لمربع الاختيار التناظرية على مدار الساعة",
+      "message": "إظهار الساعة التماثلية"
+   },
+   "showDigital": {
+      "description": "التسمية لمربع الاختيار ساعة رقمية",
+      "message": "إظهار ساعة رقمية"
+   },
+   "silence": {
+      "description": "النص Mouseover على أيقونة كتم الصوت عند التذكير بأي صوت المعينة",
+      "message": "لا يوجد صوت"
+   },
+   "twitter": {
+      "description": "العرض للاتصال على تويتر",
+      "message": "اتبع هذا التمديد على تويتر"
+   },
+   "webstore": {
+      "description": "العرض للاتصال في مخزن ويب",
+      "message": "تقرير الأخطاء، وطلب ميزة أو طرح سؤال على مخزن ويب الكروم"
+   }
+}

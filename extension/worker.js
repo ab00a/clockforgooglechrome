@@ -57,6 +57,19 @@ async function alarmHandler(alarm) {
 //When an alarm sounds, use the alarm handler
 chrome.alarms.onAlarm.addListener(alarmHandler);
 
+// There is an issue that after a period of standby, alarms no longer fire, so this detects the user state change an fixes them
+chrome.idle.onStateChanged.addListener(function (newState) {
+	if (newState === "active") {
+		chrome.alarms.get("___minute", function(updateAlarm) {
+			if (updateAlarm.scheduledTime < Date.now()) {
+				//Alarm didn't fire so we need to reset them
+				console.log("Out of sync - restarting");
+				startup();
+			}
+		});
+	}
+});
+
 //Function that iterates through every Reminder in storage and deletes non-repeating ones that happen in the past
 async function purgeStaleReminders() {
 	let storedReminders = await chrome.storage.sync.get(["alarms", "offset"]); //Collect Reminders from storage
@@ -712,6 +725,9 @@ async function setupPreferences() {
 //This sets everything up and is run at start up
 async function startup() {
 
+	// Clear any remnant alarms (alarms persist across restarts and upgrades)
+	await chrome.alarms.clearAll();
+
 	// Make sure expired reminders don't sound early
 	await purgeStaleReminders();
 
@@ -722,6 +738,7 @@ async function startup() {
 	// Start the clock and set up the regular reminders
 	setUpdateAlarm();
 	regularTime();
+
 }
 
 chrome.runtime.onStartup.addListener(startup);

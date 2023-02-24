@@ -1,0 +1,310 @@
+{
+   "April": {
+      "description": "Aprila",
+      "message": "Aprila"
+   },
+   "August": {
+      "description": "Avgust",
+      "message": "Avgust"
+   },
+   "December": {
+      "description": "Decembra",
+      "message": "Decembra"
+   },
+   "February": {
+      "description": "Februarja",
+      "message": "Februarja"
+   },
+   "Friday": {
+      "description": "Petek",
+      "message": "Petek"
+   },
+   "January": {
+      "description": "Januarja",
+      "message": "Januarja"
+   },
+   "July": {
+      "description": "Julija",
+      "message": "Julija"
+   },
+   "June": {
+      "description": "Junija",
+      "message": "Junija"
+   },
+   "March": {
+      "description": "Marca",
+      "message": "Marca"
+   },
+   "May": {
+      "description": "Maja",
+      "message": "Maja"
+   },
+   "Monday": {
+      "description": "Ponedeljek",
+      "message": "Ponedeljek"
+   },
+   "November": {
+      "description": "Novembra",
+      "message": "Novembra"
+   },
+   "October": {
+      "description": "Oktobra",
+      "message": "Oktobra"
+   },
+   "Saturday": {
+      "description": "Sobota",
+      "message": "Sobota"
+   },
+   "September": {
+      "description": "Septembra",
+      "message": "Septembra"
+   },
+   "Sunday": {
+      "description": "Nedelja",
+      "message": "Nedelja"
+   },
+   "Thursday": {
+      "description": "Četrtek",
+      "message": "Četrtek"
+   },
+   "Tuesday": {
+      "description": "Torek",
+      "message": "Torek"
+   },
+   "Wednesday": {
+      "description": "Sreda",
+      "message": "Sreda"
+   },
+   "analogueTitle": {
+      "description": "Naslov oddelka analogna ura",
+      "message": "Analogna ura"
+   },
+   "and": {
+      "description": "to opozorilo ugasne vsako soboto in nedeljo",
+      "message": " in"
+   },
+   "appearanceTitle": {
+      "description": "Naslov oddelka videz",
+      "message": "Videz"
+   },
+   "appearanceh": {
+      "description": "Možnosti postavko za nastavitve videza",
+      "message": "Videz"
+   },
+   "contacth": {
+      "description": "Možnosti, naslov za stik nastavitve",
+      "message": "pomoč"
+   },
+   "datePickerCustom": {
+      "description": "Oznaka za datum po meri",
+      "message": "Drugih"
+   },
+   "datePickerToday": {
+      "description": "Oznaka za danes",
+      "message": "Danes"
+   },
+   "datePickerTomorrow": {
+      "description": "Oznaka za jutri",
+      "message": "Jutri"
+   },
+   "delete": {
+      "description": "Besedilo mouseover na ikono Izbriši za opomine",
+      "message": "Izbrisati"
+   },
+   "deleteCheck": {
+      "description": "Vprašanje za preverjanje, da je uporabnik zares želi izbrisati opomnik",
+      "message": "Ali želite izbrisati opozorilo?"
+   },
+   "digitalTitle": {
+      "description": "Naslov za digitalno uro značko predkupna pravica sekcija",
+      "message": "Digitalna ura"
+   },
+   "edit": {
+      "description": "Word za urejanje, kot v urediti ta alarm",
+      "message": "Urejanje"
+   },
+   "every": {
+      "description": "to opozorilo ugasne vsako nedeljo",
+      "message": " vsak"
+   },
+   "everyDay": {
+      "description": "to opozorilo ugasne vsak dan",
+      "message": " vsak dan"
+   },
+   "exhortation": {
+      "description": "Besedilo, ki uporabnikom pove, da lahko govori z mano",
+      "message": "Za komentarje, povratne informacije in razpravo:"
+   },
+   "extensionDescription": {
+      "description": "Opis razširitev",
+      "message": "Analogna ura v orodni vrstici!"
+   },
+   "extensionName": {
+      "description": "Ime tega podaljšanja",
+      "message": "Ura za Microsoft Edge ™"
+   },
+   "formath": {
+      "description": "Možnosti postavko za nastavitve oblike",
+      "message": "Oblika"
+   },
+   "gplus": {
+      "description": "Ponujajo povezati na G +",
+      "message": "Sledite to podaljšanje na Google +"
+   },
+   "handColourCustom": {
+      "description": "Besedilo, ki opisuje po meri barva roke",
+      "message": "Po meri barva roke"
+   },
+   "handColourDark": {
+      "description": "Besedilo, ki opisuje temne roke",
+      "message": "Temno roke"
+   },
+   "handColourPale": {
+      "description": "Besedilo, ki opisuje bledo roke",
+      "message": "Bledo roke"
+   },
+   "hourChime": {
+      "description": "Oznaka za polje, ki označuje, da je ura naj bi hrup vsako uro",
+      "message": "Zvonjenje ure"
+   },
+   "hoverTextCustom": {
+      "description": "Oznaka za izbiro gumb po meri",
+      "message": "Obliko zapisa po meri"
+   },
+   "infoTitle": {
+      "description": "Glava razdelka informacije",
+      "message": "Informacije"
+   },
+   "information": {
+      "description": "Kratek opis strani možnosti",
+      "message": "Stran uporabite, če želite spremeniti nastavitve na uro."
+   },
+   "labelHandsColour": {
+      "description": "Oznaka za roke barve",
+      "message": "Roke barve"
+   },
+   "labelHandsTrans": {
+      "description": "Oznaka za roke preglednosti",
+      "message": "Roke preglednosti"
+   },
+   "lblAddNewAlarmHeading": {
+      "description": "Naslov za odseku Dodaj nov opomin",
+      "message": "Dodaj nov opomin"
+   },
+   "lblAlarmLabel": {
+      "description": "Oznaka za oznako za nov opomin",
+      "message": "Oznaka "
+   },
+   "lblBadgeA": {
+      "description": "Oznaka za izbirnik preglednosti za značko ozadje za digitalna ura",
+      "message": "Digitalna ura preglednosti"
+   },
+   "lblBadgePicker": {
+      "description": "Oznaka za izbirnik barve za ozadje značko za digitalna ura",
+      "message": "Digitalna ura barva ozadja"
+   },
+   "lblCategory": {
+      "description": "Etiketa za kategorijo opomnik",
+      "message": "Kategorija"
+   },
+   "lblFirstDayoftheWeek": {
+      "description": "Oznaka za prvi dan v tednu, vložek",
+      "message": "Prvi dan v tednu "
+   },
+   "lblHelpSupportContact": {
+      "description": "Naslov za pomoč kartici",
+      "message": "Pomoč, podporo in stike"
+   },
+   "lblListOfReminders": {
+      "description": "Naslov za seznam opomnikov",
+      "message": "Načrtovani opomniki"
+   },
+   "lblMainAlarms": {
+      "description": "Naslovom oznako za opomnike oddelek",
+      "message": "Opomniki"
+   },
+   "lblNewAlarmHour": {
+      "description": "Oznaka za izbirnik drsnik uro",
+      "message": "Uro "
+   },
+   "lblNewAlarmMinute": {
+      "description": "Oznaka za minuto selektor drsnik",
+      "message": "Minuto "
+   },
+   "lblOffset": {
+      "description": "Oznaka za vložek, ki se doda ali odstrani čas, da dejansko čas",
+      "message": "Čas odmik"
+   },
+   "lblRingLabel": {
+      "description": "Oznaka za zvok dropdown za nov opomin",
+      "message": "Zvok "
+   },
+   "lblSelectedTime": {
+      "description": "Oznako za trenutno izbrano časovno",
+      "message": "Čas "
+   },
+   "mainHoverTitle": {
+      "description": "Datum oblika naslova je izbral uporabnik.",
+      "message": "Oblika datuma"
+   },
+   "minutes": {
+      "description": "Beseda minut, kot 5 minut",
+      "message": "minut"
+   },
+   "nextReminder": {
+      "description": "Besedilo, ki gre pred je dat na mouseover ponovite ikone",
+      "message": "Naslednji opomnik: "
+   },
+   "noReminders": {
+      "description": "Ko obstajajo ni opomnikov",
+      "message": "Niso nastavljene opomniki"
+   },
+   "on": {
+      "description": "Na primer, ta opomnik je na ta dan",
+      "message": " na "
+   },
+   "optionsTitle": {
+      "description": "Besedilo naslova, ki se prikaže na strani možnosti",
+      "message": "Ura za Microsoft Edge ™"
+   },
+   "rdoFourDots": {
+      "description": "Oznaka za štiri označevalci uro",
+      "message": "Štiri pike"
+   },
+   "rdoNoDots": {
+      "description": "Oznaka za tradicionalne, brez oznak ura",
+      "message": "Brez pike"
+   },
+   "rdoTwelveDots": {
+      "description": "Oznaka za dvanajst označevalci uro",
+      "message": "Dvanajst pike"
+   },
+   "remindersh": {
+      "description": "Naslov za opomnike nastavitve možnosti",
+      "message": "Opomniki"
+   },
+   "repeatNewAlarm": {
+      "description": "Oznaka za polje ponovite opomnik",
+      "message": "Ponovite"
+   },
+   "showAnalogue": {
+      "description": "Oznaka za polje analogna ura",
+      "message": "Pokaži analogna ura"
+   },
+   "showDigital": {
+      "description": "Oznaka za polje digitalna ura",
+      "message": "Pokaži digitalna ura"
+   },
+   "silence": {
+      "description": "Mouseover besedilo ikono nem ko opomnik je dodeljena zvoka",
+      "message": "Brez zvoka"
+   },
+   "twitter": {
+      "description": "Ponudba povezati na Twitter",
+      "message": "Sledite to podaljšanje na Twitter"
+   },
+   "webstore": {
+      "description": "Ponudba za povezavo spletne trgovine",
+      "message": "Poročilo bug, funkcija zahtevo ali zastavite vprašanje na spletna trgovina Chrome"
+   }
+}

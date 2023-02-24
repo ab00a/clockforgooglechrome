@@ -1,0 +1,310 @@
+{
+   "April": {
+      "description": "Nisan",
+      "message": "Nisan"
+   },
+   "August": {
+      "description": "Ağustos",
+      "message": "Ağustos"
+   },
+   "December": {
+      "description": "Aralık",
+      "message": "Aralık"
+   },
+   "February": {
+      "description": "Şubat",
+      "message": "Şubat"
+   },
+   "Friday": {
+      "description": "Cuma",
+      "message": "Cuma"
+   },
+   "January": {
+      "description": "Ocak",
+      "message": "Ocak"
+   },
+   "July": {
+      "description": "Temmuz",
+      "message": "Temmuz"
+   },
+   "June": {
+      "description": "Haziran",
+      "message": "Haziran"
+   },
+   "March": {
+      "description": "Mart",
+      "message": "Mart"
+   },
+   "May": {
+      "description": "Mayıs",
+      "message": "Mayıs"
+   },
+   "Monday": {
+      "description": "Pazartesi",
+      "message": "Pazartesi"
+   },
+   "November": {
+      "description": "Kasım",
+      "message": "Kasım"
+   },
+   "October": {
+      "description": "Ekim",
+      "message": "Ekim"
+   },
+   "Saturday": {
+      "description": "Cumartesi",
+      "message": "Cumartesi"
+   },
+   "September": {
+      "description": "Eylül",
+      "message": "Eylül"
+   },
+   "Sunday": {
+      "description": "Pazar",
+      "message": "Pazar"
+   },
+   "Thursday": {
+      "description": "Perşembe",
+      "message": "Perşembe"
+   },
+   "Tuesday": {
+      "description": "Salı",
+      "message": "Salı"
+   },
+   "Wednesday": {
+      "description": "Çarşamba",
+      "message": "Çarşamba"
+   },
+   "analogueTitle": {
+      "description": "Analog Saat bölüm başlığı",
+      "message": "Analog Saat"
+   },
+   "and": {
+      "description": "Bu hatırlatma her Cumartesi ve Pazar gider.",
+      "message": " ve"
+   },
+   "appearanceTitle": {
+      "description": "Görünüm bölümünde başlığı",
+      "message": "Görünüm"
+   },
+   "appearanceh": {
+      "description": "Görünüm ayarlarını başlık seçenekleri",
+      "message": "Görünüm"
+   },
+   "contacth": {
+      "description": "İletişim ayarlarını başlık seçenekleri",
+      "message": "Yardım"
+   },
+   "datePickerCustom": {
+      "description": "Özel Tarih etiketi",
+      "message": "Diğer"
+   },
+   "datePickerToday": {
+      "description": "Bugün için etiket",
+      "message": "Bugün"
+   },
+   "datePickerTomorrow": {
+      "description": "Yarın için etiket",
+      "message": "Yarın"
+   },
+   "delete": {
+      "description": "Mouseover metni Sil simgesini hatırlatma",
+      "message": "Sil"
+   },
+   "deleteCheck": {
+      "description": "Kullanıcının gerçekten bir hatırlatma silmek istediği doğrulamak için soru",
+      "message": "Uyarı mektubu silinsin mi?"
+   },
+   "digitalTitle": {
+      "description": "Dijital saat rozet seçenekleri Bölümü başlığı",
+      "message": "Dijital saat"
+   },
+   "edit": {
+      "description": "Kelime düzenlemek, bu alarm olarak düzenleme",
+      "message": "Düzenle"
+   },
+   "every": {
+      "description": "Bu hatırlatma her Pazar gider.",
+      "message": " her"
+   },
+   "everyDay": {
+      "description": "Bu hatırlatma her gün gider.",
+      "message": " Her gün"
+   },
+   "exhortation": {
+      "description": "Kullanıcılar, onlar-ebilmek konuşmak bana anlatmaya metin",
+      "message": "Yorumlar, geri bildirim ve tartışma için:"
+   },
+   "extensionDescription": {
+      "description": "Uzantının tanımlaması",
+      "message": "Araç çubuğunda bir analog saat!"
+   },
+   "extensionName": {
+      "description": "Bu uzantı adı",
+      "message": "Microsoft Edge ™ Clock"
+   },
+   "formath": {
+      "description": "Biçim ayarları için başlık seçenekleri",
+      "message": "Biçim"
+   },
+   "gplus": {
+      "description": "g + bağlamak teklif",
+      "message": "Bu eklenti Google + izleyin"
+   },
+   "handColourCustom": {
+      "description": "Özel renk eller açıklayan metin",
+      "message": "Özel renk eller"
+   },
+   "handColourDark": {
+      "description": "Karanlık eller açıklayan metin",
+      "message": "Karanlık eller"
+   },
+   "handColourPale": {
+      "description": "Soluk eller açıklayan metin",
+      "message": "Soluk eller"
+   },
+   "hourChime": {
+      "description": "Saat her saat bir gürültü yapmak gerektiğini belirtmek onay kutusu etiketi",
+      "message": "Saat çan"
+   },
+   "hoverTextCustom": {
+      "description": "Özel Tarih seçimi düğmesi etiketi",
+      "message": "Özel biçim"
+   },
+   "infoTitle": {
+      "description": "Bilgi bölüm başlığı",
+      "message": "Bilgi"
+   },
+   "information": {
+      "description": "Seçenekler sayfası ile ilgili kısa bir açıklama",
+      "message": "Saat ayarlarını değiştirmek için bu sayfayı kullanın."
+   },
+   "labelHandsColour": {
+      "description": "Eller renk etiketi",
+      "message": "Renk eller"
+   },
+   "labelHandsTrans": {
+      "description": "Etiket eller şeffaflık",
+      "message": "Eller şeffaflık"
+   },
+   "lblAddNewAlarmHeading": {
+      "description": "Ekle yeni hatırlatma Bölümü başlığı",
+      "message": "Yeni bir anımsatıcı ekleme"
+   },
+   "lblAlarmLabel": {
+      "description": "Etiket Etiket için yeni bir uyarı mektubu",
+      "message": "Etiket "
+   },
+   "lblBadgeA": {
+      "description": "Rozet arka plan dijital saat için saydamlık seçici etiketi",
+      "message": "Dijital saat şeffaflık"
+   },
+   "lblBadgePicker": {
+      "description": "Rozet arka plan dijital saat için renk seçici etiketi",
+      "message": "Dijital saat arka plan rengi"
+   },
+   "lblCategory": {
+      "description": "Bir hatırlatma kategori etiketi",
+      "message": "Kategori"
+   },
+   "lblFirstDayoftheWeek": {
+      "description": "Etiket giriş haftanın ilk günü",
+      "message": "Haftanın ilk günü "
+   },
+   "lblHelpSupportContact": {
+      "description": "Başlık için yardım sekmesi",
+      "message": "Yardım, destek ve iletişim"
+   },
+   "lblListOfReminders": {
+      "description": "Anımsatıcı listesi başlığı",
+      "message": "Zamanlanmış anımsatıcıların"
+   },
+   "lblMainAlarms": {
+      "description": "Anımsatıcı bölümünde başlık etiketi",
+      "message": "Anımsatıcıları"
+   },
+   "lblNewAlarmHour": {
+      "description": "Saat seçici kaymak için etiket",
+      "message": "Saat "
+   },
+   "lblNewAlarmMinute": {
+      "description": "Dakikada seçici kaymak için etiket",
+      "message": "Dakika "
+   },
+   "lblOffset": {
+      "description": "Ekler veya kaldırır zaman gerçek zaman giriş için etiket",
+      "message": "Saat farkı"
+   },
+   "lblRingLabel": {
+      "description": "Etiket için yeni bir uyarı mektubu için ses açılır",
+      "message": "Ses "
+   },
+   "lblSelectedTime": {
+      "description": "Seçili zaman etiketi",
+      "message": "Zaman "
+   },
+   "mainHoverTitle": {
+      "description": "Kullanıcının tercih ettiği tarih başlığını Biçimlendir.",
+      "message": "Tarih biçimi"
+   },
+   "minutes": {
+      "description": "Kelime olduğu gibi 5 dakika dakika",
+      "message": "dakika"
+   },
+   "nextReminder": {
+      "description": "Tekrar simgeyi mouseover sadece dat giden metin",
+      "message": "Sonraki bir hatırlatma: "
+   },
+   "noReminders": {
+      "description": "Hiçbir uyarı mektupları olduğunda gösterilen",
+      "message": "Orada hiçbir uyarı mektupları ayarlanır"
+   },
+   "on": {
+      "description": "Örneğin, bu tarihte bu mektubudur",
+      "message": " Tarih "
+   },
+   "optionsTitle": {
+      "description": "Options sayfasında görünen başlık metni",
+      "message": "Microsoft Edge ™ Clock"
+   },
+   "rdoFourDots": {
+      "description": "Etiket işaretleri dört saat için",
+      "message": "Dört nokta"
+   },
+   "rdoNoDots": {
+      "description": "Etiket için geleneksel, hiçbir işaretleri saat",
+      "message": "Hiçbir nokta"
+   },
+   "rdoTwelveDots": {
+      "description": "Saat oniki işaretleri için etiket",
+      "message": "On iki nokta"
+   },
+   "remindersh": {
+      "description": "Anımsatıcı ayarları için başlık seçenekleri",
+      "message": "Anımsatıcıları"
+   },
+   "repeatNewAlarm": {
+      "description": "Tekrar Anımsatıcı onay kutusu etiketi",
+      "message": "Yinele"
+   },
+   "showAnalogue": {
+      "description": "Analog Saat onay kutusunun etiketi",
+      "message": "Analog Saat göster"
+   },
+   "showDigital": {
+      "description": "Dijital Saat onay kutusunun etiketi",
+      "message": "Dijital saati göster"
+   },
+   "silence": {
+      "description": "Uyarı mektubu atanmış ses olduğunda sessiz simgesi mouseover metni",
+      "message": "Ses yok"
+   },
+   "twitter": {
+      "description": "Twitter bağlamak teklif",
+      "message": "Bu uzantı Twitter'da takip edin."
+   },
+   "webstore": {
+      "description": "Web deposuna bağlanmak teklif",
+      "message": "Rapor bir hata, özellik isteği veya Chrome Web deposunun bir soru sorun"
+   }
+}

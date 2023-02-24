@@ -1,0 +1,310 @@
+{
+   "April": {
+      "description": "Abril",
+      "message": "Abril"
+   },
+   "August": {
+      "description": "Agost",
+      "message": "Agost"
+   },
+   "December": {
+      "description": "Desembre",
+      "message": "Desembre"
+   },
+   "February": {
+      "description": "Febrer",
+      "message": "Febrer"
+   },
+   "Friday": {
+      "description": "Divendres",
+      "message": "Divendres"
+   },
+   "January": {
+      "description": "Gener",
+      "message": "Gener"
+   },
+   "July": {
+      "description": "Juliol",
+      "message": "Juliol"
+   },
+   "June": {
+      "description": "Juny",
+      "message": "Juny"
+   },
+   "March": {
+      "description": "Març",
+      "message": "Març"
+   },
+   "May": {
+      "description": "Maig",
+      "message": "Maig"
+   },
+   "Monday": {
+      "description": "Dilluns",
+      "message": "Dilluns"
+   },
+   "November": {
+      "description": "Novembre",
+      "message": "Novembre"
+   },
+   "October": {
+      "description": "Octubre",
+      "message": "Octubre"
+   },
+   "Saturday": {
+      "description": "Dissabte",
+      "message": "Dissabte"
+   },
+   "September": {
+      "description": "Setembre",
+      "message": "Setembre"
+   },
+   "Sunday": {
+      "description": "Diumenge",
+      "message": "Diumenge"
+   },
+   "Thursday": {
+      "description": "Dijous",
+      "message": "Dijous"
+   },
+   "Tuesday": {
+      "description": "Dimarts",
+      "message": "Dimarts"
+   },
+   "Wednesday": {
+      "description": "Dimecres",
+      "message": "Dimecres"
+   },
+   "analogueTitle": {
+      "description": "El títol de la secció de rellotge analògic",
+      "message": "Rellotge analògic"
+   },
+   "and": {
+      "description": "aquesta notificació es despenja cada dissabte i diumenge",
+      "message": " i"
+   },
+   "appearanceTitle": {
+      "description": "El títol de la secció d'aparició",
+      "message": "Aparició"
+   },
+   "appearanceh": {
+      "description": "Opcions d'escenes d'aparició de títol",
+      "message": "Aparició"
+   },
+   "contacth": {
+      "description": "Opcions de direcció per a configuració de contacte",
+      "message": "Ajuda"
+   },
+   "datePickerCustom": {
+      "description": "Etiqueta per data de costum",
+      "message": "Altres"
+   },
+   "datePickerToday": {
+      "description": "Etiqueta d'avui",
+      "message": "Avui en dia"
+   },
+   "datePickerTomorrow": {
+      "description": "Etiqueta per demà",
+      "message": "Demà"
+   },
+   "delete": {
+      "description": "Text de passar el ratolí a la icona d'eliminar els recordatoris",
+      "message": "Suprimir"
+   },
+   "deleteCheck": {
+      "description": "Pregunta per verificar que l'usuari realment vol esborrar un recordatori",
+      "message": "Suprimeix l'avís?"
+   },
+   "digitalTitle": {
+      "description": "La partida per a la secció d'opcions de targeta d'identificació de rellotge digital",
+      "message": "Rellotge digital"
+   },
+   "edit": {
+      "description": "La paraula per a editar, com en editar aquesta alarma",
+      "message": "Editar"
+   },
+   "every": {
+      "description": "aquesta notificació es despenja cada diumenge",
+      "message": " cada"
+   },
+   "everyDay": {
+      "description": "aquesta notificació es despenja cada dia",
+      "message": " Tots els dies"
+   },
+   "exhortation": {
+      "description": "Text dient als usuaris que poden parlar per mi",
+      "message": "Per a comentaris, comentaris i la discussió:"
+   },
+   "extensionDescription": {
+      "description": "La descripció de l'extensió",
+      "message": "Un rellotge analògic a la barra d'eines!"
+   },
+   "extensionName": {
+      "description": "El nom d'aquesta ampliació",
+      "message": "Rellotge per a Microsoft Edge ™"
+   },
+   "formath": {
+      "description": "Opcions d'escenes de format de la partida",
+      "message": "Format de"
+   },
+   "gplus": {
+      "description": "Ofereixen connectar-se a G +",
+      "message": "Seguir aquesta extensió a Google +"
+   },
+   "handColourCustom": {
+      "description": "Text que descriu a mans de color personalitzat",
+      "message": "Mans de color personalitzat"
+   },
+   "handColourDark": {
+      "description": "Text que descriu les mans foscos",
+      "message": "Mans foscos"
+   },
+   "handColourPale": {
+      "description": "Text que descriu les mans pàl·lid",
+      "message": "Mans pàl·lid"
+   },
+   "hourChime": {
+      "description": "L'etiqueta per a la casella de selecció indicar que el rellotge s'ha de fer un soroll cada hora",
+      "message": "Hores repic"
+   },
+   "hoverTextCustom": {
+      "description": "Etiqueta per al botó de selecció de dates personalitzat",
+      "message": "Format personalitzat"
+   },
+   "infoTitle": {
+      "description": "Capçalera de la secció informació",
+      "message": "Informació"
+   },
+   "information": {
+      "description": "Una breu descripció de la pàgina d'opcions",
+      "message": "Feu servir aquesta pàgina per canviar els paràmetres en el rellotge."
+   },
+   "labelHandsColour": {
+      "description": "L'etiqueta per a les mans color",
+      "message": "Color a les teves mans"
+   },
+   "labelHandsTrans": {
+      "description": "Etiqueta per la transparència de les mans",
+      "message": "Transparència a les teves mans"
+   },
+   "lblAddNewAlarmHeading": {
+      "description": "La partida per a la secció d'afegir nou recordatori",
+      "message": "Afegir nou recordatori"
+   },
+   "lblAlarmLabel": {
+      "description": "L'etiqueta per a l'etiqueta d'un nou recordatori",
+      "message": "Etiqueta "
+   },
+   "lblBadgeA": {
+      "description": "Etiqueta per al selector de transparència per a fons de la targeta d'identificació per al rellotge digital",
+      "message": "Transparència de rellotge digital"
+   },
+   "lblBadgePicker": {
+      "description": "Etiqueta per al selector de color de fons del distintiu per al rellotge digital",
+      "message": "Color de fons de rellotge digital"
+   },
+   "lblCategory": {
+      "description": "L'etiqueta per a la categoria d'un recordatori",
+      "message": "Categoria"
+   },
+   "lblFirstDayoftheWeek": {
+      "description": "Etiqueta per al primer dia de la setmana d'entrada",
+      "message": "Primer dia de la setmana "
+   },
+   "lblHelpSupportContact": {
+      "description": "A la pestanya ajuda",
+      "message": "Ajuda, suport i contacte"
+   },
+   "lblListOfReminders": {
+      "description": "La partida per a la llista de notificacions",
+      "message": "Recordatoris planificades"
+   },
+   "lblMainAlarms": {
+      "description": "Una etiqueta de títol per a la secció de notificacions",
+      "message": "Recordatoris"
+   },
+   "lblNewAlarmHour": {
+      "description": "Etiqueta per la colissa de selector d'hora",
+      "message": "Hora "
+   },
+   "lblNewAlarmMinute": {
+      "description": "Etiqueta per la colissa minut selector",
+      "message": "Minut "
+   },
+   "lblOffset": {
+      "description": "Etiqueta d'entrada que afegeix o treu temps al temps present",
+      "message": "Zona horària"
+   },
+   "lblRingLabel": {
+      "description": "Etiqueta de quadre desplegable so per a un nou recordatori",
+      "message": "So "
+   },
+   "lblSelectedTime": {
+      "description": "L'etiqueta per a l'hora seleccionada actualment",
+      "message": "Temps "
+   },
+   "mainHoverTitle": {
+      "description": "L'usuari preferida de títol de format de data.",
+      "message": "Format de data"
+   },
+   "minutes": {
+      "description": "La paraula per minuts, com en 5 minuts",
+      "message": "avui:"
+   },
+   "nextReminder": {
+      "description": "Text que va davant el dat en el sobre ratolí de la icona de repetició",
+      "message": "Recordatori següent: "
+   },
+   "noReminders": {
+      "description": "Mostrat quan no hi ha cap avís",
+      "message": "No hi ha cap conjunt de recordatoris"
+   },
+   "on": {
+      "description": "Per exemple, aquesta notificació és sobre aquesta data",
+      "message": " en "
+   },
+   "optionsTitle": {
+      "description": "El text de títol que apareix a la pàgina d'opcions",
+      "message": "Rellotge per a Microsoft Edge ™"
+   },
+   "rdoFourDots": {
+      "description": "Etiqueta per al rellotge per quatre marcadors",
+      "message": "Quatre punts"
+   },
+   "rdoNoDots": {
+      "description": "Per a l'etiqueta tradicional, sense marcadors del rellotge",
+      "message": "No hi ha punts"
+   },
+   "rdoTwelveDots": {
+      "description": "Etiqueta per al rellotge de dotze marcadors",
+      "message": "Dotze punts"
+   },
+   "remindersh": {
+      "description": "Opcions de configuració de notificacions de la partida",
+      "message": "Recordatoris"
+   },
+   "repeatNewAlarm": {
+      "description": "L'etiqueta per a la casella de selecció Recordatori de repetició",
+      "message": "Repetir"
+   },
+   "showAnalogue": {
+      "description": "Etiqueta de la Caixa de comprovació de rellotge analògic",
+      "message": "Mostra el rellotge analògic"
+   },
+   "showDigital": {
+      "description": "Etiqueta de la Caixa de comprovació de rellotge digital",
+      "message": "Mostra el rellotge Digital"
+   },
+   "silence": {
+      "description": "Mouseover text en icona mut quan la notificació no té cap so assignat",
+      "message": "No hi ha so"
+   },
+   "twitter": {
+      "description": "Ofereixen connectar-se a Twitter",
+      "message": "Aquesta extensió de seguir a Twitter"
+   },
+   "webstore": {
+      "description": "Ofereixen connectar-se a la Botiga Web",
+      "message": "Informar d'un d'errors, sol licitud de funció o fer una pregunta a Chrome Web Store"
+   }
+}

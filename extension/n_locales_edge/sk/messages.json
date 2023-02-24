@@ -1,0 +1,310 @@
+{
+   "April": {
+      "description": "Apríla",
+      "message": "Apríla"
+   },
+   "August": {
+      "description": "Augusta",
+      "message": "Augusta"
+   },
+   "December": {
+      "description": "Decembra",
+      "message": "Decembra"
+   },
+   "February": {
+      "description": "Februára",
+      "message": "Februára"
+   },
+   "Friday": {
+      "description": "Piatok",
+      "message": "Piatok"
+   },
+   "January": {
+      "description": "Januára",
+      "message": "Januára"
+   },
+   "July": {
+      "description": "Júla",
+      "message": "Júla"
+   },
+   "June": {
+      "description": "Júna",
+      "message": "Júna"
+   },
+   "March": {
+      "description": "Marca",
+      "message": "Marca"
+   },
+   "May": {
+      "description": "Mája",
+      "message": "Mája"
+   },
+   "Monday": {
+      "description": "Pondelok",
+      "message": "Pondelok"
+   },
+   "November": {
+      "description": "Novembra",
+      "message": "Novembra"
+   },
+   "October": {
+      "description": "Októbra",
+      "message": "Októbra"
+   },
+   "Saturday": {
+      "description": "Sobota",
+      "message": "Sobota"
+   },
+   "September": {
+      "description": "Septembra",
+      "message": "Septembra"
+   },
+   "Sunday": {
+      "description": "Nedeľa",
+      "message": "Nedeľa"
+   },
+   "Thursday": {
+      "description": "Štvrtok",
+      "message": "Štvrtok"
+   },
+   "Tuesday": {
+      "description": "Utorok",
+      "message": "Utorok"
+   },
+   "Wednesday": {
+      "description": "Streda",
+      "message": "Streda"
+   },
+   "analogueTitle": {
+      "description": "Názov časti analógové hodiny",
+      "message": "Analógové hodiny"
+   },
+   "and": {
+      "description": "Toto pripomenutie zhasne každú sobotu a nedeľu",
+      "message": " a"
+   },
+   "appearanceTitle": {
+      "description": "Názov časti vzhľad",
+      "message": "Vzhľad"
+   },
+   "appearanceh": {
+      "description": "Možnosti mieri do Nastavenia vzhåadu",
+      "message": "Vzhľad"
+   },
+   "contacth": {
+      "description": "Možnosti mieri do kontaktu nastavenia",
+      "message": "pomoc"
+   },
+   "datePickerCustom": {
+      "description": "Označenie pre vlastné dátum",
+      "message": "Ostatné"
+   },
+   "datePickerToday": {
+      "description": "Štítok pre dnešok",
+      "message": "Dnes"
+   },
+   "datePickerTomorrow": {
+      "description": "Štítok na zajtrajšok",
+      "message": "Zajtra"
+   },
+   "delete": {
+      "description": "Mouseover text na ikonu odstrániť pre upomienky",
+      "message": "Odstrániť"
+   },
+   "deleteCheck": {
+      "description": "Otázka na overenie, že používateľ naozaj chce odstrániť pripomenutie",
+      "message": "Odstrániť upomienky?"
+   },
+   "digitalTitle": {
+      "description": "Nadpis časti digitálne hodiny odznak možnosti",
+      "message": "Digitálne hodiny"
+   },
+   "edit": {
+      "description": "Slovo pre upravovať, ako upraviť tento alarm",
+      "message": "Upraviť"
+   },
+   "every": {
+      "description": "Toto pripomenutie zhasne každú nedeľu",
+      "message": " každý"
+   },
+   "everyDay": {
+      "description": "Toto pripomenutie zhasne každý deň",
+      "message": " každý deň"
+   },
+   "exhortation": {
+      "description": "Textom, ktorý oznamuje užívateľov, že môže so mnou hovoriť",
+      "message": "Pre pripomienky, názory a diskusie:"
+   },
+   "extensionDescription": {
+      "description": "Opis rozšírenia",
+      "message": "Analogické hodiny v nástrojovej lište!"
+   },
+   "extensionName": {
+      "description": "Názov tohto rozšírenia",
+      "message": "Hodiny pre Microsoft Edge ™"
+   },
+   "formath": {
+      "description": "Možnosti položky pre nastavenie formátu",
+      "message": "Formát"
+   },
+   "gplus": {
+      "description": "Ponúkajú sa pripojiť na G +",
+      "message": "Sledovať toto rozšírenie na Google +"
+   },
+   "handColourCustom": {
+      "description": "Text popisujúci vlastný farebný ruky",
+      "message": "Vlastná farba ruky"
+   },
+   "handColourDark": {
+      "description": "Text popisujúci tmavých rúk",
+      "message": "Tmavé ruky"
+   },
+   "handColourPale": {
+      "description": "Text popisujúci bledo ruky",
+      "message": "Svetlé ruky"
+   },
+   "hourChime": {
+      "description": "Označenie pre začiarkavacie políčko na označenie, že hodiny by mali robiť hluk každú hodinu",
+      "message": "Hodinu zvonkohry"
+   },
+   "hoverTextCustom": {
+      "description": "Označenie pre vlastné dátum výberové tlačidlo",
+      "message": "Vlastný formát"
+   },
+   "infoTitle": {
+      "description": "Informácie hlavičky sekcie",
+      "message": "Informácie"
+   },
+   "information": {
+      "description": "Stručný popis možností stránku",
+      "message": "Na tejto stránke môžete zmeniť nestavenie na hodiny."
+   },
+   "labelHandsColour": {
+      "description": "Označenie pre ruky farba",
+      "message": "Ruky farba"
+   },
+   "labelHandsTrans": {
+      "description": "Označenie pre ruky transparentnosti",
+      "message": "Ruky transparentnosti"
+   },
+   "lblAddNewAlarmHeading": {
+      "description": "Nadpis časti pridať nový pripomenutie",
+      "message": "Pridať novú upomienku"
+   },
+   "lblAlarmLabel": {
+      "description": "Značka na označenie pre novú upomienku",
+      "message": "Štítok "
+   },
+   "lblBadgeA": {
+      "description": "Označenie pre transparentnosť zberač pozadia odznakom pre digitálne hodiny",
+      "message": "Digitálne hodiny transparentnosti"
+   },
+   "lblBadgePicker": {
+      "description": "Menovka pre výber farby pre pozadia odznakom pre digitálne hodiny",
+      "message": "Digitálne hodiny farba pozadia"
+   },
+   "lblCategory": {
+      "description": "Označenie pre kategóriu pripomenutie",
+      "message": "Kategória"
+   },
+   "lblFirstDayoftheWeek": {
+      "description": "Označenie pre prvý deň v týždni, vstup",
+      "message": "Prvý deň v týždni "
+   },
+   "lblHelpSupportContact": {
+      "description": "Nadpis pre pomoc kartu",
+      "message": "Pomoc, podpora a kontakt"
+   },
+   "lblListOfReminders": {
+      "description": "Nadpis zoznamu upomienky",
+      "message": "Plánované pripomenutia"
+   },
+   "lblMainAlarms": {
+      "description": "Menovku položky pre sekcii pripomenutia",
+      "message": "Pripomenutia"
+   },
+   "lblNewAlarmHour": {
+      "description": "Označenie pre hodinu selector jazdca",
+      "message": "Hodinu "
+   },
+   "lblNewAlarmMinute": {
+      "description": "Označenie pre minútu selector jazdca",
+      "message": "Minúta "
+   },
+   "lblOffset": {
+      "description": "Označenie pre vstup, ktorý pridá alebo odstráni čas skutočne spotrebovaný čas",
+      "message": "Časovému posunu"
+   },
+   "lblRingLabel": {
+      "description": "Označenie pre zvuk rozbaľovacej ponuke pre novú upomienku",
+      "message": "Zvuk "
+   },
+   "lblSelectedTime": {
+      "description": "Označenie pre aktuálne vybratý čas.",
+      "message": "Čas "
+   },
+   "mainHoverTitle": {
+      "description": "Používateľ Preferovaný názov formátu dátumu.",
+      "message": "Formát dátumu"
+   },
+   "minutes": {
+      "description": "Slovo minút, ako 5 minút",
+      "message": "minút"
+   },
+   "nextReminder": {
+      "description": "Text, ktorý ide len pred dat na mouseover opakovať ikony",
+      "message": "Ďalším pripomenutie: "
+   },
+   "noReminders": {
+      "description": "Ak neexistujú žiadne pripomenutia",
+      "message": "Nie sú nastavené žiadne pripomenutie"
+   },
+   "on": {
+      "description": "Táto pripomienka je napríklad k tomuto dátumu",
+      "message": " na "
+   },
+   "optionsTitle": {
+      "description": "Titul text zobrazený na stránke možnosti",
+      "message": "Hodiny pre Microsoft Edge ™"
+   },
+   "rdoFourDots": {
+      "description": "Označenie pre štyri značky hodiny",
+      "message": "Štyri bodky"
+   },
+   "rdoNoDots": {
+      "description": "Štítok pre tradičné, bez značiek hodiny",
+      "message": "Bez bodky"
+   },
+   "rdoTwelveDots": {
+      "description": "Označenie pre dvanásť markery hodiny",
+      "message": "Dvanásť bodov"
+   },
+   "remindersh": {
+      "description": "Možnosti položky pre nastavenie pripomenutia",
+      "message": "Pripomenutia"
+   },
+   "repeatNewAlarm": {
+      "description": "Označenie pre začiarkavacie políčko opakovať upomienky",
+      "message": "Opakovať"
+   },
+   "showAnalogue": {
+      "description": "Označenie políčka analógové hodiny",
+      "message": "Zobraziť analógové hodiny"
+   },
+   "showDigital": {
+      "description": "Označenie políčka digitálne hodiny",
+      "message": "Zobraziť digitálne hodiny"
+   },
+   "silence": {
+      "description": "Mouseover text na němá ikony, keď pripomenutie má priradený žiadny zvuk",
+      "message": "Žiadny zvuk"
+   },
+   "twitter": {
+      "description": "Ponuka pripojiť na Twitter",
+      "message": "Sledovať toto rozšírenie na Twitter"
+   },
+   "webstore": {
+      "description": "Ponuka na pripojenie na internetový obchod",
+      "message": "Správa chyba, feature request alebo niečo opýtať na internetovom obchode Chrome"
+   }
+}

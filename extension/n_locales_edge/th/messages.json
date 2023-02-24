@@ -1,0 +1,310 @@
+{
+   "April": {
+      "description": "เมษายน",
+      "message": "เมษายน"
+   },
+   "August": {
+      "description": "สิงหาคม",
+      "message": "สิงหาคม"
+   },
+   "December": {
+      "description": "ธันวาคม",
+      "message": "ธันวาคม"
+   },
+   "February": {
+      "description": "กุมภาพันธ์",
+      "message": "กุมภาพันธ์"
+   },
+   "Friday": {
+      "description": "วันศุกร์",
+      "message": "วันศุกร์"
+   },
+   "January": {
+      "description": "มกราคม",
+      "message": "มกราคม"
+   },
+   "July": {
+      "description": "กรกฎาคม",
+      "message": "กรกฎาคม"
+   },
+   "June": {
+      "description": "มิถุนายน",
+      "message": "มิถุนายน"
+   },
+   "March": {
+      "description": "มีนาคม",
+      "message": "มีนาคม"
+   },
+   "May": {
+      "description": "อาจ",
+      "message": "อาจ"
+   },
+   "Monday": {
+      "description": "วันจันทร์",
+      "message": "วันจันทร์"
+   },
+   "November": {
+      "description": "พฤศจิกายน",
+      "message": "พฤศจิกายน"
+   },
+   "October": {
+      "description": "ตุลาคม",
+      "message": "ตุลาคม"
+   },
+   "Saturday": {
+      "description": "วันเสาร์",
+      "message": "วันเสาร์"
+   },
+   "September": {
+      "description": "กันยายน",
+      "message": "กันยายน"
+   },
+   "Sunday": {
+      "description": "วันอาทิตย์",
+      "message": "วันอาทิตย์"
+   },
+   "Thursday": {
+      "description": "วันพฤหัสบดี",
+      "message": "วันพฤหัสบดี"
+   },
+   "Tuesday": {
+      "description": "วันอังคาร",
+      "message": "วันอังคาร"
+   },
+   "Wednesday": {
+      "description": "วันพุธ",
+      "message": "วันพุธ"
+   },
+   "analogueTitle": {
+      "description": "ชื่อของส่วนนาฬิกาอนาล็อก",
+      "message": "นาฬิกาอนาล็อก"
+   },
+   "and": {
+      "description": "จดหมายเตือนชำระเงินนี้จะปิดทุกวันเสาร์และวันอาทิตย์",
+      "message": " และ"
+   },
+   "appearanceTitle": {
+      "description": "ชื่อของส่วนลักษณะที่ปรากฏ",
+      "message": "ลักษณะที่ปรากฏ"
+   },
+   "appearanceh": {
+      "description": "เลือกหัวข้อสำหรับการตั้งค่าลักษณะที่ปรากฏ",
+      "message": "ลักษณะที่ปรากฏ"
+   },
+   "contacth": {
+      "description": "เลือกหัวข้อสำหรับการตั้งค่าที่ติดต่อ",
+      "message": "วิธีใช้"
+   },
+   "datePickerCustom": {
+      "description": "ป้ายชื่อสำหรับวันแบบกำหนดเอง",
+      "message": "อื่น ๆ"
+   },
+   "datePickerToday": {
+      "description": "ป้ายชื่อสำหรับวันนี้",
+      "message": "วันนี้"
+   },
+   "datePickerTomorrow": {
+      "description": "ป้ายชื่อสำหรับวันพรุ่งนี้",
+      "message": "Tomorrow"
+   },
+   "delete": {
+      "description": "ข้อความ Mouseover บนไอคอนลบสำหรับจดหมายเตือนชำระเงิน",
+      "message": "ลบ"
+   },
+   "deleteCheck": {
+      "description": "คำถามเพื่อตรวจสอบว่า ผู้ใช้จริง ๆ อยากลบตัวเตือน",
+      "message": "ลบการเตือนหรือไม่"
+   },
+   "digitalTitle": {
+      "description": "หัวเรื่องสำหรับส่วนตัวเลือกป้ายชื่อนาฬิกาดิจิทัล",
+      "message": "นาฬิกาแบบดิจิทัล"
+   },
+   "edit": {
+      "description": "Word สำหรับแก้ไข ในการแก้ไขการแจ้งเตือนนี้",
+      "message": "แก้ไข"
+   },
+   "every": {
+      "description": "จดหมายเตือนชำระเงินนี้จะปิดทุกวันอาทิตย์",
+      "message": " ทุก"
+   },
+   "everyDay": {
+      "description": "จดหมายเตือนชำระเงินนี้จะปิดทุกวัน",
+      "message": " ทุกวัน"
+   },
+   "exhortation": {
+      "description": "ข้อความแจ้งผู้ใช้ว่า พวกเขาสามารถพูดคุยกับผม",
+      "message": "สำหรับข้อคิดเห็น ความคิดเห็น และอภิปราย:"
+   },
+   "extensionDescription": {
+      "description": "คำอธิบายของส่วนขยาย",
+      "message": "นาฬิกาอนาล็อกในแถบเครื่องมือ"
+   },
+   "extensionName": {
+      "description": "ชื่อนามสกุลนี้",
+      "message": "นาฬิกาสำหรับ Microsoft Edge ™"
+   },
+   "formath": {
+      "description": "เลือกหัวข้อสำหรับการตั้งค่ารูปแบบ",
+      "message": "รูปแบบ"
+   },
+   "gplus": {
+      "description": "นำเสนอการเชื่อมต่อบน G +",
+      "message": "ตามส่วนขยายนี้บน Google +"
+   },
+   "handColourCustom": {
+      "description": "ข้อความที่อธิบายมือสีแบบกำหนดเอง",
+      "message": "มือสีแบบกำหนดเอง"
+   },
+   "handColourDark": {
+      "description": "ข้อความที่อธิบายมือมืด",
+      "message": "มือมืด"
+   },
+   "handColourPale": {
+      "description": "ข้อความที่อธิบายมือซีด",
+      "message": "มือซีด"
+   },
+   "hourChime": {
+      "description": "ป้ายชื่อสำหรับกล่องกาเครื่องหมายเพื่อบ่งชี้ว่า นาฬิกาควรทำเสียงรบกวนในทุกชั่วโมง",
+      "message": "ชั่วโมง Chime"
+   },
+   "hoverTextCustom": {
+      "description": "ป้ายชื่อสำหรับปุ่มเลือกวันแบบกำหนดเอง",
+      "message": "รูปแบบกำหนดเอง"
+   },
+   "infoTitle": {
+      "description": "ข้อมูลส่วนหัว",
+      "message": "ข้อมูล"
+   },
+   "information": {
+      "description": "คำอธิบายโดยย่อของหน้าตัวเลือก",
+      "message": "ใช้เพจนี้เพื่อเปลี่ยนแปลงการตั้งค่าบนนาฬิกา"
+   },
+   "labelHandsColour": {
+      "description": "ป้ายชื่อสำหรับสีมือ",
+      "message": "สีมือ"
+   },
+   "labelHandsTrans": {
+      "description": "ป้ายชื่อสำหรับความโปร่งใสของมือ",
+      "message": "ความโปร่งใสของมือ"
+   },
+   "lblAddNewAlarmHeading": {
+      "description": "หัวเรื่องสำหรับส่วนของจดหมายเตือนชำระเงินใหม่เพิ่ม",
+      "message": "เพิ่มใหม่เตือน"
+   },
+   "lblAlarmLabel": {
+      "description": "ป้ายชื่อป้ายผนึกสำหรับจดหมายเตือนชำระเงินใหม่",
+      "message": "ป้ายชื่อ "
+   },
+   "lblBadgeA": {
+      "description": "ป้ายชื่อสำหรับตัวเลือกความโปร่งใสสำหรับพื้นหลังป้ายชื่อสำหรับนาฬิกาดิจิทัล",
+      "message": "ความโปร่งใสของนาฬิกาดิจิตอล"
+   },
+   "lblBadgePicker": {
+      "description": "ป้ายชื่อสำหรับการเลือกสีสำหรับพื้นหลังป้ายชื่อสำหรับนาฬิกาดิจิทัล",
+      "message": "สีพื้นหลังนาฬิกาดิจิทัล"
+   },
+   "lblCategory": {
+      "description": "ป้ายชื่อสำหรับประเภทเตือน",
+      "message": "ประเภท"
+   },
+   "lblFirstDayoftheWeek": {
+      "description": "ป้ายชื่อสำหรับวันแรกของสัปดาห์การป้อนข้อมูล",
+      "message": "วันแรกของสัปดาห์ "
+   },
+   "lblHelpSupportContact": {
+      "description": "หัวเรื่องสำหรับวิธีใช้แท็บ",
+      "message": "วิธีใช้ สนับสนุน และติดต่อ"
+   },
+   "lblListOfReminders": {
+      "description": "หัวเรื่องสำหรับรายการจดหมายเตือนชำระเงิน",
+      "message": "จดหมายเตือนชำระเงินตามกำหนดการ"
+   },
+   "lblMainAlarms": {
+      "description": "ป้ายชื่อหัวเรื่องหัวข้อจดหมายเตือนชำระเงิน",
+      "message": "จดหมายเตือนชำระเงิน"
+   },
+   "lblNewAlarmHour": {
+      "description": "ป้ายชื่อสำหรับเลื่อนตัวเลือกชั่วโมง",
+      "message": "ชั่วโมง "
+   },
+   "lblNewAlarmMinute": {
+      "description": "ป้ายชื่อสำหรับเลื่อนตัวเลือกใกล้วันเดินทาง",
+      "message": "ใกล้วันเดินทาง "
+   },
+   "lblOffset": {
+      "description": "ป้ายชื่อสำหรับการป้อนข้อมูลที่เพิ่ม หรือเอาออกเวลาเวลาแท้จริง",
+      "message": "ชดเชยเวลา"
+   },
+   "lblRingLabel": {
+      "description": "ป้ายชื่อสำหรับรายการแบบหล่นลงเสียงสำหรับเตือนใหม่",
+      "message": "เสียง "
+   },
+   "lblSelectedTime": {
+      "description": "ป้ายชื่อสำหรับเวลาที่เลือกในปัจจุบัน",
+      "message": "เวลา "
+   },
+   "mainHoverTitle": {
+      "description": "ผู้ใช้ของที่ต้องการชื่อเรื่องรูปแบบวัน",
+      "message": "รูปแบบวัน"
+   },
+   "minutes": {
+      "description": "คำนาที ใน 5 นาที",
+      "message": "นาที"
+   },
+   "nextReminder": {
+      "description": "ข้อความที่ไปอยู่หน้า dat การ mouseover คอนซ้ำ",
+      "message": "ตัวเตือนถัดไป: "
+   },
+   "noReminders": {
+      "description": "แสดงเมื่อมีตัวเตือน",
+      "message": "มีการตั้งค่าจดหมายเตือนชำระเงินไม่มี"
+   },
+   "on": {
+      "description": "ตัวอย่าง จดหมายเตือนชำระเงินนี้คือในวันนี้",
+      "message": " บน "
+   },
+   "optionsTitle": {
+      "description": "ข้อความชื่อเรื่องที่ปรากฏในหน้า options",
+      "message": "นาฬิกาสำหรับ Microsoft Edge ™"
+   },
+   "rdoFourDots": {
+      "description": "ป้ายชื่อสำหรับเครื่องหมายสี่นาฬิกา",
+      "message": "สี่จุด"
+   },
+   "rdoNoDots": {
+      "description": "ป้ายชื่อสำหรับการตอกบัตรไม่มีเครื่องหมายดั้งเดิม",
+      "message": "ไม่มีจุด"
+   },
+   "rdoTwelveDots": {
+      "description": "ป้ายชื่อสำหรับเครื่องหมายสิบสองนาฬิกา",
+      "message": "สิบสองจุด"
+   },
+   "remindersh": {
+      "description": "เลือกหัวข้อสำหรับการตั้งค่าตัวเตือน",
+      "message": "จดหมายเตือนชำระเงิน"
+   },
+   "repeatNewAlarm": {
+      "description": "ป้ายชื่อสำหรับกล่องกาเครื่องหมายตัวเตือนซ้ำ",
+      "message": "ทำซ้ำ"
+   },
+   "showAnalogue": {
+      "description": "ป้ายชื่อสำหรับกล่องกาเครื่องหมายนาฬิกาอนาล็อก",
+      "message": "แสดงนาฬิกา Analogue"
+   },
+   "showDigital": {
+      "description": "ป้ายชื่อสำหรับกล่องกาเครื่องหมายนาฬิกาดิจิทัล",
+      "message": "แสดงนาฬิกาแบบดิจิทัล"
+   },
+   "silence": {
+      "description": "ข้อความ Mouseover คอนปิดเสียงเมื่อจดหมายเตือนชำระเงินมีเสียงไม่มีกำหนด",
+      "message": "ไม่มีเสียง"
+   },
+   "twitter": {
+      "description": "นำเสนอการเชื่อมต่อบนตัว",
+      "message": "ตามส่วนขยายนี้บนตัว"
+   },
+   "webstore": {
+      "description": "นำเสนอการเชื่อมต่อบนเว็บร้าน",
+      "message": "รายงานข้อบกพร่อง คุณลักษณะขอ หรือถามคำถามใน Chrome Web Store"
+   }
+}

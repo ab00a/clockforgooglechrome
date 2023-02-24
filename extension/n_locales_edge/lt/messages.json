@@ -1,0 +1,310 @@
+{
+   "April": {
+      "description": "Balandžio",
+      "message": "Balandžio"
+   },
+   "August": {
+      "description": "Rugpjūčio",
+      "message": "Rugpjūčio"
+   },
+   "December": {
+      "description": "Gruodžio",
+      "message": "Gruodžio"
+   },
+   "February": {
+      "description": "Vasario",
+      "message": "Vasario"
+   },
+   "Friday": {
+      "description": "Penktadienis",
+      "message": "Penktadienis"
+   },
+   "January": {
+      "description": "Sausio",
+      "message": "Sausio"
+   },
+   "July": {
+      "description": "Liepos",
+      "message": "Liepos"
+   },
+   "June": {
+      "description": "Birželio",
+      "message": "Birželio"
+   },
+   "March": {
+      "description": "Kovo",
+      "message": "Kovo"
+   },
+   "May": {
+      "description": "Gali",
+      "message": "Gali"
+   },
+   "Monday": {
+      "description": "Pirmadienis",
+      "message": "Pirmadienis"
+   },
+   "November": {
+      "description": "Lapkričio",
+      "message": "Lapkričio"
+   },
+   "October": {
+      "description": "Spalio",
+      "message": "Spalio"
+   },
+   "Saturday": {
+      "description": "Šeštadienis",
+      "message": "Šeštadienis"
+   },
+   "September": {
+      "description": "Rugsėjo",
+      "message": "Rugsėjo"
+   },
+   "Sunday": {
+      "description": "Sekmadienis",
+      "message": "Sekmadienis"
+   },
+   "Thursday": {
+      "description": "Ketvirtadienis",
+      "message": "Ketvirtadienis"
+   },
+   "Tuesday": {
+      "description": "Antradienis",
+      "message": "Antradienis"
+   },
+   "Wednesday": {
+      "description": "Trečiadienis",
+      "message": "Trečiadienis"
+   },
+   "analogueTitle": {
+      "description": "Rodyklinis laikrodis skirsnio antraštinė dalis",
+      "message": "Rodyklinis laikrodis"
+   },
+   "and": {
+      "description": "šį priminimą eina ne kiekvieną šeštadienį ir sekmadienį",
+      "message": " ir"
+   },
+   "appearanceTitle": {
+      "description": "Išvaizdos skyriuje pavadinimas",
+      "message": "Išvaizda"
+   },
+   "appearanceh": {
+      "description": "Funkcijos antraštė Apipavidalinimo parametrai",
+      "message": "Išvaizda"
+   },
+   "contacth": {
+      "description": "Funkcijos antraštė adresatų duomenų nustatymai",
+      "message": "pagalba"
+   },
+   "datePickerCustom": {
+      "description": "Ženklo užsakymą datos",
+      "message": "Kiti"
+   },
+   "datePickerToday": {
+      "description": "Ženklas šiandien",
+      "message": "Šiandien"
+   },
+   "datePickerTomorrow": {
+      "description": "Etiketės, rytoj",
+      "message": "Rytoj"
+   },
+   "delete": {
+      "description": "Mouseover tekstas piktogramą Naikinti priminimus",
+      "message": "Naikinti"
+   },
+   "deleteCheck": {
+      "description": "Klausimą, kad patvirtintumėte kad vartotojas tikrai nori ištrinti priminimas",
+      "message": "Naikinti priminimą?"
+   },
+   "digitalTitle": {
+      "description": "Skaitmeninis laikrodis ženklelis parinktys skyriaus antraštė",
+      "message": "Skaitmeninis laikrodis"
+   },
+   "edit": {
+      "description": "Ήodis redaguoti, kaip redaguoti šį signalą",
+      "message": "Redaguoti"
+   },
+   "every": {
+      "description": "šį priminimą eina ne kiekvieną sekmadienį",
+      "message": " Kiekvienas"
+   },
+   "everyDay": {
+      "description": "šį priminimą eina ne kiekvieną dieną",
+      "message": " kasdien"
+   },
+   "exhortation": {
+      "description": "Tekstas sako vartotojams, kad jie gali kalbėtis su manimi",
+      "message": "Komentarai, atsiliepimai ir diskusijų:"
+   },
+   "extensionDescription": {
+      "description": "Išplėtimo apibūdinimas",
+      "message": "Rodyklinis laikrodis įrankių juostoje!"
+   },
+   "extensionName": {
+      "description": "Šio plėtinio pavadinimas",
+      "message": "Laikrodis \"Microsoft Edge\" ™"
+   },
+   "formath": {
+      "description": "Funkcijos antraštė formato parametrai",
+      "message": "Formatas"
+   },
+   "gplus": {
+      "description": "Siūlome susisiekti G +",
+      "message": "Po šio pratęsimo \"Google +\""
+   },
+   "handColourCustom": {
+      "description": "Tinkinama spalva rankas tekstas",
+      "message": "Pasirinktinės spalvos rankas"
+   },
+   "handColourDark": {
+      "description": "Tekstą, aprašantį tamsiai rankas",
+      "message": "Tamsiai rankas"
+   },
+   "handColourPale": {
+      "description": "Tekstą, aprašantį šviesiai rankas",
+      "message": "Šviesiai rankas"
+   },
+   "hourChime": {
+      "description": "Žymę žymės langelį, norint nurodyti, kad laikrodis turėtų padaryti triukšmo kas valandą",
+      "message": "Valandą varpelių"
+   },
+   "hoverTextCustom": {
+      "description": "Etiketės pasirinktinį datos pasirinkimo mygtukas",
+      "message": "Pasirinktinį formatą"
+   },
+   "infoTitle": {
+      "description": "Informacijos skyriaus antraštė",
+      "message": "Informacija"
+   },
+   "information": {
+      "description": "Trumpas puslapio parinktys",
+      "message": "Naudokite šį puslapį norėdami keisti parametrus, laikrodis."
+   },
+   "labelHandsColour": {
+      "description": "Rankų spalvos etiketė",
+      "message": "Rankų spalvos"
+   },
+   "labelHandsTrans": {
+      "description": "Etiketės rankas skaidrumo",
+      "message": "Rankas skaidrumo"
+   },
+   "lblAddNewAlarmHeading": {
+      "description": "Pridėti naują priminimo skyriaus antraštė",
+      "message": "Pridėti naujas priminimas"
+   },
+   "lblAlarmLabel": {
+      "description": "Etiketė etiketės naujas priminimas",
+      "message": "Etiketė "
+   },
+   "lblBadgeA": {
+      "description": "Skaidrumo Picker ženklelis foną, skaitmeninis laikrodis, žymę",
+      "message": "Skaitmeninis laikrodis skaidrumo"
+   },
+   "lblBadgePicker": {
+      "description": "Etiketės spalva Picker ženklelis foną, skaitmeninis laikrodis",
+      "message": "Skaitmeninis laikrodis fono spalva"
+   },
+   "lblCategory": {
+      "description": "Kategorijai, priminimas, žymę",
+      "message": "Kategorija"
+   },
+   "lblFirstDayoftheWeek": {
+      "description": "Ženklo įvedimo savaitės dieną",
+      "message": "Pirmoji savaitės diena "
+   },
+   "lblHelpSupportContact": {
+      "description": "Skirtu help skirtuką",
+      "message": "Pagalbos, pagalbos ir susisiekim"
+   },
+   "lblListOfReminders": {
+      "description": "Priminimo pažymų sąrašo antraštė",
+      "message": "Reguliaraus priminimai"
+   },
+   "lblMainAlarms": {
+      "description": "Antraštės etiketę priminimus skyrius",
+      "message": "Priminimai"
+   },
+   "lblNewAlarmHour": {
+      "description": "Slankiklį valandą selektorių, žymę",
+      "message": "Valandą "
+   },
+   "lblNewAlarmMinute": {
+      "description": "Slankiklį minutę selektorių, žymę",
+      "message": "Kelio "
+   },
+   "lblOffset": {
+      "description": "Įvestis, prideda arba pašalina laiko faktinio laiko žymė",
+      "message": "Laiko poslinkis"
+   },
+   "lblRingLabel": {
+      "description": "Etiketės garso sąrašo naujas priminimas",
+      "message": "Garso "
+   },
+   "lblSelectedTime": {
+      "description": "Šiuo metu pažymėtą laiko tarpą, žymę",
+      "message": "Laikas "
+   },
+   "mainHoverTitle": {
+      "description": "Vartotojo pageidaujamą datos formato pavadinimas.",
+      "message": "Datos formatas"
+   },
+   "minutes": {
+      "description": "Žodis minučių, kaip ir 5 minutės",
+      "message": "minučių"
+   },
+   "nextReminder": {
+      "description": "Tekstą, kuris eina prieš IT mouseover pasikartojančią piktogramą",
+      "message": "Kitą priminimą: "
+   },
+   "noReminders": {
+      "description": "Kai be priminimų",
+      "message": "Yra nenaudojamas priminimai"
+   },
+   "on": {
+      "description": "Pavyzdžiui, prisiminimas yra šią dieną",
+      "message": " dėl "
+   },
+   "optionsTitle": {
+      "description": "Pavadinimo tekstą puslapyje Parinktys",
+      "message": "Laikrodis \"Microsoft Edge\" ™"
+   },
+   "rdoFourDots": {
+      "description": "Etiketės keturių žymių laikrodis",
+      "message": "Keturių taškų"
+   },
+   "rdoNoDots": {
+      "description": "Ženklinimą tradicinės, be žymių laikrodis",
+      "message": "Nėra taškų"
+   },
+   "rdoTwelveDots": {
+      "description": "Etiketės dvylika žymeklių laikrodis",
+      "message": "Dvylika taškų"
+   },
+   "remindersh": {
+      "description": "Funkcijos antraštė priminimo parametrai",
+      "message": "Priminimai"
+   },
+   "repeatNewAlarm": {
+      "description": "Ženklo kartojimo priminimo žymės langelį",
+      "message": "Pakartokite"
+   },
+   "showAnalogue": {
+      "description": "Žymę žymės langelį rodyklinis laikrodis",
+      "message": "Analoginis laikrodis"
+   },
+   "showDigital": {
+      "description": "Žymę žymės langelį skaitmeninis laikrodis",
+      "message": "Skaitmeninis laikrodis"
+   },
+   "silence": {
+      "description": "Mouseover tekstas nutildyti piktogramos priminimas buvo paskirtas garso",
+      "message": "Be garso"
+   },
+   "twitter": {
+      "description": "Siūlome prisijungti Twitter",
+      "message": "Po šio plėtinio Twitter"
+   },
+   "webstore": {
+      "description": "Siūlome susisiekti dėl internetinės parduotuvės",
+      "message": "Pranešti apie klaidą, funkcija arba užduoti klausimą apie \"Chrome\" internetinė parduotuvė"
+   }
+}

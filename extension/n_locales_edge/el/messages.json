@@ -1,0 +1,310 @@
+{
+   "April": {
+      "description": "Απριλίου",
+      "message": "Απριλίου"
+   },
+   "August": {
+      "description": "Αυγούστου",
+      "message": "Αυγούστου"
+   },
+   "December": {
+      "description": "Δεκεμβρίου",
+      "message": "Δεκεμβρίου"
+   },
+   "February": {
+      "description": "Φεβρουαρίου",
+      "message": "Φεβρουαρίου"
+   },
+   "Friday": {
+      "description": "Παρασκευή",
+      "message": "Παρασκευή"
+   },
+   "January": {
+      "description": "Ιανουαρίου",
+      "message": "Ιανουαρίου"
+   },
+   "July": {
+      "description": "Ιουλίου",
+      "message": "Ιουλίου"
+   },
+   "June": {
+      "description": "Ιουνίου",
+      "message": "Ιουνίου"
+   },
+   "March": {
+      "description": "Μαρτίου",
+      "message": "Μαρτίου"
+   },
+   "May": {
+      "description": "Μπορεί να",
+      "message": "Μπορεί να"
+   },
+   "Monday": {
+      "description": "Δευτέρα",
+      "message": "Δευτέρα"
+   },
+   "November": {
+      "description": "Νοεμβρίου",
+      "message": "Νοεμβρίου"
+   },
+   "October": {
+      "description": "Οκτωβρίου",
+      "message": "Οκτωβρίου"
+   },
+   "Saturday": {
+      "description": "Σάββατο",
+      "message": "Σάββατο"
+   },
+   "September": {
+      "description": "Σεπτεμβρίου",
+      "message": "Σεπτεμβρίου"
+   },
+   "Sunday": {
+      "description": "Κυριακή",
+      "message": "Κυριακή"
+   },
+   "Thursday": {
+      "description": "Πέμπτη",
+      "message": "Πέμπτη"
+   },
+   "Tuesday": {
+      "description": "Τρίτη",
+      "message": "Τρίτη"
+   },
+   "Wednesday": {
+      "description": "Τετάρτη",
+      "message": "Τετάρτη"
+   },
+   "analogueTitle": {
+      "description": "Ο τίτλος της ενότητας ανάλογη ρολόι",
+      "message": "Ανάλογη ρολόι"
+   },
+   "and": {
+      "description": "Αυτή η υπενθύμιση φεύγει κάθε Σάββατο και Κυριακή",
+      "message": " και"
+   },
+   "appearanceTitle": {
+      "description": "Ο τίτλος της ενότητας εμφάνιση",
+      "message": "Εμφάνιση"
+   },
+   "appearanceh": {
+      "description": "Επιλογές επικεφαλίδα για ρυθμίσεις εμφάνισης",
+      "message": "Εμφάνιση"
+   },
+   "contacth": {
+      "description": "Επιλογές επικεφαλίδα για ρυθμίσεις επαφής",
+      "message": "Βοήθεια"
+   },
+   "datePickerCustom": {
+      "description": "Ετικέτα για Custom ημερομηνία",
+      "message": "Άλλα"
+   },
+   "datePickerToday": {
+      "description": "Ετικέτα για σήμερα",
+      "message": "Σήμερα"
+   },
+   "datePickerTomorrow": {
+      "description": "Ετικέτα για το αύριο",
+      "message": "Αύριο"
+   },
+   "delete": {
+      "description": "Τρεις κείμενο σε στο εικονίδιο διαγραφής για υπενθυμίσεις",
+      "message": "Διαγραφή"
+   },
+   "deleteCheck": {
+      "description": "Ερώτηση για να επαληθεύσετε ότι ο χρήστης θέλει πραγματικά να διαγράψετε μια υπενθύμιση",
+      "message": "Διαγράψτε την υπενθύμιση;"
+   },
+   "digitalTitle": {
+      "description": "Κλάση της ενότητας επιλογές badge ψηφιακό ρολόι",
+      "message": "Ψηφιακό ρολόι"
+   },
+   "edit": {
+      "description": "Το word για επεξεργασία, όπως και στην επεξεργασία αυτή συναγερμού",
+      "message": "Επεξεργασία"
+   },
+   "every": {
+      "description": "Αυτή η υπενθύμιση φεύγει κάθε Κυριακή",
+      "message": " κάθε"
+   },
+   "everyDay": {
+      "description": "Αυτή η υπενθύμιση φεύγει κάθε μέρα",
+      "message": " Κάθε μέρα"
+   },
+   "exhortation": {
+      "description": "Κείμενο που σας πληροφορεί τους χρήστες ότι μπορούν να μιλούν για μένα",
+      "message": "Για παρατηρήσεις, σχόλια και συζήτηση:"
+   },
+   "extensionDescription": {
+      "description": "Η περιγραφή της επέκτασης",
+      "message": "Μια ανάλογη ρολόι στη γραμμή εργαλείων του!"
+   },
+   "extensionName": {
+      "description": "Το όνομα της εν λόγω παράτασης",
+      "message": "Ρολόι για Microsoft Edge ™"
+   },
+   "formath": {
+      "description": "Επιλογές επικεφαλίδα για ρυθμίσεις μορφοποίησης",
+      "message": "Μορφή"
+   },
+   "gplus": {
+      "description": "Προσφορά σύνδεσης G +",
+      "message": "Ακολουθήστε αυτήν την επέκταση στο Google +"
+   },
+   "handColourCustom": {
+      "description": "Κείμενο που περιγράφει τα χέρια προσαρμοσμένο χρώμα",
+      "message": "Προσαρμοσμένο χρώμα χέρια"
+   },
+   "handColourDark": {
+      "description": "Κείμενο που περιγράφει την σκοτεινή χέρια",
+      "message": "Σκούρα τα χέρια"
+   },
+   "handColourPale": {
+      "description": "Κείμενο που περιγράφει Παλ χέρια",
+      "message": "Παλ χέρια"
+   },
+   "hourChime": {
+      "description": "Ετικέτα για το πλαίσιο ελέγχου για να υποδείξετε ότι το ρολόι πρέπει να κάνει ένα θόρυβο κάθε ώρα",
+      "message": "Ώρα Chime"
+   },
+   "hoverTextCustom": {
+      "description": "Ετικέτα για το κουμπί επιλογής προσαρμοσμένη ημερομηνία",
+      "message": "Προσαρμοσμένη μορφή"
+   },
+   "infoTitle": {
+      "description": "Πληροφορίες κεφαλίδας ενότητας",
+      "message": "Πληροφορίες"
+   },
+   "information": {
+      "description": "Μια σύντομη περιγραφή της Επιλογές σελίδας",
+      "message": "Χρησιμοποιήστε αυτήν τη σελίδα, για να αλλάξετε τις ρυθμίσεις για το ρολόι."
+   },
+   "labelHandsColour": {
+      "description": "Ετικέτα για χέρια χρώμα",
+      "message": "Χέρια χρώμα"
+   },
+   "labelHandsTrans": {
+      "description": "Ετικέτα για χέρια διαφάνειας",
+      "message": "Χέρια διαφάνειας"
+   },
+   "lblAddNewAlarmHeading": {
+      "description": "Τίτλο για τη νέα ενότητα υπενθύμισης προσθήκη",
+      "message": "Να προσθέσετε νέο σημείωμα υπενθύμισης"
+   },
+   "lblAlarmLabel": {
+      "description": "Ετικέτα για την ετικέτα για ένα νέο σημείωμα υπενθύμισης",
+      "message": "Ετικέτα "
+   },
+   "lblBadgeA": {
+      "description": "Ετικέτα για διαφάνεια επιλογέα για το badge φόντο για το ψηφιακό ρολόι",
+      "message": "Ψηφιακό ρολόι διαφάνειας"
+   },
+   "lblBadgePicker": {
+      "description": "Ετικέτα για το χρώμα στον επιλογέα για το badge φόντο για το ψηφιακό ρολόι",
+      "message": "Χρώμα φόντου ψηφιακό ρολόι"
+   },
+   "lblCategory": {
+      "description": "Ετικέτας για την κατηγορία του μια υπενθύμιση",
+      "message": "Κατηγορία"
+   },
+   "lblFirstDayoftheWeek": {
+      "description": "Ετικέτα για την πρώτη ημέρα της εβδομάδας εισόδου",
+      "message": "Πρώτη ημέρα της εβδομάδας "
+   },
+   "lblHelpSupportContact": {
+      "description": "Επικεφαλίδα για βοήθεια καρτέλα",
+      "message": "Βοήθεια, υποστήριξη και επικοινωνία"
+   },
+   "lblListOfReminders": {
+      "description": "Κεφαλίδα για λίστα υπενθυμίσεις",
+      "message": "Προγραμματισμένες υπενθυμίσεις"
+   },
+   "lblMainAlarms": {
+      "description": "Μια ετικέτα κλάσης για την ενότητα υπενθυμίσεις",
+      "message": "Υπενθυμίσεις"
+   },
+   "lblNewAlarmHour": {
+      "description": "Ετικέτα για το ρυθμιστικό επιλογέα ώρα",
+      "message": "Ώρα "
+   },
+   "lblNewAlarmMinute": {
+      "description": "Ετικέτα για το ρυθμιστικό λεπτό επιλογέας",
+      "message": "Λεπτό "
+   },
+   "lblOffset": {
+      "description": "Ετικέτα για εισαγωγή δεδομένων που προσθέτει ή αφαιρεί χρόνο για να τον πραγματικό χρόνο",
+      "message": "Χρονική μετατόπιση"
+   },
+   "lblRingLabel": {
+      "description": "Ετικέτα για το dropdown ήχου για ένα νέο σημείωμα υπενθύμισης",
+      "message": "Ήχος "
+   },
+   "lblSelectedTime": {
+      "description": "Ετικέτα για το τρέχον επιλεγμένο χρόνο",
+      "message": "Χρόνος "
+   },
+   "mainHoverTitle": {
+      "description": "Χρήστη προτιμώμενη ημερομηνία Μορφοποίηση τίτλου.",
+      "message": "Μορφή ημερομηνίας"
+   },
+   "minutes": {
+      "description": "Η λέξη για πρακτικά, όπως και σε 5 λεπτά",
+      "message": "συνοπτικά πρακτικά"
+   },
+   "nextReminder": {
+      "description": "Κείμενο που πάει ακριβώς μπροστά από το dat σχετικά με τις τρεις από το εικονίδιο της επανάληψης",
+      "message": "Επόμενη υπενθύμιση: "
+   },
+   "noReminders": {
+      "description": "Εμφανίζονται όταν υπάρχουν δεν υπενθυμίσεις",
+      "message": "Υπάρχουν ούτε Ορισμός υπενθυμίσεων"
+   },
+   "on": {
+      "description": "Για παράδειγμα, αυτή η υπενθύμιση είναι σχετικά με την ημερομηνία αυτή",
+      "message": " σχετικά με "
+   },
+   "optionsTitle": {
+      "description": "Το κείμενο του τίτλου που εμφανίζεται στη σελίδα Επιλογές",
+      "message": "Ρολόι για Microsoft Edge ™"
+   },
+   "rdoFourDots": {
+      "description": "Ετικέτα για τέσσερις δείκτες ρολογιού",
+      "message": "Τέσσερις τελείες"
+   },
+   "rdoNoDots": {
+      "description": "Ετικέτας για την παραδοσιακή, χωρίς δείκτες ρολογιού",
+      "message": "Χωρίς τελείες"
+   },
+   "rdoTwelveDots": {
+      "description": "Ετικέτα για δώδεκα δείκτες ρολογιού",
+      "message": "Δώδεκα στιγμές"
+   },
+   "remindersh": {
+      "description": "Επιλογές επικεφαλίδα για ρυθμίσεις υπενθυμίσεων",
+      "message": "Υπενθυμίσεις"
+   },
+   "repeatNewAlarm": {
+      "description": "Ετικέτα για το πλαίσιο ελέγχου Επανάληψη υπενθύμισης",
+      "message": "Επαναλάβετε"
+   },
+   "showAnalogue": {
+      "description": "Ετικέτα για το πλαίσιο ελέγχου ανάλογη ρολόι",
+      "message": "Εμφάνιση το αναλογικό ρολόι"
+   },
+   "showDigital": {
+      "description": "Ετικέτα για το πλαίσιο ελέγχου ψηφιακό ρολόι",
+      "message": "Εμφάνιση το ψηφιακό ρολόι"
+   },
+   "silence": {
+      "description": "Τρεις κειμένου στο εικονίδιο Σίγαση όταν υπενθύμιση έχει κανένα ήχο που του έχουν ανατεθεί",
+      "message": "Δεν ακούγεται"
+   },
+   "twitter": {
+      "description": "Προσφορά για να συνδεθείτε στο Twitter",
+      "message": "Ακολουθήστε αυτήν την επέκταση στο Twitter"
+   },
+   "webstore": {
+      "description": "Προσφορά για να συνδεθείτε στο χώρο αποθήκευσης στο Web",
+      "message": "Αναφέρετε ένα σφάλμα, τη δυνατότητα αίτησης ή μια ερώτηση σχετικά με το Chrome Web Store"
+   }
+}

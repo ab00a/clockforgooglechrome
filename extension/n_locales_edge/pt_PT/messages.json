@@ -1,0 +1,310 @@
+{
+   "April": {
+      "description": "Abril",
+      "message": "Abril"
+   },
+   "August": {
+      "description": "Agosto",
+      "message": "Agosto"
+   },
+   "December": {
+      "description": "Dezembro de",
+      "message": "Dezembro de"
+   },
+   "February": {
+      "description": "Fevereiro de",
+      "message": "Fevereiro de"
+   },
+   "Friday": {
+      "description": "Sexta-feira",
+      "message": "Sexta-feira"
+   },
+   "January": {
+      "description": "Janeiro de",
+      "message": "Janeiro de"
+   },
+   "July": {
+      "description": "Julho de",
+      "message": "Julho de"
+   },
+   "June": {
+      "description": "Junho de",
+      "message": "Junho de"
+   },
+   "March": {
+      "description": "Março",
+      "message": "Março"
+   },
+   "May": {
+      "description": "Maio",
+      "message": "Maio"
+   },
+   "Monday": {
+      "description": "Segunda-feira",
+      "message": "Segunda-feira"
+   },
+   "November": {
+      "description": "Novembro de",
+      "message": "Novembro de"
+   },
+   "October": {
+      "description": "Outubro",
+      "message": "Outubro"
+   },
+   "Saturday": {
+      "description": "Sábado",
+      "message": "Sábado"
+   },
+   "September": {
+      "description": "Setembro de",
+      "message": "Setembro de"
+   },
+   "Sunday": {
+      "description": "Domingo",
+      "message": "Domingo"
+   },
+   "Thursday": {
+      "description": "Quinta-feira",
+      "message": "Quinta-feira"
+   },
+   "Tuesday": {
+      "description": "Terça-feira",
+      "message": "Terça-feira"
+   },
+   "Wednesday": {
+      "description": "Quarta-feira",
+      "message": "Quarta-feira"
+   },
+   "analogueTitle": {
+      "description": "O título da seção de relógio analógico",
+      "message": "Relógio analógico"
+   },
+   "and": {
+      "description": "esta lembrança se apaga todos os sábados e domingo",
+      "message": " e"
+   },
+   "appearanceTitle": {
+      "description": "O título da seção de aparência",
+      "message": "Aparência"
+   },
+   "appearanceh": {
+      "description": "Opções para configurações de aparência",
+      "message": "Aparência"
+   },
+   "contacth": {
+      "description": "Opções para configurações de contatos",
+      "message": "Ajuda"
+   },
+   "datePickerCustom": {
+      "description": "Rótulo para Custom data",
+      "message": "Outros"
+   },
+   "datePickerToday": {
+      "description": "Rótulo para hoje",
+      "message": "Hoje"
+   },
+   "datePickerTomorrow": {
+      "description": "Rótulo para amanhã",
+      "message": "Amanhã"
+   },
+   "delete": {
+      "description": "Texto do mouse sobre o ícone ' excluir ' para lembretes",
+      "message": "Excluir"
+   },
+   "deleteCheck": {
+      "description": "Pergunta para verificar que o usuário realmente deseja excluir um lembrete",
+      "message": "Excluir o lembrete?"
+   },
+   "digitalTitle": {
+      "description": "Indo para a seção de opções de crachá de relógio digital",
+      "message": "Relógio digital"
+   },
+   "edit": {
+      "description": "A palavra para editar, como em Editar este alarme",
+      "message": "Editar"
+   },
+   "every": {
+      "description": "esta lembrança se apaga todos os domingos",
+      "message": " cada"
+   },
+   "everyDay": {
+      "description": "esta lembrança se apaga todos os dias",
+      "message": " Todos os dias"
+   },
+   "exhortation": {
+      "description": "Texto contar os usuários que podem falar-me",
+      "message": "Para comentários, comentários e discussão:"
+   },
+   "extensionDescription": {
+      "description": "A descrição da extensão",
+      "message": "Um relógio analógico na barra de ferramentas!"
+   },
+   "extensionName": {
+      "description": "O nome desta extensão",
+      "message": "Relógio para o Microsoft Edge ™"
+   },
+   "formath": {
+      "description": "Opções para configurações de formato",
+      "message": "Formato"
+   },
+   "gplus": {
+      "description": "Oferecer para conectar no G +",
+      "message": "Siga esta extensão no Google +"
+   },
+   "handColourCustom": {
+      "description": "Texto descrevendo as mãos de cor personalizada",
+      "message": "Mãos de cor personalizada"
+   },
+   "handColourDark": {
+      "description": "Texto descrevendo as mãos escuras",
+      "message": "Mãos escuras"
+   },
+   "handColourPale": {
+      "description": "Texto descrevendo as mãos pálidas",
+      "message": "Mãos pálidas"
+   },
+   "hourChime": {
+      "description": "Etiqueta para a caixa de seleção indicar que o relógio deve fazer um barulho cada hora",
+      "message": "Carrilhão de hora"
+   },
+   "hoverTextCustom": {
+      "description": "Rótulo para o botão de seleção de data personalizada",
+      "message": "Formato personalizado"
+   },
+   "infoTitle": {
+      "description": "Cabeçalho da seção de informações",
+      "message": "Informações"
+   },
+   "information": {
+      "description": "Uma breve descrição da página opções",
+      "message": "Use esta página para alterar as configurações do relógio."
+   },
+   "labelHandsColour": {
+      "description": "Rótulo para cor de mãos",
+      "message": "Cor de mãos"
+   },
+   "labelHandsTrans": {
+      "description": "Rótulo para transparência de mãos",
+      "message": "Transparência de mãos"
+   },
+   "lblAddNewAlarmHeading": {
+      "description": "Caminhando para o Adicionar novo lembrete seção",
+      "message": "Adicionar novo lembrete"
+   },
+   "lblAlarmLabel": {
+      "description": "Rótulo para o rótulo para um novo lembrete",
+      "message": "Rótulo "
+   },
+   "lblBadgeA": {
+      "description": "Rótulo para selecionador de transparência para o fundo do emblema para o relógio digital",
+      "message": "Transparência de relógio digital"
+   },
+   "lblBadgePicker": {
+      "description": "Rótulo para selecionador de cor para o fundo do emblema para o relógio digital",
+      "message": "Cor de fundo de relógio digital"
+   },
+   "lblCategory": {
+      "description": "Rótulo para a categoria de um lembrete",
+      "message": "Categoria"
+   },
+   "lblFirstDayoftheWeek": {
+      "description": "Rótulo para o primeiro dia da semana de entrada",
+      "message": "Primeiro dia da semana "
+   },
+   "lblHelpSupportContact": {
+      "description": "Caminhando para o guia de ajuda",
+      "message": "Ajuda, suporte e contato"
+   },
+   "lblListOfReminders": {
+      "description": "Indo para a lista de lembretes",
+      "message": "Lembretes programados"
+   },
+   "lblMainAlarms": {
+      "description": "Um rótulo de cabeçalho para a seção de lembretes",
+      "message": "Lembretes"
+   },
+   "lblNewAlarmHour": {
+      "description": "Rótulo para o controle deslizante seletor de hora",
+      "message": "Hora "
+   },
+   "lblNewAlarmMinute": {
+      "description": "Rótulo para o controle deslizante do seletor de minuto",
+      "message": "Minutos "
+   },
+   "lblOffset": {
+      "description": "Rótulo para entrada que adiciona ou remove a tempo para o tempo real",
+      "message": "Deslocamento de tempo"
+   },
+   "lblRingLabel": {
+      "description": "Rótulo para o som suspenso para um novo lembrete",
+      "message": "Som "
+   },
+   "lblSelectedTime": {
+      "description": "Rótulo para o tempo selecionado",
+      "message": "Tempo "
+   },
+   "mainHoverTitle": {
+      "description": "Usuário preferida de título de formato de data.",
+      "message": "Formato de data"
+   },
+   "minutes": {
+      "description": "A palavra para minutos, como em 5 minutos",
+      "message": "minutos"
+   },
+   "nextReminder": {
+      "description": "Texto que vai em frente o dat o MouseOver o ícone de repetição",
+      "message": "Seguinte lembrete: "
+   },
+   "noReminders": {
+      "description": "Quando não há nenhum lembretes",
+      "message": "Não há nenhum conjunto de lembretes"
+   },
+   "on": {
+      "description": "Por exemplo, esta lembrança é nesta data",
+      "message": " em "
+   },
+   "optionsTitle": {
+      "description": "O texto de título que aparece na página opções",
+      "message": "Relógio para o Microsoft Edge ™"
+   },
+   "rdoFourDots": {
+      "description": "Rótulo para relógio de quatro marcadores",
+      "message": "Quatro pontos"
+   },
+   "rdoNoDots": {
+      "description": "Etiqueta para tradicional, sem marcadores relógio",
+      "message": "Sem pontos"
+   },
+   "rdoTwelveDots": {
+      "description": "Rótulo para relógio de doze marcadores",
+      "message": "Doze pontos"
+   },
+   "remindersh": {
+      "description": "Opções para configurações de lembretes",
+      "message": "Lembretes"
+   },
+   "repeatNewAlarm": {
+      "description": "Rótulo para a caixa de seleção lembrete de repetição",
+      "message": "Repita"
+   },
+   "showAnalogue": {
+      "description": "Rótulo para a caixa de seleção de relógio analógico",
+      "message": "Mostrar o relógio analógico"
+   },
+   "showDigital": {
+      "description": "Rótulo para a caixa de verificação do relógio digital",
+      "message": "Mostrar o relógio Digital"
+   },
+   "silence": {
+      "description": "Mouseover texto no ícone mudo quando o lembrete não tem atribuído som",
+      "message": "Sem som"
+   },
+   "twitter": {
+      "description": "Oferta para conectar no Twitter",
+      "message": "Siga esta extensão no Twitter"
+   },
+   "webstore": {
+      "description": "Oferta para conectar na Web Store",
+      "message": "Reportar um bug, o pedido de recurso ou uma pergunta na Chrome Web Store"
+   }
+}

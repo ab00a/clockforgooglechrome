@@ -1,0 +1,310 @@
+{
+   "April": {
+      "description": "4 月",
+      "message": "4 月"
+   },
+   "August": {
+      "description": "8 月",
+      "message": "8 月"
+   },
+   "December": {
+      "description": "12 月",
+      "message": "12 月"
+   },
+   "February": {
+      "description": "2 月",
+      "message": "2 月"
+   },
+   "Friday": {
+      "description": "星期五",
+      "message": "星期五"
+   },
+   "January": {
+      "description": "1 月",
+      "message": "1 月"
+   },
+   "July": {
+      "description": "7 月",
+      "message": "7 月"
+   },
+   "June": {
+      "description": "6 月",
+      "message": "6 月"
+   },
+   "March": {
+      "description": "3 月",
+      "message": "3 月"
+   },
+   "May": {
+      "description": "5 月",
+      "message": "5 月"
+   },
+   "Monday": {
+      "description": "星期一",
+      "message": "星期一"
+   },
+   "November": {
+      "description": "11 月",
+      "message": "11 月"
+   },
+   "October": {
+      "description": "10 月",
+      "message": "10 月"
+   },
+   "Saturday": {
+      "description": "星期六",
+      "message": "星期六"
+   },
+   "September": {
+      "description": "9 月",
+      "message": "9 月"
+   },
+   "Sunday": {
+      "description": "星期日",
+      "message": "星期日"
+   },
+   "Thursday": {
+      "description": "星期四",
+      "message": "星期四"
+   },
+   "Tuesday": {
+      "description": "星期二",
+      "message": "星期二"
+   },
+   "Wednesday": {
+      "description": "星期三",
+      "message": "星期三"
+   },
+   "analogueTitle": {
+      "description": "模拟时钟节的标题",
+      "message": "模拟时钟"
+   },
+   "and": {
+      "description": "此提醒熄灭每星期六和星期日",
+      "message": "和"
+   },
+   "appearanceTitle": {
+      "description": "外观部分的标题",
+      "message": "外观"
+   },
+   "appearanceh": {
+      "description": "标题的外观设置选项",
+      "message": "外观"
+   },
+   "contacth": {
+      "description": "为联系人设置的标题的选项",
+      "message": "帮助"
+   },
+   "datePickerCustom": {
+      "description": "自定义日期的标签",
+      "message": "其他"
+   },
+   "datePickerToday": {
+      "description": "今天的标签",
+      "message": "今日"
+   },
+   "datePickerTomorrow": {
+      "description": "明天的标签",
+      "message": "明天"
+   },
+   "delete": {
+      "description": "鼠标悬停文字提醒的删除图标",
+      "message": "删除"
+   },
+   "deleteCheck": {
+      "description": "问题以验证用户真正想要删除提醒",
+      "message": "删除提醒吗？"
+   },
+   "digitalTitle": {
+      "description": "数字时钟徽章选项部分的标题",
+      "message": "数字时钟"
+   },
+   "edit": {
+      "description": "为 word 编辑，作为中编辑此报警",
+      "message": "编辑"
+   },
+   "every": {
+      "description": "每个星期天都有此提醒",
+      "message": "每个"
+   },
+   "everyDay": {
+      "description": "每天都该提醒",
+      "message": "每天"
+   },
+   "exhortation": {
+      "description": "告诉用户他们可以跟我的文本",
+      "message": "评论、 反馈和讨论："
+   },
+   "extensionDescription": {
+      "description": "扩展的说明",
+      "message": "在工具栏中模拟时钟 ！"
+   },
+   "extensionName": {
+      "description": "此扩展的名称",
+      "message": "Microsoft Edge ™ 的时钟"
+   },
+   "formath": {
+      "description": "标题的格式设置选项",
+      "message": "格式"
+   },
+   "gplus": {
+      "description": "提供的连接上 G +",
+      "message": "按照此扩展上 Google +"
+   },
+   "handColourCustom": {
+      "description": "描述自定义颜色手的文本",
+      "message": "自定义颜色手"
+   },
+   "handColourDark": {
+      "description": "文字描述暗手",
+      "message": "暗手"
+   },
+   "handColourPale": {
+      "description": "文字描述苍白的手",
+      "message": "苍白的手"
+   },
+   "hourChime": {
+      "description": "复选框以指示时钟应让噪音每个小时的标签",
+      "message": "小时编钟"
+   },
+   "hoverTextCustom": {
+      "description": "自定义日期选择按钮的标签",
+      "message": "自定义格式"
+   },
+   "infoTitle": {
+      "description": "节标头信息",
+      "message": "信息"
+   },
+   "information": {
+      "description": "选项页的简要说明",
+      "message": "使用此页面可更改时钟上的设置。"
+   },
+   "labelHandsColour": {
+      "description": "手肤色的标签",
+      "message": "手肤色"
+   },
+   "labelHandsTrans": {
+      "description": "手透明度的标签",
+      "message": "手透明度"
+   },
+   "lblAddNewAlarmHeading": {
+      "description": "添加新的提醒节的标题",
+      "message": "添加新的提醒"
+   },
+   "lblAlarmLabel": {
+      "description": "新提醒的标签的标签",
+      "message": "标签"
+   },
+   "lblBadgeA": {
+      "description": "透明度选取器中为数字钟的徽章背景的标签",
+      "message": "数字时钟透明"
+   },
+   "lblBadgePicker": {
+      "description": "颜色选取器中为数字钟的徽章背景的标签",
+      "message": "数字时钟背景颜色"
+   },
+   "lblCategory": {
+      "description": "标签为提醒的类别的",
+      "message": "类别"
+   },
+   "lblFirstDayoftheWeek": {
+      "description": "输入一周的第一天的标签",
+      "message": "一周的第一天"
+   },
+   "lblHelpSupportContact": {
+      "description": "帮助选项卡的标题",
+      "message": "帮助、 支持和联络"
+   },
+   "lblListOfReminders": {
+      "description": "提醒列表的标题",
+      "message": "定时的提醒"
+   },
+   "lblMainAlarms": {
+      "description": "提醒一节的标题标签",
+      "message": "提醒"
+   },
+   "lblNewAlarmHour": {
+      "description": "小时选择器滑块的标签",
+      "message": "小时"
+   },
+   "lblNewAlarmMinute": {
+      "description": "分钟选择器滑块的标签",
+      "message": "分钟"
+   },
+   "lblOffset": {
+      "description": "添加或移除时间与实际时间输入框的标签",
+      "message": "时间偏移"
+   },
+   "lblRingLabel": {
+      "description": "对于新提醒的声音下拉列表的标签",
+      "message": "声音"
+   },
+   "lblSelectedTime": {
+      "description": "标签为当前选定的时间的",
+      "message": "时间"
+   },
+   "mainHoverTitle": {
+      "description": "用户的首选日期标题格式。",
+      "message": "日期格式"
+   },
+   "minutes": {
+      "description": "分钟，如 5 分钟一词",
+      "message": "分钟"
+   },
+   "nextReminder": {
+      "description": "在重复图标的鼠标悬停在 dat 面前去的文本",
+      "message": "下次提醒："
+   },
+   "noReminders": {
+      "description": "显示时没有提醒",
+      "message": "没有提醒设置"
+   },
+   "on": {
+      "description": "例如，此提醒是在此日期",
+      "message": "关于"
+   },
+   "optionsTitle": {
+      "description": "在选项页显示的标题文本",
+      "message": "Microsoft Edge ™ 的时钟"
+   },
+   "rdoFourDots": {
+      "description": "四个标志物时钟的标签",
+      "message": "4 个点"
+   },
+   "rdoNoDots": {
+      "description": "标签为传统，没有标记时钟",
+      "message": "没有句点"
+   },
+   "rdoTwelveDots": {
+      "description": "十二个标记时钟的标签",
+      "message": "十二个点"
+   },
+   "remindersh": {
+      "description": "为提醒设置标题的选项",
+      "message": "提醒"
+   },
+   "repeatNewAlarm": {
+      "description": "重复提醒复选框的标签",
+      "message": "重复"
+   },
+   "showAnalogue": {
+      "description": "模拟时钟复选框的标签",
+      "message": "显示模拟时钟"
+   },
+   "showDigital": {
+      "description": "数字时钟复选框的标签",
+      "message": "显示数字时钟"
+   },
+   "silence": {
+      "description": "时提醒已没有指派的声音静音图标上悬停文本",
+      "message": "没有声音"
+   },
+   "twitter": {
+      "description": "提供在 Twitter 上连接",
+      "message": "在 Twitter 上遵循此扩展"
+   },
+   "webstore": {
+      "description": "提供要连接的 Web 存储上",
+      "message": "报告 bug、 功能请求，或问一个问题在 Chrome Web 存储区上"
+   }
+}
