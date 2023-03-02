@@ -1,0 +1,14 @@
+runtime: python311
+
+handlers:
+- url: /favicon\.ico
+  static_files: favicon.ico
+  upload: favicon\.ico
+
+- url: /ads\.txt
+  static_files: ads.txt
+  upload: ads\.txt
+
+- url: /site
+  static_dir: site
+
