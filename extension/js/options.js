@@ -290,7 +290,7 @@ function showDigitalChange(e) {
 function switchPane(e) {
     //If the help link was clicked, go to the webhelp page
     if (e.currentTarget.id == "contacth") {
-        window.open("https://ab00a.github.io/clockforgooglechrome/");
+        window.open("https://clockforchrome.appspot.com/site/index.html");
     } else {
         //First, hide the visible one
         document.querySelector(".optionOn").className = "optionOff";
