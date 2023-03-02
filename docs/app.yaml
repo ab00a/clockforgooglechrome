@@ -5,9 +5,9 @@ handlers:
   static_files: favicon.ico
   upload: favicon\.ico
 
-- url: /ads\.txt
-  static_files: ads.txt
-  upload: ads\.txt
+- url: /google13d98156732d1c0e\.html
+  static_files: google13d98156732d1c0e.html
+  upload: google13d98156732d1c0e\.html
 
 - url: /site
   static_dir: site
