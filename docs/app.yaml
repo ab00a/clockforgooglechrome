@@ -9,6 +9,11 @@ handlers:
   static_files: google13d98156732d1c0e.html
   upload: google13d98156732d1c0e\.html
 
+
+- url: /ads\.txt
+  static_files: ads.txt
+  upload: ads\.txt
+  
 - url: /site
   static_dir: site
 
